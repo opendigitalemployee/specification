@@ -1,6 +1,15 @@
 # Open Digital Employee Specification
 
-**Draft release 0.1.0-draft.4 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
+<!-- project-badges:start -->
+[![documentation: read](docs/badges/documentation.svg)](https://github.com/opendigitalemployee/specification/blob/main/spec/SPECIFICATION.md)
+[![overview: read](docs/badges/overview.svg)](https://github.com/opendigitalemployee/specification/blob/main/docs/OVERVIEW.md)
+[![format: 0.1.0-draft](docs/badges/format.svg)](https://github.com/opendigitalemployee/specification/blob/main/STATUS.md)
+[![schema checks: GitHub CI](docs/badges/checks.svg)](https://github.com/opendigitalemployee/specification/actions/workflows/check.yml)
+[![spec license: Apache-2.0](docs/badges/spec-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSE)
+[![docs license: CC BY 4.0](docs/badges/docs-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt)
+<!-- project-badges:end -->
+
+**Draft release 0.1.0-draft.5 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
 
 Design a digital employee around a **measurable business outcome**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Preserve that design independently of a runtime.
 

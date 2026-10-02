@@ -1,6 +1,10 @@
 # Change history
 
-## 0.1.0-draft.4 — draft release
+## 0.1.0-draft.5 — documentation badges
+
+Added linked documentation, overview, format, schema-check and license badges to README. The check badge links to CI and does not assert runtime certification or a static passing result. Package semantics, schemas and example bytes remain unchanged.
+
+## 0.1.0-draft.4 — first public draft
 
 Selected the 0.1.0-draft specification, generated schemas, glossary, synthetic employee and file-backup examples, documentation and automated schema/example checks. Added a compact outcome-led overview and explicit status boundaries.
 

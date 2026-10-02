@@ -15,35 +15,35 @@
       "license": "Apache-2.0",
       "sha256": "c91bbdaf41d0932131ce376e6ef1c597103399ceff55819d4be25fbfa8bbf440",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     ".gitignore": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "daa1621cef56cfbce76f76b5a024ad3c94c5057fcaebcb4bd31996ea592cd403",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     "CHANGELOG.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "5d2c24689bba43c56cebe4f1391fe05621fedff2b5f25293f1f21c68643046ba",
+      "sha256": "e07fe81c42d31088bdf320439789c505b1021aaa3fdc14cb80a5f8190e8da4a8",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     "CONTRIBUTING.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "6679726e72fa036d2ad849b94c0143e0f7412b8e625f0bdfc8887c40ac35092a",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     "CONTRIBUTORS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "8683e3393b0223bb324908ae5ac7ffacdbc94ff97dde5da86f77b685a049ad1a",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     "LICENSE": {
       "adapted": false,
@@ -64,35 +64,84 @@
       "license": "CC-BY-4.0",
       "sha256": "678caaaddf86febf1d29d9a9ba2cc6f150a482d952ed2e3642496721f463e4a4",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     "NOTICE": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "3a552cc2f12ce3bf8f7262bdd8ab289d56be43c8836cf32d49a7c0288a727151",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     "README.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "fe9ad836a21c4d14a71f3061f66ecf94cabeb87e0e7671f674e8e89645009c55",
+      "sha256": "8762431b989982ed1f0bccbb5b40ba824d8ea5c1d2fe8ee3c696e761b9775eb7",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     "STATUS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "b41282149e923b9e0ad7f568dd9f51acb792dde9419c69d08124cae9ef7bde94",
+      "sha256": "cee6d707ccd82b83bcf1a421fe2b6f02de7763d200bb6df73e310585f3fce595",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
     },
     "docs/OVERVIEW.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "7c198c9eac376847cf5cdae07a51f3c94d243b5c5ae045c71affce7f046a3c5a",
       "source": "spec/public-export.json",
-      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+      "sourceSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600"
+    },
+    "docs/badges/catalog.json": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "328f1f881900226cfdd09aa14bb72216eaf516f85c6244221ac85dbef9fac1b2",
+      "source": "spec/public-badges/catalog.json",
+      "sourceSha256": "328f1f881900226cfdd09aa14bb72216eaf516f85c6244221ac85dbef9fac1b2"
+    },
+    "docs/badges/checks.svg": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "594a590b3fcce28d22be80c4f694b74e3e346db39723cc8a26cd8cd8275fedf8",
+      "source": "spec/public-badges/checks.svg",
+      "sourceSha256": "594a590b3fcce28d22be80c4f694b74e3e346db39723cc8a26cd8cd8275fedf8"
+    },
+    "docs/badges/docs-license.svg": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "0260168aed99b8305af2a62d69cc13361061804e6065e044a81c61f5fecc94ab",
+      "source": "spec/public-badges/docs-license.svg",
+      "sourceSha256": "0260168aed99b8305af2a62d69cc13361061804e6065e044a81c61f5fecc94ab"
+    },
+    "docs/badges/documentation.svg": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "55616a82cff06d48b0e486387940ecdf05f2f6c3d81ef5d7757e3258c8e460c7",
+      "source": "spec/public-badges/documentation.svg",
+      "sourceSha256": "55616a82cff06d48b0e486387940ecdf05f2f6c3d81ef5d7757e3258c8e460c7"
+    },
+    "docs/badges/format.svg": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "2a3629cb9d7d4e277acf0b4099e76c70948d910042ff0df7beb7a27ad8c7978b",
+      "source": "spec/public-badges/format.svg",
+      "sourceSha256": "2a3629cb9d7d4e277acf0b4099e76c70948d910042ff0df7beb7a27ad8c7978b"
+    },
+    "docs/badges/overview.svg": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "74f474e66b78940f90f0d970e516c57bec0dda57c4b74f21340bae8fcd7daf57",
+      "source": "spec/public-badges/overview.svg",
+      "sourceSha256": "74f474e66b78940f90f0d970e516c57bec0dda57c4b74f21340bae8fcd7daf57"
+    },
+    "docs/badges/spec-license.svg": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "04613afc7926aa2920833e3411cd6abe3a50d8716f594dd4502422c97b1c4565",
+      "source": "spec/public-badges/spec-license.svg",
+      "sourceSha256": "04613afc7926aa2920833e3411cd6abe3a50d8716f594dd4502422c97b1c4565"
     },
     "examples/clinic-backup/agents/demo/1.0.0/activation.json": {
       "adapted": false,
@@ -795,10 +844,10 @@
     ]
   },
   "publication": "local-candidate; no repository created or pushed",
-  "releaseVersion": "0.1.0-draft.4",
+  "releaseVersion": "0.1.0-draft.5",
   "rightsHolder": "Taras Pustovoy and contributors",
   "sourcePlan": "spec/public-export.json",
-  "sourcePlanSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4",
+  "sourcePlanSha256": "476140d589f3f147ec451879ad1389170b90c638492dc596ea9da01c3658d600",
   "specVersion": "0.1.0-draft",
   "verificationSources": {
     "tools/dep.py": "6c9cb30df0265e96c88ce7b8465f15ab12165096f63237644295b394f15672d0",
