@@ -1,0 +1,808 @@
+{
+  "checks": {
+    "fileAdapters": [],
+    "liveRuntimeTested": false,
+    "markdownLinks": true,
+    "packageValidation": true,
+    "privateMarkersAndCredentialPatternScan": true,
+    "referenceToolsDistributed": false,
+    "roundTripBytes": true,
+    "schemaReproduction": true
+  },
+  "files": {
+    ".github/workflows/check.yml": {
+      "adapted": true,
+      "license": "Apache-2.0",
+      "sha256": "c91bbdaf41d0932131ce376e6ef1c597103399ceff55819d4be25fbfa8bbf440",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    ".gitignore": {
+      "adapted": true,
+      "license": "Apache-2.0",
+      "sha256": "daa1621cef56cfbce76f76b5a024ad3c94c5057fcaebcb4bd31996ea592cd403",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "CHANGELOG.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "5d2c24689bba43c56cebe4f1391fe05621fedff2b5f25293f1f21c68643046ba",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "CONTRIBUTING.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "6679726e72fa036d2ad849b94c0143e0f7412b8e625f0bdfc8887c40ac35092a",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "CONTRIBUTORS.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "8683e3393b0223bb324908ae5ac7ffacdbc94ff97dde5da86f77b685a049ad1a",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "LICENSE": {
+      "adapted": false,
+      "license": null,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source": "spec/public-licenses/Apache-2.0.txt",
+      "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "adapted": false,
+      "license": null,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "source": "spec/public-licenses/CC-BY-4.0.txt",
+      "sourceSha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    "LICENSING.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "678caaaddf86febf1d29d9a9ba2cc6f150a482d952ed2e3642496721f463e4a4",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "NOTICE": {
+      "adapted": true,
+      "license": "Apache-2.0",
+      "sha256": "3a552cc2f12ce3bf8f7262bdd8ab289d56be43c8836cf32d49a7c0288a727151",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "README.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "fe9ad836a21c4d14a71f3061f66ecf94cabeb87e0e7671f674e8e89645009c55",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "STATUS.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "b41282149e923b9e0ad7f568dd9f51acb792dde9419c69d08124cae9ef7bde94",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "docs/OVERVIEW.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "7c198c9eac376847cf5cdae07a51f3c94d243b5c5ae045c71affce7f046a3c5a",
+      "source": "spec/public-export.json",
+      "sourceSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4"
+    },
+    "examples/clinic-backup/agents/demo/1.0.0/activation.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "3c839689b1750d5267d1d34a9f63f9b17a8b53ecdb7a71319f5a96a3478d7aa6",
+      "source": "examples/clinic-backup/agents/demo/1.0.0/activation.json",
+      "sourceSha256": "3c839689b1750d5267d1d34a9f63f9b17a8b53ecdb7a71319f5a96a3478d7aa6"
+    },
+    "examples/clinic-backup/agents/demo/1.0.0/change.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d21aa8c7b523c65c4800b2752abccb1fa360774f9be85edbbd4b7da45e8e8751",
+      "source": "examples/clinic-backup/agents/demo/1.0.0/change.json",
+      "sourceSha256": "d21aa8c7b523c65c4800b2752abccb1fa360774f9be85edbbd4b7da45e8e8751"
+    },
+    "examples/clinic-backup/agents/demo/1.0.0/client-brief.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "f28104967cb49d4be09a0d5f42d393ef4d8c934d9f7f027d135d03e18c98cf55",
+      "source": "examples/clinic-backup/agents/demo/1.0.0/client-brief.json",
+      "sourceSha256": "f28104967cb49d4be09a0d5f42d393ef4d8c934d9f7f027d135d03e18c98cf55"
+    },
+    "examples/clinic-backup/agents/demo/1.0.0/employee.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "2eb2e862574ce00eaca5a35b0329ade7fe74b236f262d287486d23caa3fb6eba",
+      "source": "examples/clinic-backup/agents/demo/1.0.0/employee.json",
+      "sourceSha256": "2eb2e862574ce00eaca5a35b0329ade7fe74b236f262d287486d23caa3fb6eba"
+    },
+    "examples/clinic-backup/agents/demo/1.0.0/goals.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "56347f65f9516de015d84106af44d8dae591e14280d1646ce2e1c2bb09055734",
+      "source": "examples/clinic-backup/agents/demo/1.0.0/goals.json",
+      "sourceSha256": "56347f65f9516de015d84106af44d8dae591e14280d1646ce2e1c2bb09055734"
+    },
+    "examples/clinic-backup/agents/demo/1.0.0/interaction.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d74039435dbcd32415d1e45167657a52495d85b4b454d4296c467ce54fe3d647",
+      "source": "examples/clinic-backup/agents/demo/1.0.0/interaction.json",
+      "sourceSha256": "d74039435dbcd32415d1e45167657a52495d85b4b454d4296c467ce54fe3d647"
+    },
+    "examples/clinic-backup/agents/demo/1.0.0/read-binding.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "a27f35894e4af8e58bfd3a594abf515cfa1b59677718f1e87a28c7f25d994904",
+      "source": "examples/clinic-backup/agents/demo/1.0.0/read-binding.json",
+      "sourceSha256": "a27f35894e4af8e58bfd3a594abf515cfa1b59677718f1e87a28c7f25d994904"
+    },
+    "examples/clinic-backup/agents/demo/1.0.0/second-employee.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "182648bdd27a8b6983242879d8b0b1c28febdae086cba44aeb992a64bb9e4d4a",
+      "source": "examples/clinic-backup/agents/demo/1.0.0/second-employee.json",
+      "sourceSha256": "182648bdd27a8b6983242879d8b0b1c28febdae086cba44aeb992a64bb9e4d4a"
+    },
+    "examples/clinic-backup/assets/normalization.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "fdb96340b822d5384fea2d25f3705b5805ed6804758f8eedd758ff5a2b45678a",
+      "source": "examples/clinic-backup/assets/normalization.md",
+      "sourceSha256": "fdb96340b822d5384fea2d25f3705b5805ed6804758f8eedd758ff5a2b45678a"
+    },
+    "examples/clinic-backup/deployments/demo/1.0.0/deployment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "fb9c62fcdf89d822214170b9133d079c5d58535fd37fddc58e91394325088664",
+      "source": "examples/clinic-backup/deployments/demo/1.0.0/deployment.json",
+      "sourceSha256": "fb9c62fcdf89d822214170b9133d079c5d58535fd37fddc58e91394325088664"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/brief-method.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d7dd468f2a22d91fe0565a9c5f887243a74b70b08b8c6d9ec01ee674c71333e8",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/brief-method.json",
+      "sourceSha256": "d7dd468f2a22d91fe0565a9c5f887243a74b70b08b8c6d9ec01ee674c71333e8"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/brief-skill.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "ab0be2354bade10e400a911d8eb3692907ba1c41b42ae63bc521613421fc1706",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/brief-skill.json",
+      "sourceSha256": "ab0be2354bade10e400a911d8eb3692907ba1c41b42ae63bc521613421fc1706"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/check-alignment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "1bffc06de31f4647866a82dbf92b3e535f15d4015e43a71c2475d9222f580158",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/check-alignment.json",
+      "sourceSha256": "1bffc06de31f4647866a82dbf92b3e535f15d4015e43a71c2475d9222f580158"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/check-performance.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "f1b01ef2129dbb5c5fac97567d0e745a182f8cab8c022fe3c7db46d0c8fde890",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/check-performance.json",
+      "sourceSha256": "f1b01ef2129dbb5c5fac97567d0e745a182f8cab8c022fe3c7db46d0c8fde890"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/check-reliability.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "b6cdc88cf6aef38c0c13fa4d9e177cbe7adfa73c57386a277c3525b55a461e35",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/check-reliability.json",
+      "sourceSha256": "b6cdc88cf6aef38c0c13fa4d9e177cbe7adfa73c57386a277c3525b55a461e35"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/commercial-role.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "a77d9f499f17023c722566993f5ac85961aeb2392478b0e560d6355878887ad0",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/commercial-role.json",
+      "sourceSha256": "a77d9f499f17023c722566993f5ac85961aeb2392478b0e560d6355878887ad0"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/dna.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "9fa0591d2410f55a87c4384ad2c7273545280e4430bddd834e6cbf4871bf75ef",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/dna.json",
+      "sourceSha256": "9fa0591d2410f55a87c4384ad2c7273545280e4430bddd834e6cbf4871bf75ef"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/read-records.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "7a6f6a3acc8b5171762fda3aaef92f784318fcd71e5ccc8f2ff7ad9afc31c3fa",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/read-records.json",
+      "sourceSha256": "7a6f6a3acc8b5171762fda3aaef92f784318fcd71e5ccc8f2ff7ad9afc31c3fa"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/review-policy.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c4ce503643eb977f995ce281a0b7fbad2657d79e7f44413f139ff6beb73bf63e",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/review-policy.json",
+      "sourceSha256": "c4ce503643eb977f995ce281a0b7fbad2657d79e7f44413f139ff6beb73bf63e"
+    },
+    "examples/clinic-backup/dna/demo/1.0.0/style.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "e3822a97096c9cacfdd33eb22f229257f0b65e8e2b9afba871157419bf347451",
+      "source": "examples/clinic-backup/dna/demo/1.0.0/style.json",
+      "sourceSha256": "e3822a97096c9cacfdd33eb22f229257f0b65e8e2b9afba871157419bf347451"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/acceptance-decision.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "32eaba41400f938e24ed36e644dca54d60dc4f5d551708135bb22adf75991ba9",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/acceptance-decision.json",
+      "sourceSha256": "32eaba41400f938e24ed36e644dca54d60dc4f5d551708135bb22adf75991ba9"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/appointment-type.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "47b65c4e37fb8b25f930076f3aa40e6fafd248a9cded06d44648e95f67b61322",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/appointment-type.json",
+      "sourceSha256": "47b65c4e37fb8b25f930076f3aa40e6fafd248a9cded06d44648e95f67b61322"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/appointments.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "4a645e7b053296d8ea70c9bf0f4f6cca9ae3cffdb71c133872f1c79e951f885d",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/appointments.json",
+      "sourceSha256": "4a645e7b053296d8ea70c9bf0f4f6cca9ae3cffdb71c133872f1c79e951f885d"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/catalog.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "dcce144d5f57e50aecfa440ca23eb38c06d26606883f6a22bb5522b1b5ca408e",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/catalog.json",
+      "sourceSha256": "dcce144d5f57e50aecfa440ca23eb38c06d26606883f6a22bb5522b1b5ca408e"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/company-environment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "8dda56cba15ba1d538da54e2eda9aa28c75503cb172491c12157f531a13466e1",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/company-environment.json",
+      "sourceSha256": "8dda56cba15ba1d538da54e2eda9aa28c75503cb172491c12157f531a13466e1"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/local-connection.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "df5962913f600ff2173c939ce6da70c22bdffc68b93fd62ecdcb964ff8a90599",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/local-connection.json",
+      "sourceSha256": "df5962913f600ff2173c939ce6da70c22bdffc68b93fd62ecdcb964ff8a90599"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/master-record.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "280074fd48f8cd00ad96f575c90137826458a8be23196171ac6afa00081b0cc1",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/master-record.json",
+      "sourceSha256": "280074fd48f8cd00ad96f575c90137826458a8be23196171ac6afa00081b0cc1"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/organization.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "0cb6d1000ad2d9dc1de56a7c07a5b674ae5a65010ecfbebad4d66978407d4c73",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/organization.json",
+      "sourceSha256": "0cb6d1000ad2d9dc1de56a7c07a5b674ae5a65010ecfbebad4d66978407d4c73"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/source.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "407c0e203cce5b035f2c2d7431f8aa487410b8b274087a6486b3295878e83dc4",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/source.json",
+      "sourceSha256": "407c0e203cce5b035f2c2d7431f8aa487410b8b274087a6486b3295878e83dc4"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/storage.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c3662849da9423283c856ce20098d17e4f0321fec8456556a1a92cde177cc512",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/storage.json",
+      "sourceSha256": "c3662849da9423283c856ce20098d17e4f0321fec8456556a1a92cde177cc512"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/transform.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "e43b81457228eab9911f5a29c368a7c10ea6482dd3b51ead74d333a30e4c1b6e",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/transform.json",
+      "sourceSha256": "e43b81457228eab9911f5a29c368a7c10ea6482dd3b51ead74d333a30e4c1b6e"
+    },
+    "examples/clinic-backup/environments/demo/1.0.0/world-model.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "fe69fec6630dd8c3f454c9f331d1417837dc66d587ed20214ba62ca569215488",
+      "source": "examples/clinic-backup/environments/demo/1.0.0/world-model.json",
+      "sourceSha256": "fe69fec6630dd8c3f454c9f331d1417837dc66d587ed20214ba62ca569215488"
+    },
+    "examples/clinic-backup/manifest.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "4f7e8b84b14685c7e6cdc3c6115a0f79eb0dae636946fcf382826117e2ce6e53",
+      "source": "examples/clinic-backup/manifest.json",
+      "sourceSha256": "4f7e8b84b14685c7e6cdc3c6115a0f79eb0dae636946fcf382826117e2ce6e53"
+    },
+    "examples/clinic-backup/native/schemas/appointment.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "9523f33a52dd4e983824dfe669099bf2dd79b2817e4c4040707bfc5a24475654",
+      "source": "examples/clinic-backup/native/schemas/appointment.schema.json",
+      "sourceSha256": "9523f33a52dd4e983824dfe669099bf2dd79b2817e4c4040707bfc5a24475654"
+    },
+    "examples/clinic-backup/native/skills/prepare-owner-brief/SKILL.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "dd8c16593ecddf3d126a73a4b1734c8f8a815330db039a5aa690428c4a46abf1",
+      "source": "examples/clinic-backup/native/skills/prepare-owner-brief/SKILL.md",
+      "sourceSha256": "dd8c16593ecddf3d126a73a4b1734c8f8a815330db039a5aa690428c4a46abf1"
+    },
+    "examples/clinic-backup/native/skills/prepare-owner-brief/references/acceptance.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "23fc8ac7d371c38ebcdde8c715a8ac0407dd75404a2274bb4143acb0d078db39",
+      "source": "examples/clinic-backup/native/skills/prepare-owner-brief/references/acceptance.md",
+      "sourceSha256": "23fc8ac7d371c38ebcdde8c715a8ac0407dd75404a2274bb4143acb0d078db39"
+    },
+    "examples/clinic-backup/package.lock.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "fab5aae0f1e7213b5c89dd15a878317616968aa4a216d0c09a744059d929e931",
+      "source": "examples/clinic-backup/package.lock.json",
+      "sourceSha256": "fab5aae0f1e7213b5c89dd15a878317616968aa4a216d0c09a744059d929e931"
+    },
+    "examples/clinic-backup/snapshots/appointments.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c8053f38cb7b28c0fac91b0bce8e287ad5a63acfed12c39558525ce998f9a1b7",
+      "source": "examples/clinic-backup/snapshots/appointments.json",
+      "sourceSha256": "c8053f38cb7b28c0fac91b0bce8e287ad5a63acfed12c39558525ce998f9a1b7"
+    },
+    "examples/clinic-backup/state/demo/1.0.0/appointment-record.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "288605b019a6597ecba6051394d3365818dda7640873a501044aafebd43efc24",
+      "source": "examples/clinic-backup/state/demo/1.0.0/appointment-record.json",
+      "sourceSha256": "288605b019a6597ecba6051394d3365818dda7640873a501044aafebd43efc24"
+    },
+    "examples/clinic-backup/state/demo/1.0.0/appointments-snapshot.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "04de3701ab4f33bd2918914539a86566de12060e09a1a556a16271dd6c6c5b76",
+      "source": "examples/clinic-backup/state/demo/1.0.0/appointments-snapshot.json",
+      "sourceSha256": "04de3701ab4f33bd2918914539a86566de12060e09a1a556a16271dd6c6c5b76"
+    },
+    "examples/clinic-backup/state/demo/1.0.0/evidence.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "7b750e74a77d72f515135adb6a8c28a7cce6bb8207f17c2fefbaaf55a7988991",
+      "source": "examples/clinic-backup/state/demo/1.0.0/evidence.json",
+      "sourceSha256": "7b750e74a77d72f515135adb6a8c28a7cce6bb8207f17c2fefbaaf55a7988991"
+    },
+    "examples/clinic-backup/state/demo/1.0.0/fact.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "ecd2dfc6e47d2022a388f8b159b11010899beed4052a9881d7cb12f3cbf3eaf6",
+      "source": "examples/clinic-backup/state/demo/1.0.0/fact.json",
+      "sourceSha256": "ecd2dfc6e47d2022a388f8b159b11010899beed4052a9881d7cb12f3cbf3eaf6"
+    },
+    "examples/clinic-backup/state/demo/1.0.0/pending-run.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "907b086102a950e2047bf5a88cdeb17656aa5031a5b419f8da9b9a2a3d9798cc",
+      "source": "examples/clinic-backup/state/demo/1.0.0/pending-run.json",
+      "sourceSha256": "907b086102a950e2047bf5a88cdeb17656aa5031a5b419f8da9b9a2a3d9798cc"
+    },
+    "examples/clinic-backup/state/demo/1.0.0/source-receipt.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "2cfafa09a4f0d57d7e48ff936fc3556d62cd10b41376be9c3ba8a28d2e6373d7",
+      "source": "examples/clinic-backup/state/demo/1.0.0/source-receipt.json",
+      "sourceSha256": "2cfafa09a4f0d57d7e48ff936fc3556d62cd10b41376be9c3ba8a28d2e6373d7"
+    },
+    "examples/clinic-employee/agents/demo/1.0.0/activation.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "3c839689b1750d5267d1d34a9f63f9b17a8b53ecdb7a71319f5a96a3478d7aa6",
+      "source": "examples/clinic-employee/agents/demo/1.0.0/activation.json",
+      "sourceSha256": "3c839689b1750d5267d1d34a9f63f9b17a8b53ecdb7a71319f5a96a3478d7aa6"
+    },
+    "examples/clinic-employee/agents/demo/1.0.0/change.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d21aa8c7b523c65c4800b2752abccb1fa360774f9be85edbbd4b7da45e8e8751",
+      "source": "examples/clinic-employee/agents/demo/1.0.0/change.json",
+      "sourceSha256": "d21aa8c7b523c65c4800b2752abccb1fa360774f9be85edbbd4b7da45e8e8751"
+    },
+    "examples/clinic-employee/agents/demo/1.0.0/client-brief.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "f28104967cb49d4be09a0d5f42d393ef4d8c934d9f7f027d135d03e18c98cf55",
+      "source": "examples/clinic-employee/agents/demo/1.0.0/client-brief.json",
+      "sourceSha256": "f28104967cb49d4be09a0d5f42d393ef4d8c934d9f7f027d135d03e18c98cf55"
+    },
+    "examples/clinic-employee/agents/demo/1.0.0/employee.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "2eb2e862574ce00eaca5a35b0329ade7fe74b236f262d287486d23caa3fb6eba",
+      "source": "examples/clinic-employee/agents/demo/1.0.0/employee.json",
+      "sourceSha256": "2eb2e862574ce00eaca5a35b0329ade7fe74b236f262d287486d23caa3fb6eba"
+    },
+    "examples/clinic-employee/agents/demo/1.0.0/goals.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "56347f65f9516de015d84106af44d8dae591e14280d1646ce2e1c2bb09055734",
+      "source": "examples/clinic-employee/agents/demo/1.0.0/goals.json",
+      "sourceSha256": "56347f65f9516de015d84106af44d8dae591e14280d1646ce2e1c2bb09055734"
+    },
+    "examples/clinic-employee/agents/demo/1.0.0/interaction.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d74039435dbcd32415d1e45167657a52495d85b4b454d4296c467ce54fe3d647",
+      "source": "examples/clinic-employee/agents/demo/1.0.0/interaction.json",
+      "sourceSha256": "d74039435dbcd32415d1e45167657a52495d85b4b454d4296c467ce54fe3d647"
+    },
+    "examples/clinic-employee/agents/demo/1.0.0/read-binding.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "a27f35894e4af8e58bfd3a594abf515cfa1b59677718f1e87a28c7f25d994904",
+      "source": "examples/clinic-employee/agents/demo/1.0.0/read-binding.json",
+      "sourceSha256": "a27f35894e4af8e58bfd3a594abf515cfa1b59677718f1e87a28c7f25d994904"
+    },
+    "examples/clinic-employee/agents/demo/1.0.0/second-employee.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "182648bdd27a8b6983242879d8b0b1c28febdae086cba44aeb992a64bb9e4d4a",
+      "source": "examples/clinic-employee/agents/demo/1.0.0/second-employee.json",
+      "sourceSha256": "182648bdd27a8b6983242879d8b0b1c28febdae086cba44aeb992a64bb9e4d4a"
+    },
+    "examples/clinic-employee/assets/normalization.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "fdb96340b822d5384fea2d25f3705b5805ed6804758f8eedd758ff5a2b45678a",
+      "source": "examples/clinic-employee/assets/normalization.md",
+      "sourceSha256": "fdb96340b822d5384fea2d25f3705b5805ed6804758f8eedd758ff5a2b45678a"
+    },
+    "examples/clinic-employee/deployments/demo/1.0.0/deployment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "fb9c62fcdf89d822214170b9133d079c5d58535fd37fddc58e91394325088664",
+      "source": "examples/clinic-employee/deployments/demo/1.0.0/deployment.json",
+      "sourceSha256": "fb9c62fcdf89d822214170b9133d079c5d58535fd37fddc58e91394325088664"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/brief-method.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d7dd468f2a22d91fe0565a9c5f887243a74b70b08b8c6d9ec01ee674c71333e8",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/brief-method.json",
+      "sourceSha256": "d7dd468f2a22d91fe0565a9c5f887243a74b70b08b8c6d9ec01ee674c71333e8"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/brief-skill.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "ab0be2354bade10e400a911d8eb3692907ba1c41b42ae63bc521613421fc1706",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/brief-skill.json",
+      "sourceSha256": "ab0be2354bade10e400a911d8eb3692907ba1c41b42ae63bc521613421fc1706"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/check-alignment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "1bffc06de31f4647866a82dbf92b3e535f15d4015e43a71c2475d9222f580158",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/check-alignment.json",
+      "sourceSha256": "1bffc06de31f4647866a82dbf92b3e535f15d4015e43a71c2475d9222f580158"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/check-performance.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "f1b01ef2129dbb5c5fac97567d0e745a182f8cab8c022fe3c7db46d0c8fde890",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/check-performance.json",
+      "sourceSha256": "f1b01ef2129dbb5c5fac97567d0e745a182f8cab8c022fe3c7db46d0c8fde890"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/check-reliability.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "b6cdc88cf6aef38c0c13fa4d9e177cbe7adfa73c57386a277c3525b55a461e35",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/check-reliability.json",
+      "sourceSha256": "b6cdc88cf6aef38c0c13fa4d9e177cbe7adfa73c57386a277c3525b55a461e35"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/commercial-role.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "a77d9f499f17023c722566993f5ac85961aeb2392478b0e560d6355878887ad0",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/commercial-role.json",
+      "sourceSha256": "a77d9f499f17023c722566993f5ac85961aeb2392478b0e560d6355878887ad0"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/dna.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "9fa0591d2410f55a87c4384ad2c7273545280e4430bddd834e6cbf4871bf75ef",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/dna.json",
+      "sourceSha256": "9fa0591d2410f55a87c4384ad2c7273545280e4430bddd834e6cbf4871bf75ef"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/read-records.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "7a6f6a3acc8b5171762fda3aaef92f784318fcd71e5ccc8f2ff7ad9afc31c3fa",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/read-records.json",
+      "sourceSha256": "7a6f6a3acc8b5171762fda3aaef92f784318fcd71e5ccc8f2ff7ad9afc31c3fa"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/review-policy.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c4ce503643eb977f995ce281a0b7fbad2657d79e7f44413f139ff6beb73bf63e",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/review-policy.json",
+      "sourceSha256": "c4ce503643eb977f995ce281a0b7fbad2657d79e7f44413f139ff6beb73bf63e"
+    },
+    "examples/clinic-employee/dna/demo/1.0.0/style.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "e3822a97096c9cacfdd33eb22f229257f0b65e8e2b9afba871157419bf347451",
+      "source": "examples/clinic-employee/dna/demo/1.0.0/style.json",
+      "sourceSha256": "e3822a97096c9cacfdd33eb22f229257f0b65e8e2b9afba871157419bf347451"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/acceptance-decision.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "32eaba41400f938e24ed36e644dca54d60dc4f5d551708135bb22adf75991ba9",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/acceptance-decision.json",
+      "sourceSha256": "32eaba41400f938e24ed36e644dca54d60dc4f5d551708135bb22adf75991ba9"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/appointment-type.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "47b65c4e37fb8b25f930076f3aa40e6fafd248a9cded06d44648e95f67b61322",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/appointment-type.json",
+      "sourceSha256": "47b65c4e37fb8b25f930076f3aa40e6fafd248a9cded06d44648e95f67b61322"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/appointments.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "4a645e7b053296d8ea70c9bf0f4f6cca9ae3cffdb71c133872f1c79e951f885d",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/appointments.json",
+      "sourceSha256": "4a645e7b053296d8ea70c9bf0f4f6cca9ae3cffdb71c133872f1c79e951f885d"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/catalog.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "dcce144d5f57e50aecfa440ca23eb38c06d26606883f6a22bb5522b1b5ca408e",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/catalog.json",
+      "sourceSha256": "dcce144d5f57e50aecfa440ca23eb38c06d26606883f6a22bb5522b1b5ca408e"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/company-environment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "8dda56cba15ba1d538da54e2eda9aa28c75503cb172491c12157f531a13466e1",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/company-environment.json",
+      "sourceSha256": "8dda56cba15ba1d538da54e2eda9aa28c75503cb172491c12157f531a13466e1"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/local-connection.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "df5962913f600ff2173c939ce6da70c22bdffc68b93fd62ecdcb964ff8a90599",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/local-connection.json",
+      "sourceSha256": "df5962913f600ff2173c939ce6da70c22bdffc68b93fd62ecdcb964ff8a90599"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/master-record.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "280074fd48f8cd00ad96f575c90137826458a8be23196171ac6afa00081b0cc1",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/master-record.json",
+      "sourceSha256": "280074fd48f8cd00ad96f575c90137826458a8be23196171ac6afa00081b0cc1"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/organization.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "0cb6d1000ad2d9dc1de56a7c07a5b674ae5a65010ecfbebad4d66978407d4c73",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/organization.json",
+      "sourceSha256": "0cb6d1000ad2d9dc1de56a7c07a5b674ae5a65010ecfbebad4d66978407d4c73"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/source.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "407c0e203cce5b035f2c2d7431f8aa487410b8b274087a6486b3295878e83dc4",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/source.json",
+      "sourceSha256": "407c0e203cce5b035f2c2d7431f8aa487410b8b274087a6486b3295878e83dc4"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/storage.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c3662849da9423283c856ce20098d17e4f0321fec8456556a1a92cde177cc512",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/storage.json",
+      "sourceSha256": "c3662849da9423283c856ce20098d17e4f0321fec8456556a1a92cde177cc512"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/transform.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "e43b81457228eab9911f5a29c368a7c10ea6482dd3b51ead74d333a30e4c1b6e",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/transform.json",
+      "sourceSha256": "e43b81457228eab9911f5a29c368a7c10ea6482dd3b51ead74d333a30e4c1b6e"
+    },
+    "examples/clinic-employee/environments/demo/1.0.0/world-model.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "fe69fec6630dd8c3f454c9f331d1417837dc66d587ed20214ba62ca569215488",
+      "source": "examples/clinic-employee/environments/demo/1.0.0/world-model.json",
+      "sourceSha256": "fe69fec6630dd8c3f454c9f331d1417837dc66d587ed20214ba62ca569215488"
+    },
+    "examples/clinic-employee/manifest.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d6ddfca06fe3fe3eb7efb1bddfeff337fd8f95c8c7b790d588a62fe0e5e053a2",
+      "source": "examples/clinic-employee/manifest.json",
+      "sourceSha256": "d6ddfca06fe3fe3eb7efb1bddfeff337fd8f95c8c7b790d588a62fe0e5e053a2"
+    },
+    "examples/clinic-employee/native/schemas/appointment.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "9523f33a52dd4e983824dfe669099bf2dd79b2817e4c4040707bfc5a24475654",
+      "source": "examples/clinic-employee/native/schemas/appointment.schema.json",
+      "sourceSha256": "9523f33a52dd4e983824dfe669099bf2dd79b2817e4c4040707bfc5a24475654"
+    },
+    "examples/clinic-employee/native/skills/prepare-owner-brief/SKILL.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "dd8c16593ecddf3d126a73a4b1734c8f8a815330db039a5aa690428c4a46abf1",
+      "source": "examples/clinic-employee/native/skills/prepare-owner-brief/SKILL.md",
+      "sourceSha256": "dd8c16593ecddf3d126a73a4b1734c8f8a815330db039a5aa690428c4a46abf1"
+    },
+    "examples/clinic-employee/native/skills/prepare-owner-brief/references/acceptance.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "23fc8ac7d371c38ebcdde8c715a8ac0407dd75404a2274bb4143acb0d078db39",
+      "source": "examples/clinic-employee/native/skills/prepare-owner-brief/references/acceptance.md",
+      "sourceSha256": "23fc8ac7d371c38ebcdde8c715a8ac0407dd75404a2274bb4143acb0d078db39"
+    },
+    "examples/clinic-employee/package.lock.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "8e905e89929efecfb5e56cdb74019188301a428f0577d91003e480d8662141a2",
+      "source": "examples/clinic-employee/package.lock.json",
+      "sourceSha256": "8e905e89929efecfb5e56cdb74019188301a428f0577d91003e480d8662141a2"
+    },
+    "examples/clinic-employee/snapshots/appointments.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c8053f38cb7b28c0fac91b0bce8e287ad5a63acfed12c39558525ce998f9a1b7",
+      "source": "examples/clinic-employee/snapshots/appointments.json",
+      "sourceSha256": "c8053f38cb7b28c0fac91b0bce8e287ad5a63acfed12c39558525ce998f9a1b7"
+    },
+    "examples/clinic-employee/state/demo/1.0.0/appointment-record.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "288605b019a6597ecba6051394d3365818dda7640873a501044aafebd43efc24",
+      "source": "examples/clinic-employee/state/demo/1.0.0/appointment-record.json",
+      "sourceSha256": "288605b019a6597ecba6051394d3365818dda7640873a501044aafebd43efc24"
+    },
+    "examples/clinic-employee/state/demo/1.0.0/appointments-snapshot.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "04de3701ab4f33bd2918914539a86566de12060e09a1a556a16271dd6c6c5b76",
+      "source": "examples/clinic-employee/state/demo/1.0.0/appointments-snapshot.json",
+      "sourceSha256": "04de3701ab4f33bd2918914539a86566de12060e09a1a556a16271dd6c6c5b76"
+    },
+    "examples/clinic-employee/state/demo/1.0.0/evidence.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "7b750e74a77d72f515135adb6a8c28a7cce6bb8207f17c2fefbaaf55a7988991",
+      "source": "examples/clinic-employee/state/demo/1.0.0/evidence.json",
+      "sourceSha256": "7b750e74a77d72f515135adb6a8c28a7cce6bb8207f17c2fefbaaf55a7988991"
+    },
+    "examples/clinic-employee/state/demo/1.0.0/fact.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "ecd2dfc6e47d2022a388f8b159b11010899beed4052a9881d7cb12f3cbf3eaf6",
+      "source": "examples/clinic-employee/state/demo/1.0.0/fact.json",
+      "sourceSha256": "ecd2dfc6e47d2022a388f8b159b11010899beed4052a9881d7cb12f3cbf3eaf6"
+    },
+    "examples/clinic-employee/state/demo/1.0.0/pending-run.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "907b086102a950e2047bf5a88cdeb17656aa5031a5b419f8da9b9a2a3d9798cc",
+      "source": "examples/clinic-employee/state/demo/1.0.0/pending-run.json",
+      "sourceSha256": "907b086102a950e2047bf5a88cdeb17656aa5031a5b419f8da9b9a2a3d9798cc"
+    },
+    "examples/clinic-employee/state/demo/1.0.0/source-receipt.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "2cfafa09a4f0d57d7e48ff936fc3556d62cd10b41376be9c3ba8a28d2e6373d7",
+      "source": "examples/clinic-employee/state/demo/1.0.0/source-receipt.json",
+      "sourceSha256": "2cfafa09a4f0d57d7e48ff936fc3556d62cd10b41376be9c3ba8a28d2e6373d7"
+    },
+    "spec/COMPOSITION.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "7921eb05a96bbf7bf1d411094519055d6752add65ed70f28ec88e793a623aa5f",
+      "source": "spec/COMPOSITION.md",
+      "sourceSha256": "8cb378b52eaeb6939572e83fa4a59c4844684688eb74c058f2626ecac097424f"
+    },
+    "spec/SPECIFICATION.md": {
+      "adapted": true,
+      "license": "Apache-2.0",
+      "sha256": "6930f748e84e5c0d3f0915fc15392c71c25f856d325d4598a48c21121b8b946e",
+      "source": "spec/SPECIFICATION.md",
+      "sourceSha256": "819921f6c6aed1917333f3a0703f6006e2c21c5218ed0e39aeec0b1996f7f485"
+    },
+    "spec/glossary.json": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "2736784ee8bc7bbc30809c911986cb545c1932468220af5eaa7bc35cc6ab9eae",
+      "source": "spec/glossary.json",
+      "sourceSha256": "2736784ee8bc7bbc30809c911986cb545c1932468220af5eaa7bc35cc6ab9eae"
+    },
+    "spec/schema/manifest.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d28610fd3163d20468d0428ad020ebf068c69ade11fcfbae4ddfa49d96345e2a",
+      "source": "spec/schema/manifest.schema.json",
+      "sourceSha256": "d28610fd3163d20468d0428ad020ebf068c69ade11fcfbae4ddfa49d96345e2a"
+    },
+    "spec/schema/object.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "db5b8b32af0af261d19b2cc18cd175f86df2a10894f4955968daaaa5834653ec",
+      "source": "spec/schema/object.schema.json",
+      "sourceSha256": "db5b8b32af0af261d19b2cc18cd175f86df2a10894f4955968daaaa5834653ec"
+    },
+    "spec/schema/reference-kinds.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "2d713c305142bc268a2fdaed02c5343f4130fb95213ab0ad3c89325e72c2d16c",
+      "source": "spec/schema/reference-kinds.json",
+      "sourceSha256": "2d713c305142bc268a2fdaed02c5343f4130fb95213ab0ad3c89325e72c2d16c"
+    },
+    "spec/schema/type-catalog.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "2fa4c7e5e3bd0c0889239616809a28e520f8eab10ed64f75eabd06ccbe630223",
+      "source": "spec/schema/type-catalog.json",
+      "sourceSha256": "2fa4c7e5e3bd0c0889239616809a28e520f8eab10ed64f75eabd06ccbe630223"
+    }
+  },
+  "format": "digital-employee-public-export/1",
+  "licenseSources": {
+    "LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
+    }
+  },
+  "licenseStatus": "approved",
+  "licensing": {
+    "default": "Apache-2.0",
+    "rules": [
+      {
+        "license": "CC-BY-4.0",
+        "paths": [
+          "docs/*",
+          "README.md",
+          "STATUS.md",
+          "CONTRIBUTING.md",
+          "CHANGELOG.md",
+          "LICENSING.md",
+          "spec/COMPOSITION.md",
+          "spec/glossary.json",
+          "adapters/README.md",
+          "CONTRIBUTORS.md"
+        ]
+      }
+    ]
+  },
+  "publication": "local-candidate; no repository created or pushed",
+  "releaseVersion": "0.1.0-draft.4",
+  "rightsHolder": "Taras Pustovoy and contributors",
+  "sourcePlan": "spec/public-export.json",
+  "sourcePlanSha256": "82c5fea3c5794c6f22a30ca73ee4600931ce0f7a55d917c8717faab2112a6ea4",
+  "specVersion": "0.1.0-draft",
+  "verificationSources": {
+    "tools/dep.py": "6c9cb30df0265e96c88ce7b8465f15ab12165096f63237644295b394f15672d0",
+    "tools/generate_schemas.py": "abcf647dd2ea68a857399f73799f8f1aa4ae1124d309d51d1f7874e4ed240a60",
+    "tools/requirements.txt": "f0f1741be035bfa1af2abc92ac0c9f4a54a66e46184f55ad896ee23d259b2be8"
+  }
+}

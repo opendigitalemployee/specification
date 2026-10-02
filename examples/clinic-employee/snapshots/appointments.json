@@ -1,0 +1,12 @@
+[
+  {
+    "id": "demo-a1",
+    "status": "cancelled",
+    "hasNewAppointment": false
+  },
+  {
+    "id": "demo-a2",
+    "status": "cancelled",
+    "hasNewAppointment": true
+  }
+]

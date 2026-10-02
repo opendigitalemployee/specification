@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:check-performance",
+  "version": "1.0.0",
+  "kind": "Check",
+  "layer": "dna",
+  "title": "Check Performance",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "pillar": "performance",
+    "case": "Prepare a brief from a limited appointment snapshot",
+    "expected": "Useful concise recommendations",
+    "passRule": "Reviewer confirms the expected property",
+    "failureAction": "Keep the result a draft and revise the method"
+  }
+}

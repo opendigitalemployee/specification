@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:brief-method",
+  "version": "1.0.0",
+  "kind": "Work",
+  "layer": "dna",
+  "title": "Brief Method",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "workKind": "recurring",
+    "outcome": "Owner can decide which cancelled appointments merit follow-up",
+    "input": {
+      "records": "A complete and dated selected appointment snapshot"
+    },
+    "output": {
+      "artifact": "Local brief with facts, limitations and proposals"
+    },
+    "acceptanceRefs": [
+      {
+        "objectId": "urn:dep:demo:check-performance",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-reliability",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-alignment",
+        "version": "1.0.0"
+      }
+    ],
+    "skillRefs": [
+      {
+        "objectId": "urn:dep:demo:brief-skill",
+        "version": "1.0.0"
+      }
+    ],
+    "toolRefs": [
+      {
+        "objectId": "urn:dep:demo:read-records",
+        "version": "1.0.0"
+      }
+    ],
+    "policyRefs": [
+      {
+        "objectId": "urn:dep:demo:review-policy",
+        "version": "1.0.0"
+      }
+    ],
+    "stopConditions": [
+      "Coverage or permission cannot be established"
+    ],
+    "steps": [
+      {
+        "id": "prepare",
+        "input": {
+          "records": "selected snapshot"
+        },
+        "output": {
+          "brief": "local draft"
+        },
+        "contributions": [
+          {
+            "actor": "agent",
+            "action": "Apply the brief method to selected records",
+            "output": "draft brief",
+            "skillRefs": [
+              {
+                "objectId": "urn:dep:demo:brief-skill",
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

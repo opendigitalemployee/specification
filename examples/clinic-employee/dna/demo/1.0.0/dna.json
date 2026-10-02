@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:dna",
+  "version": "1.0.0",
+  "kind": "AgentDNA",
+  "layer": "dna",
+  "title": "Dna",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "outcome": "Support grounded commercial decisions",
+    "roleRefs": [
+      {
+        "objectId": "urn:dep:demo:commercial-role",
+        "version": "1.0.0"
+      }
+    ],
+    "workRefs": [
+      {
+        "objectId": "urn:dep:demo:brief-method",
+        "version": "1.0.0"
+      }
+    ],
+    "styleRefs": [
+      {
+        "objectId": "urn:dep:demo:style",
+        "version": "1.0.0"
+      }
+    ],
+    "checkRefs": [
+      {
+        "objectId": "urn:dep:demo:check-performance",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-reliability",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-alignment",
+        "version": "1.0.0"
+      }
+    ],
+    "environmentRequirements": [
+      {
+        "concept": "appointment",
+        "needs": [
+          "status",
+          "subsequent booking",
+          "coverage",
+          "asOf"
+        ]
+      }
+    ],
+    "policyRefs": [
+      {
+        "objectId": "urn:dep:demo:review-policy",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:storage",
+  "version": "1.0.0",
+  "kind": "Storage",
+  "layer": "environment",
+  "title": "Storage",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "logicalZone": "normalized",
+    "format": "json",
+    "retention": {
+      "policy": "Demo files kept with this package"
+    },
+    "backup": {
+      "mode": "included-file-snapshot"
+    },
+    "location": {
+      "mode": "package-relative"
+    },
+    "datasetRefs": [
+      {
+        "objectId": "urn:dep:demo:appointments",
+        "version": "1.0.0"
+      }
+    ],
+    "schemaRefs": [
+      {
+        "objectId": "urn:dep:demo:appointment-type",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

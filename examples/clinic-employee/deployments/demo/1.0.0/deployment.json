@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:deployment",
+  "version": "1.0.0",
+  "kind": "Deployment",
+  "layer": "deployment",
+  "title": "Deployment",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "agentRef": {
+      "objectId": "urn:dep:demo:employee",
+      "version": "1.0.0"
+    },
+    "environmentRef": {
+      "objectId": "urn:dep:demo:company-environment",
+      "version": "1.0.0"
+    },
+    "runtimeAdapter": "unselected",
+    "capabilities": [],
+    "admission": {
+      "status": "not-reviewed",
+      "launchReady": false
+    }
+  }
+}

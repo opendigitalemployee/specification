@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:style",
+  "version": "1.0.0",
+  "kind": "DecisionStyle",
+  "layer": "dna",
+  "title": "Style",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "decisionRules": [
+      "Separate facts, uncertainty and proposed actions"
+    ],
+    "bounds": [
+      "Do not treat absent evidence as a negative fact"
+    ]
+  }
+}

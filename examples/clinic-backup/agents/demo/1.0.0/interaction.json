@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:interaction",
+  "version": "1.0.0",
+  "kind": "InteractionContract",
+  "layer": "agent",
+  "title": "Interaction",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "participants": [
+      {
+        "role": "owner",
+        "kind": "human"
+      }
+    ],
+    "allowedIntent": [
+      "Present a local draft for review"
+    ],
+    "attentionBudget": {
+      "reviewMinutes": 5
+    },
+    "proactivity": {
+      "mode": "manual"
+    }
+  }
+}

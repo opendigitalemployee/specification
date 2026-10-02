@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:brief-skill",
+  "version": "1.0.0",
+  "kind": "Skill",
+  "layer": "dna",
+  "title": "Brief Skill",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "artifact": {
+      "path": "native/skills/prepare-owner-brief/SKILL.md",
+      "format": "agent-skills",
+      "standardId": "agent-skills"
+    },
+    "input": {
+      "appointmentRecords": "Validated selected snapshot"
+    },
+    "output": {
+      "brief": "Grounded recommendations with evidence"
+    },
+    "preconditions": [
+      "As-of time and scope are visible"
+    ],
+    "checkRefs": [
+      {
+        "objectId": "urn:dep:demo:check-performance",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-reliability",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-alignment",
+        "version": "1.0.0"
+      }
+    ],
+    "skillKind": "skill"
+  }
+}

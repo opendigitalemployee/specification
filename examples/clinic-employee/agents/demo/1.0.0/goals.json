@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:goals",
+  "version": "1.0.0",
+  "kind": "GoalMap",
+  "layer": "agent",
+  "title": "Goals",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "objectives": [
+      {
+        "id": "repeat-revenue",
+        "title": "Illustrative +25% repeat revenue goal",
+        "kind": "OKR",
+        "target": {
+          "changePercent": 25,
+          "period": "example quarter"
+        },
+        "status": "proposal"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "brief-quality",
+        "definition": "Evidence-supported draft decisions",
+        "unit": "accepted draft"
+      }
+    ],
+    "workRefs": [
+      {
+        "objectId": "urn:dep:demo:client-brief",
+        "version": "1.0.0"
+      }
+    ],
+    "styleRefs": [
+      {
+        "objectId": "urn:dep:demo:style",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

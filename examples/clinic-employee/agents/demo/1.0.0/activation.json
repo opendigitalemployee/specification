@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:activation",
+  "version": "1.0.0",
+  "kind": "ActivationBinding",
+  "layer": "agent",
+  "title": "Activation",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "skillRef": {
+      "objectId": "urn:dep:demo:brief-skill",
+      "version": "1.0.0"
+    },
+    "ownerRef": {
+      "objectId": "urn:dep:demo:employee",
+      "version": "1.0.0"
+    },
+    "trigger": {
+      "workRef": {
+        "objectId": "urn:dep:demo:client-brief",
+        "version": "1.0.0"
+      },
+      "stepId": "prepare"
+    },
+    "enforcement": "instruction"
+  }
+}

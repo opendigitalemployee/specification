@@ -1,0 +1,741 @@
+{
+  "specVersion": "0.1.0-draft",
+  "types": [
+    {
+      "kind": "AgentDNA",
+      "layers": [
+        "dna"
+      ],
+      "requiredFields": [
+        "outcome",
+        "workRefs",
+        "environmentRequirements"
+      ],
+      "fields": [
+        "outcome",
+        "roleRefs",
+        "workRefs",
+        "goalOptions",
+        "styleRefs",
+        "metaSkillRefs",
+        "checkRefs",
+        "policyRefs",
+        "environmentRequirements",
+        "onboardingWorkRefs"
+      ]
+    },
+    {
+      "kind": "Role",
+      "layers": [
+        "dna",
+        "agent"
+      ],
+      "requiredFields": [
+        "purpose",
+        "responsibilityBounds"
+      ],
+      "fields": [
+        "purpose",
+        "responsibilityBounds",
+        "workRefs",
+        "goalRefs"
+      ]
+    },
+    {
+      "kind": "Work",
+      "layers": [
+        "dna",
+        "agent"
+      ],
+      "requiredFields": [
+        "workKind",
+        "outcome",
+        "input",
+        "output",
+        "steps",
+        "acceptanceRefs"
+      ],
+      "fields": [
+        "workKind",
+        "outcome",
+        "input",
+        "output",
+        "contributionHypothesis",
+        "steps",
+        "acceptanceRefs",
+        "skillRefs",
+        "toolRefs",
+        "dataRefs",
+        "toolRequirements",
+        "dataRequirements",
+        "policyRefs",
+        "trigger",
+        "stopConditions",
+        "instructions",
+        "basedOn"
+      ]
+    },
+    {
+      "kind": "Skill",
+      "layers": [
+        "dna",
+        "agent"
+      ],
+      "requiredFields": [
+        "artifact",
+        "input",
+        "output"
+      ],
+      "fields": [
+        "artifact",
+        "input",
+        "output",
+        "preconditions",
+        "checkRefs",
+        "assetPaths",
+        "skillKind",
+        "basedOn"
+      ]
+    },
+    {
+      "kind": "ToolDefinition",
+      "layers": [
+        "dna"
+      ],
+      "requiredFields": [
+        "operation",
+        "inputSchema",
+        "outputSchema",
+        "effects",
+        "errors"
+      ],
+      "fields": [
+        "operation",
+        "inputSchema",
+        "outputSchema",
+        "effects",
+        "errors",
+        "dataRequirements",
+        "protocol",
+        "artifact"
+      ]
+    },
+    {
+      "kind": "DecisionStyle",
+      "layers": [
+        "dna",
+        "agent"
+      ],
+      "requiredFields": [
+        "decisionRules",
+        "bounds"
+      ],
+      "fields": [
+        "decisionRules",
+        "bounds",
+        "tradeoffs",
+        "hypothesisPreferences",
+        "examples"
+      ]
+    },
+    {
+      "kind": "GoalMap",
+      "layers": [
+        "dna",
+        "agent"
+      ],
+      "requiredFields": [
+        "objectives",
+        "metrics"
+      ],
+      "fields": [
+        "objectives",
+        "metrics",
+        "period",
+        "workRefs",
+        "styleRefs",
+        "ownerRef"
+      ]
+    },
+    {
+      "kind": "ClientAgent",
+      "layers": [
+        "agent"
+      ],
+      "requiredFields": [
+        "dnaRef",
+        "organizationRef",
+        "environmentRef",
+        "workRefs"
+      ],
+      "fields": [
+        "dnaRef",
+        "organizationRef",
+        "environmentRef",
+        "workRefs",
+        "roleRefs",
+        "goalRefs",
+        "styleRefs",
+        "toolBindingRefs",
+        "activationRefs",
+        "interactionRefs",
+        "policyRefs",
+        "checkRefs",
+        "customizations",
+        "basedOnAgentRef",
+        "requiredCapabilities"
+      ]
+    },
+    {
+      "kind": "ActivationBinding",
+      "layers": [
+        "agent"
+      ],
+      "requiredFields": [
+        "skillRef",
+        "ownerRef",
+        "trigger",
+        "enforcement"
+      ],
+      "fields": [
+        "skillRef",
+        "ownerRef",
+        "trigger",
+        "condition",
+        "inputMapping",
+        "outputMapping",
+        "enforcement",
+        "runtimeAdapter"
+      ]
+    },
+    {
+      "kind": "ToolBinding",
+      "layers": [
+        "agent"
+      ],
+      "requiredFields": [
+        "toolRef",
+        "organizationRef",
+        "environmentRef",
+        "config",
+        "verification"
+      ],
+      "fields": [
+        "toolRef",
+        "organizationRef",
+        "environmentRef",
+        "connectionRef",
+        "dataRefs",
+        "sourceRefs",
+        "methodRefs",
+        "policyRefs",
+        "config",
+        "secretRefs",
+        "verification"
+      ]
+    },
+    {
+      "kind": "InteractionContract",
+      "layers": [
+        "agent"
+      ],
+      "requiredFields": [
+        "participants",
+        "allowedIntent",
+        "attentionBudget"
+      ],
+      "fields": [
+        "participants",
+        "allowedIntent",
+        "attentionBudget",
+        "channelRef",
+        "proactivity",
+        "decisionBrief",
+        "policyRefs"
+      ]
+    },
+    {
+      "kind": "Policy",
+      "layers": [
+        "dna",
+        "environment",
+        "agent"
+      ],
+      "requiredFields": [
+        "actions",
+        "resourceScope",
+        "mode",
+        "enforcement"
+      ],
+      "fields": [
+        "actions",
+        "resourceScope",
+        "mode",
+        "enforcement",
+        "principalRef",
+        "approver",
+        "enforcementRef",
+        "revocation",
+        "audit"
+      ]
+    },
+    {
+      "kind": "Check",
+      "layers": [
+        "dna",
+        "agent"
+      ],
+      "requiredFields": [
+        "pillar",
+        "case",
+        "expected",
+        "passRule",
+        "failureAction"
+      ],
+      "fields": [
+        "pillar",
+        "case",
+        "expected",
+        "passRule",
+        "failureAction",
+        "subjectRef",
+        "inputFixture",
+        "threshold",
+        "evaluator"
+      ]
+    },
+    {
+      "kind": "Organization",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "identity",
+        "accessBoundary"
+      ],
+      "fields": [
+        "identity",
+        "accessBoundary",
+        "owners",
+        "environmentRefs",
+        "worldModelRefs",
+        "agentRefs"
+      ]
+    },
+    {
+      "kind": "Environment",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "organizationRef",
+        "readiness"
+      ],
+      "fields": [
+        "organizationRef",
+        "readiness",
+        "storageRefs",
+        "sourceRefs",
+        "transformationRefs",
+        "worldModelRefs",
+        "connectionRefs",
+        "governance"
+      ]
+    },
+    {
+      "kind": "Storage",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "logicalZone",
+        "format",
+        "retention",
+        "backup"
+      ],
+      "fields": [
+        "logicalZone",
+        "format",
+        "retention",
+        "backup",
+        "location",
+        "datasetRefs",
+        "schemaRefs",
+        "policyRefs",
+        "owner"
+      ]
+    },
+    {
+      "kind": "Source",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "sourceKind",
+        "coverage",
+        "freshness"
+      ],
+      "fields": [
+        "sourceKind",
+        "coverage",
+        "freshness",
+        "locator",
+        "owner",
+        "schemaRef",
+        "policyRefs",
+        "catalogRef",
+        "receiptRefs"
+      ]
+    },
+    {
+      "kind": "SourceReceipt",
+      "layers": [
+        "state"
+      ],
+      "requiredFields": [
+        "sourceRef",
+        "receivedAt",
+        "original",
+        "coverage"
+      ],
+      "fields": [
+        "sourceRef",
+        "receivedAt",
+        "original",
+        "coverage",
+        "digest",
+        "errors"
+      ]
+    },
+    {
+      "kind": "Transformation",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "inputRefs",
+        "outputSchemaRefs",
+        "logic",
+        "trigger",
+        "qualityCheckRefs"
+      ],
+      "fields": [
+        "inputRefs",
+        "outputSchemaRefs",
+        "logic",
+        "trigger",
+        "qualityCheckRefs",
+        "executorRef",
+        "failurePolicy",
+        "owner"
+      ]
+    },
+    {
+      "kind": "WorldModel",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "organizationRef",
+        "instanceId",
+        "schemaRefs",
+        "governance"
+      ],
+      "fields": [
+        "organizationRef",
+        "instanceId",
+        "schemaRefs",
+        "governance",
+        "factRefs",
+        "masterRefs",
+        "dataProductRefs",
+        "acceptedSnapshotRef"
+      ]
+    },
+    {
+      "kind": "EntityType",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "definition",
+        "fieldSchemas",
+        "identityRules",
+        "relations"
+      ],
+      "fields": [
+        "definition",
+        "fieldSchemas",
+        "identityRules",
+        "relations",
+        "stateTransitions",
+        "owner",
+        "artifact"
+      ]
+    },
+    {
+      "kind": "EntityRecord",
+      "layers": [
+        "state"
+      ],
+      "requiredFields": [
+        "entityTypeRef",
+        "recordId",
+        "attributes"
+      ],
+      "fields": [
+        "entityTypeRef",
+        "recordId",
+        "attributes",
+        "validTime",
+        "sourceRefs"
+      ]
+    },
+    {
+      "kind": "MasterData",
+      "layers": [
+        "environment",
+        "state"
+      ],
+      "requiredFields": [
+        "entityTypeRef",
+        "canonicalId",
+        "attributes",
+        "mergeRule"
+      ],
+      "fields": [
+        "entityTypeRef",
+        "canonicalId",
+        "attributes",
+        "mergeRule",
+        "sourceKeys",
+        "validFrom",
+        "authoritySourceRef",
+        "decisionRef"
+      ]
+    },
+    {
+      "kind": "Fact",
+      "layers": [
+        "state"
+      ],
+      "requiredFields": [
+        "subjectRef",
+        "predicate",
+        "value",
+        "observedAt",
+        "confidence"
+      ],
+      "fields": [
+        "subjectRef",
+        "predicate",
+        "value",
+        "observedAt",
+        "confidence",
+        "sourceRef",
+        "sourceSpan",
+        "extractionRunRef",
+        "validTime",
+        "supersedes",
+        "decisionRef"
+      ]
+    },
+    {
+      "kind": "DataProduct",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "contract",
+        "schemaRef",
+        "inputRefs",
+        "storageRef"
+      ],
+      "fields": [
+        "contract",
+        "schemaRef",
+        "inputRefs",
+        "storageRef",
+        "transformRef",
+        "consumerRefs",
+        "freshness",
+        "coverage"
+      ]
+    },
+    {
+      "kind": "DataSnapshot",
+      "layers": [
+        "state"
+      ],
+      "requiredFields": [
+        "subjectRef",
+        "asOf",
+        "coverage",
+        "artifact",
+        "qualityState"
+      ],
+      "fields": [
+        "subjectRef",
+        "asOf",
+        "coverage",
+        "artifact",
+        "qualityState",
+        "inputSnapshotRefs",
+        "transformationRef",
+        "receiptRefs"
+      ]
+    },
+    {
+      "kind": "CatalogIndex",
+      "layers": [
+        "environment",
+        "state"
+      ],
+      "requiredFields": [
+        "indexedRefs",
+        "indexMethod",
+        "coverage",
+        "invalidationRule"
+      ],
+      "fields": [
+        "indexedRefs",
+        "indexMethod",
+        "coverage",
+        "invalidationRule",
+        "builtAt",
+        "accessFilter",
+        "artifact"
+      ]
+    },
+    {
+      "kind": "Connection",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "protocol",
+        "configurationRequirements",
+        "secretRefs"
+      ],
+      "fields": [
+        "protocol",
+        "configurationRequirements",
+        "secretRefs",
+        "status"
+      ]
+    },
+    {
+      "kind": "Deployment",
+      "layers": [
+        "deployment"
+      ],
+      "requiredFields": [
+        "agentRef",
+        "environmentRef",
+        "runtimeAdapter",
+        "capabilities",
+        "admission"
+      ],
+      "fields": [
+        "agentRef",
+        "environmentRef",
+        "runtimeAdapter",
+        "capabilities",
+        "admission",
+        "principal",
+        "endpointRef"
+      ]
+    },
+    {
+      "kind": "Run",
+      "layers": [
+        "state"
+      ],
+      "requiredFields": [
+        "specRef",
+        "inputSnapshotRefs",
+        "executor",
+        "startedAt",
+        "status"
+      ],
+      "fields": [
+        "specRef",
+        "inputSnapshotRefs",
+        "executor",
+        "startedAt",
+        "status",
+        "outputRefs",
+        "modelAndAdapterPins",
+        "receipt",
+        "unfinishedActions"
+      ]
+    },
+    {
+      "kind": "Evidence",
+      "layers": [
+        "state"
+      ],
+      "requiredFields": [
+        "checkRef",
+        "observations",
+        "verdict",
+        "evaluator",
+        "limitations"
+      ],
+      "fields": [
+        "checkRef",
+        "observations",
+        "verdict",
+        "evaluator",
+        "limitations",
+        "runRef",
+        "artifacts"
+      ]
+    },
+    {
+      "kind": "ChangeSet",
+      "layers": [
+        "dna",
+        "environment",
+        "agent"
+      ],
+      "requiredFields": [
+        "targetRefs",
+        "reason",
+        "beforeAfter"
+      ],
+      "fields": [
+        "targetRefs",
+        "reason",
+        "beforeAfter",
+        "affectedConsumers",
+        "migration",
+        "checkRefs",
+        "decisionRef",
+        "rollback",
+        "releasePins"
+      ]
+    },
+    {
+      "kind": "Decision",
+      "layers": [
+        "dna",
+        "environment",
+        "agent",
+        "state"
+      ],
+      "requiredFields": [
+        "question",
+        "decision",
+        "responsible"
+      ],
+      "fields": [
+        "question",
+        "decision",
+        "responsible",
+        "evidenceRefs",
+        "effectiveFrom"
+      ]
+    }
+  ]
+}

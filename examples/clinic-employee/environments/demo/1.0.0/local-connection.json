@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:local-connection",
+  "version": "1.0.0",
+  "kind": "Connection",
+  "layer": "environment",
+  "title": "Local Connection",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "protocol": "local-files",
+    "configurationRequirements": {
+      "packageDirectory": "required"
+    },
+    "secretRefs": [],
+    "status": "design"
+  }
+}

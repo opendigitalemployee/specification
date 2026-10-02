@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:review-policy",
+  "version": "1.0.0",
+  "kind": "Policy",
+  "layer": "dna",
+  "title": "Review Policy",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "actions": [
+      "prepare-local-draft"
+    ],
+    "resourceScope": {
+      "mode": "selected-input"
+    },
+    "mode": "approval-required",
+    "enforcement": "human",
+    "approver": "Owner reviews any external action"
+  }
+}

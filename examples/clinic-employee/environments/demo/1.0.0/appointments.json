@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:appointments",
+  "version": "1.0.0",
+  "kind": "DataProduct",
+  "layer": "environment",
+  "title": "Appointments",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "contract": {
+      "purpose": "Read selected appointment records",
+      "collection": true
+    },
+    "schemaRef": {
+      "objectId": "urn:dep:demo:appointment-type",
+      "version": "1.0.0"
+    },
+    "inputRefs": [
+      {
+        "objectId": "urn:dep:demo:source",
+        "version": "1.0.0"
+      }
+    ],
+    "storageRef": {
+      "objectId": "urn:dep:demo:storage",
+      "version": "1.0.0"
+    },
+    "transformRef": {
+      "objectId": "urn:dep:demo:transform",
+      "version": "1.0.0"
+    }
+  }
+}

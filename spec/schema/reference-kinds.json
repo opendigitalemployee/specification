@@ -1,0 +1,155 @@
+{
+  "dnaRef": [
+    "AgentDNA"
+  ],
+  "organizationRef": [
+    "Organization"
+  ],
+  "environmentRef": [
+    "Environment"
+  ],
+  "environmentRefs": [
+    "Environment"
+  ],
+  "agentRef": [
+    "ClientAgent"
+  ],
+  "agentRefs": [
+    "ClientAgent"
+  ],
+  "basedOnAgentRef": [
+    "ClientAgent"
+  ],
+  "workRefs": [
+    "Work"
+  ],
+  "onboardingWorkRefs": [
+    "Work"
+  ],
+  "roleRefs": [
+    "Role"
+  ],
+  "skillRef": [
+    "Skill"
+  ],
+  "skillRefs": [
+    "Skill"
+  ],
+  "metaSkillRefs": [
+    "Skill"
+  ],
+  "toolRef": [
+    "ToolDefinition"
+  ],
+  "toolRefs": [
+    "ToolDefinition"
+  ],
+  "toolBindingRefs": [
+    "ToolBinding"
+  ],
+  "goalRefs": [
+    "GoalMap"
+  ],
+  "styleRefs": [
+    "DecisionStyle"
+  ],
+  "policyRefs": [
+    "Policy"
+  ],
+  "checkRef": [
+    "Check"
+  ],
+  "checkRefs": [
+    "Check"
+  ],
+  "acceptanceRefs": [
+    "Check"
+  ],
+  "qualityCheckRefs": [
+    "Check"
+  ],
+  "activationRefs": [
+    "ActivationBinding"
+  ],
+  "interactionRefs": [
+    "InteractionContract"
+  ],
+  "connectionRef": [
+    "Connection"
+  ],
+  "connectionRefs": [
+    "Connection"
+  ],
+  "sourceRef": [
+    "Source"
+  ],
+  "sourceRefs": [
+    "Source"
+  ],
+  "authoritySourceRef": [
+    "Source"
+  ],
+  "receiptRefs": [
+    "SourceReceipt"
+  ],
+  "schemaRef": [
+    "EntityType"
+  ],
+  "schemaRefs": [
+    "EntityType"
+  ],
+  "entityTypeRef": [
+    "EntityType"
+  ],
+  "outputSchemaRefs": [
+    "EntityType"
+  ],
+  "worldModelRefs": [
+    "WorldModel"
+  ],
+  "factRefs": [
+    "Fact"
+  ],
+  "masterRefs": [
+    "MasterData"
+  ],
+  "dataProductRefs": [
+    "DataProduct"
+  ],
+  "storageRef": [
+    "Storage"
+  ],
+  "storageRefs": [
+    "Storage"
+  ],
+  "transformationRef": [
+    "Transformation"
+  ],
+  "transformationRefs": [
+    "Transformation"
+  ],
+  "transformRef": [
+    "Transformation"
+  ],
+  "acceptedSnapshotRef": [
+    "DataSnapshot"
+  ],
+  "inputSnapshotRefs": [
+    "DataSnapshot"
+  ],
+  "catalogRef": [
+    "CatalogIndex"
+  ],
+  "decisionRef": [
+    "Decision"
+  ],
+  "evidenceRefs": [
+    "Evidence"
+  ],
+  "runRef": [
+    "Run"
+  ],
+  "extractionRunRef": [
+    "Run"
+  ]
+}

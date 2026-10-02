@@ -1,0 +1,10 @@
+# Change history
+
+## 0.1.0-draft.4 — draft release
+
+Selected the 0.1.0-draft specification, generated schemas, glossary, synthetic employee and file-backup examples, documentation and automated schema/example checks. Added a compact outcome-led overview and explicit status boundaries.
+
+The export manifest records source and output hashes. Informative next-version paragraphs and internal documentation links are adapted explicitly by the private export plan. Normative sections 1–9 and native package bytes retain their source meaning; Workflow and Person are not promoted to 0.1 kinds. Configured Apache-2.0 for the normative specification, schemas, examples and automated checks, and CC BY 4.0 for explanatory documentation and glossary. Export does not publish to GitHub.
+
+---
+Copyright 2026 Taras Pustovoy and contributors. Licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).

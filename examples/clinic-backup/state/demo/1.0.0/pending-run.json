@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:pending-run",
+  "version": "1.0.0",
+  "kind": "Run",
+  "layer": "state",
+  "title": "Pending Run",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "specRef": {
+      "objectId": "urn:dep:demo:client-brief",
+      "version": "1.0.0"
+    },
+    "inputSnapshotRefs": [
+      {
+        "objectId": "urn:dep:demo:appointments-snapshot",
+        "version": "1.0.0"
+      }
+    ],
+    "executor": {
+      "status": "not-selected"
+    },
+    "startedAt": "2026-09-29T12:00:00Z",
+    "status": "pending",
+    "unfinishedActions": []
+  }
+}

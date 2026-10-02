@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:read-binding",
+  "version": "1.0.0",
+  "kind": "ToolBinding",
+  "layer": "agent",
+  "title": "Read Binding",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "toolRef": {
+      "objectId": "urn:dep:demo:read-records",
+      "version": "1.0.0"
+    },
+    "organizationRef": {
+      "objectId": "urn:dep:demo:organization",
+      "version": "1.0.0"
+    },
+    "environmentRef": {
+      "objectId": "urn:dep:demo:company-environment",
+      "version": "1.0.0"
+    },
+    "connectionRef": {
+      "objectId": "urn:dep:demo:local-connection",
+      "version": "1.0.0"
+    },
+    "dataRefs": [
+      {
+        "objectId": "urn:dep:demo:appointments-snapshot",
+        "version": "1.0.0"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "objectId": "urn:dep:demo:source",
+        "version": "1.0.0"
+      }
+    ],
+    "methodRefs": [
+      {
+        "objectId": "urn:dep:demo:brief-skill",
+        "version": "1.0.0"
+      }
+    ],
+    "config": {
+      "mode": "local-read",
+      "snapshotPath": "snapshots/appointments.json"
+    },
+    "secretRefs": [],
+    "verification": {
+      "status": "not-runtime-tested"
+    }
+  }
+}

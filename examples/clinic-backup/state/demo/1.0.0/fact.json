@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:fact",
+  "version": "1.0.0",
+  "kind": "Fact",
+  "layer": "state",
+  "title": "Fact",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "subjectRef": {
+      "objectId": "urn:dep:demo:appointment-record",
+      "version": "1.0.0"
+    },
+    "predicate": "appointment-status",
+    "value": "cancelled",
+    "observedAt": "2026-09-29T12:00:00Z",
+    "confidence": 1,
+    "sourceRef": {
+      "objectId": "urn:dep:demo:source",
+      "version": "1.0.0"
+    },
+    "sourceSpan": {
+      "recordId": "demo-a1"
+    },
+    "decisionRef": {
+      "objectId": "urn:dep:demo:acceptance-decision",
+      "version": "1.0.0"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:source",
+  "version": "1.0.0",
+  "kind": "Source",
+  "layer": "environment",
+  "title": "Source",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "sourceKind": "synthetic-file",
+    "coverage": {
+      "records": 2,
+      "completeFor": "demo fixture only"
+    },
+    "freshness": {
+      "asOf": "2026-09-29T12:00:00Z",
+      "use": "Fixed test case; not current business data"
+    },
+    "locator": {
+      "mode": "included-artifact"
+    },
+    "receiptRefs": [
+      {
+        "objectId": "urn:dep:demo:source-receipt",
+        "version": "1.0.0"
+      }
+    ],
+    "schemaRef": {
+      "objectId": "urn:dep:demo:appointment-type",
+      "version": "1.0.0"
+    }
+  }
+}

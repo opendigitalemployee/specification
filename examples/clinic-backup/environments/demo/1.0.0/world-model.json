@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:world-model",
+  "version": "1.0.0",
+  "kind": "WorldModel",
+  "layer": "environment",
+  "title": "World Model",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "organizationRef": {
+      "objectId": "urn:dep:demo:organization",
+      "version": "1.0.0"
+    },
+    "instanceId": "demo-bok-1",
+    "schemaRefs": [
+      {
+        "objectId": "urn:dep:demo:appointment-type",
+        "version": "1.0.0"
+      }
+    ],
+    "governance": {
+      "facts": "Synthetic observations only"
+    },
+    "factRefs": [
+      {
+        "objectId": "urn:dep:demo:fact",
+        "version": "1.0.0"
+      }
+    ],
+    "masterRefs": [
+      {
+        "objectId": "urn:dep:demo:master-record",
+        "version": "1.0.0"
+      }
+    ],
+    "dataProductRefs": [
+      {
+        "objectId": "urn:dep:demo:appointments",
+        "version": "1.0.0"
+      }
+    ],
+    "acceptedSnapshotRef": {
+      "objectId": "urn:dep:demo:appointments-snapshot",
+      "version": "1.0.0"
+    }
+  }
+}

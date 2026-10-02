@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:master-record",
+  "version": "1.0.0",
+  "kind": "MasterData",
+  "layer": "environment",
+  "title": "Master Record",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "entityTypeRef": {
+      "objectId": "urn:dep:demo:appointment-type",
+      "version": "1.0.0"
+    },
+    "canonicalId": "demo-a1",
+    "attributes": {
+      "id": "demo-a1"
+    },
+    "mergeRule": "Source ID retained in this fixture",
+    "authoritySourceRef": {
+      "objectId": "urn:dep:demo:source",
+      "version": "1.0.0"
+    }
+  }
+}

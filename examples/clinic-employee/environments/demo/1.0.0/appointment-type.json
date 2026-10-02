@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:appointment-type",
+  "version": "1.0.0",
+  "kind": "EntityType",
+  "layer": "environment",
+  "title": "Appointment Type",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "definition": "A scheduled or cancelled appointment",
+    "fieldSchemas": {
+      "id": {
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "scheduled",
+          "cancelled"
+        ]
+      },
+      "hasNewAppointment": {
+        "type": "boolean"
+      }
+    },
+    "identityRules": [
+      "id is unique inside this synthetic source"
+    ],
+    "relations": [],
+    "artifact": {
+      "path": "native/schemas/appointment.schema.json",
+      "format": "json-schema",
+      "standardId": "json-schema"
+    }
+  }
+}

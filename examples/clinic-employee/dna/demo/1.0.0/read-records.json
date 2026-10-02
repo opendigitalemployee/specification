@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:read-records",
+  "version": "1.0.0",
+  "kind": "ToolDefinition",
+  "layer": "dna",
+  "title": "Read Records",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "operation": "read-selected-records",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path"
+      ]
+    },
+    "outputSchema": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "effects": [
+      "Read local selected files"
+    ],
+    "errors": []
+  }
+}

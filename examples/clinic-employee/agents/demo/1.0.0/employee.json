@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:employee",
+  "version": "1.0.0",
+  "kind": "ClientAgent",
+  "layer": "agent",
+  "title": "Employee",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "dnaRef": {
+      "objectId": "urn:dep:demo:dna",
+      "version": "1.0.0"
+    },
+    "organizationRef": {
+      "objectId": "urn:dep:demo:organization",
+      "version": "1.0.0"
+    },
+    "environmentRef": {
+      "objectId": "urn:dep:demo:company-environment",
+      "version": "1.0.0"
+    },
+    "workRefs": [
+      {
+        "objectId": "urn:dep:demo:client-brief",
+        "version": "1.0.0"
+      }
+    ],
+    "roleRefs": [
+      {
+        "objectId": "urn:dep:demo:commercial-role",
+        "version": "1.0.0"
+      }
+    ],
+    "goalRefs": [
+      {
+        "objectId": "urn:dep:demo:goals",
+        "version": "1.0.0"
+      }
+    ],
+    "styleRefs": [
+      {
+        "objectId": "urn:dep:demo:style",
+        "version": "1.0.0"
+      }
+    ],
+    "toolBindingRefs": [
+      {
+        "objectId": "urn:dep:demo:read-binding",
+        "version": "1.0.0"
+      }
+    ],
+    "activationRefs": [
+      {
+        "objectId": "urn:dep:demo:activation",
+        "version": "1.0.0"
+      }
+    ],
+    "interactionRefs": [
+      {
+        "objectId": "urn:dep:demo:interaction",
+        "version": "1.0.0"
+      }
+    ],
+    "policyRefs": [
+      {
+        "objectId": "urn:dep:demo:review-policy",
+        "version": "1.0.0"
+      }
+    ],
+    "checkRefs": [
+      {
+        "objectId": "urn:dep:demo:check-performance",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-reliability",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-alignment",
+        "version": "1.0.0"
+      }
+    ],
+    "requiredCapabilities": [
+      "instructions",
+      "skills",
+      "local-files"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:change",
+  "version": "1.0.0",
+  "kind": "ChangeSet",
+  "layer": "agent",
+  "title": "Change",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "targetRefs": [
+      {
+        "objectId": "urn:dep:demo:employee",
+        "version": "1.0.0"
+      }
+    ],
+    "reason": "Initial synthetic example",
+    "beforeAfter": [
+      {
+        "before": null,
+        "after": "Draft description"
+      }
+    ],
+    "checkRefs": [
+      {
+        "objectId": "urn:dep:demo:check-performance",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-reliability",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:check-alignment",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

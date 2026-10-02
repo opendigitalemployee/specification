@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:company-environment",
+  "version": "1.0.0",
+  "kind": "Environment",
+  "layer": "environment",
+  "title": "Company Environment",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "organizationRef": {
+      "objectId": "urn:dep:demo:organization",
+      "version": "1.0.0"
+    },
+    "readiness": "design",
+    "storageRefs": [
+      {
+        "objectId": "urn:dep:demo:storage",
+        "version": "1.0.0"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "objectId": "urn:dep:demo:source",
+        "version": "1.0.0"
+      }
+    ],
+    "transformationRefs": [
+      {
+        "objectId": "urn:dep:demo:transform",
+        "version": "1.0.0"
+      }
+    ],
+    "worldModelRefs": [
+      {
+        "objectId": "urn:dep:demo:world-model",
+        "version": "1.0.0"
+      }
+    ],
+    "connectionRefs": [
+      {
+        "objectId": "urn:dep:demo:local-connection",
+        "version": "1.0.0"
+      }
+    ],
+    "governance": {
+      "acceptance": "Owner reviews changes; source evidence is retained"
+    }
+  }
+}

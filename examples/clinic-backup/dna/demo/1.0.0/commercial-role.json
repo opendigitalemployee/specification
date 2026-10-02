@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:commercial-role",
+  "version": "1.0.0",
+  "kind": "Role",
+  "layer": "dna",
+  "title": "Commercial Role",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "purpose": "Prepare grounded commercial decisions",
+    "responsibilityBounds": [
+      "Prepare recommendations; owner chooses external actions"
+    ],
+    "workRefs": [
+      {
+        "objectId": "urn:dep:demo:brief-method",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

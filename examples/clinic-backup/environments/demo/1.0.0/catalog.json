@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:catalog",
+  "version": "1.0.0",
+  "kind": "CatalogIndex",
+  "layer": "environment",
+  "title": "Catalog",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "indexedRefs": [
+      {
+        "objectId": "urn:dep:demo:source",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:appointments-snapshot",
+        "version": "1.0.0"
+      }
+    ],
+    "indexMethod": "Manifest inventory",
+    "coverage": {
+      "syntheticOnly": true
+    },
+    "invalidationRule": "Regenerate after a selected object or source revision changes"
+  }
+}

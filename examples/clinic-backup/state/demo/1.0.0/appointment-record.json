@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:appointment-record",
+  "version": "1.0.0",
+  "kind": "EntityRecord",
+  "layer": "state",
+  "title": "Appointment Record",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "entityTypeRef": {
+      "objectId": "urn:dep:demo:appointment-type",
+      "version": "1.0.0"
+    },
+    "recordId": "demo-a1",
+    "attributes": {
+      "id": "demo-a1",
+      "status": "cancelled",
+      "hasNewAppointment": false
+    },
+    "sourceRefs": [
+      {
+        "objectId": "urn:dep:demo:source",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

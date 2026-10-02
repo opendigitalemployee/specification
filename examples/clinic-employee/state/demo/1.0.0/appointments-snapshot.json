@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:appointments-snapshot",
+  "version": "1.0.0",
+  "kind": "DataSnapshot",
+  "layer": "state",
+  "title": "Appointments Snapshot",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "subjectRef": {
+      "objectId": "urn:dep:demo:appointments",
+      "version": "1.0.0"
+    },
+    "asOf": "2026-09-29T12:00:00Z",
+    "coverage": {
+      "records": 2,
+      "scope": "Synthetic fixture"
+    },
+    "artifact": {
+      "path": "snapshots/appointments.json",
+      "format": "json"
+    },
+    "qualityState": "checked",
+    "receiptRefs": [
+      {
+        "objectId": "urn:dep:demo:source-receipt",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

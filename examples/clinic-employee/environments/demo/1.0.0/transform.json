@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:transform",
+  "version": "1.0.0",
+  "kind": "Transformation",
+  "layer": "environment",
+  "title": "Transform",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "inputRefs": [
+      {
+        "objectId": "urn:dep:demo:source",
+        "version": "1.0.0"
+      }
+    ],
+    "outputSchemaRefs": [
+      {
+        "objectId": "urn:dep:demo:appointment-type",
+        "version": "1.0.0"
+      }
+    ],
+    "logic": {
+      "path": "assets/normalization.md",
+      "format": "markdown"
+    },
+    "trigger": {
+      "mode": "manual"
+    },
+    "qualityCheckRefs": [
+      {
+        "objectId": "urn:dep:demo:check-reliability",
+        "version": "1.0.0"
+      }
+    ],
+    "failurePolicy": {
+      "missingStatus": "reject or retain as unknown"
+    }
+  }
+}

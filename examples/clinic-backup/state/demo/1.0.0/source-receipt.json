@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:source-receipt",
+  "version": "1.0.0",
+  "kind": "SourceReceipt",
+  "layer": "state",
+  "title": "Source Receipt",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "sourceRef": {
+      "objectId": "urn:dep:demo:source",
+      "version": "1.0.0"
+    },
+    "receivedAt": "2026-09-29T12:00:00Z",
+    "original": {
+      "path": "snapshots/appointments.json",
+      "format": "json"
+    },
+    "coverage": {
+      "records": 2,
+      "synthetic": true
+    },
+    "errors": []
+  }
+}

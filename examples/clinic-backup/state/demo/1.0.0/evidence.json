@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:evidence",
+  "version": "1.0.0",
+  "kind": "Evidence",
+  "layer": "state",
+  "title": "Evidence",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "checkRef": {
+      "objectId": "urn:dep:demo:check-reliability",
+      "version": "1.0.0"
+    },
+    "runRef": {
+      "objectId": "urn:dep:demo:pending-run",
+      "version": "1.0.0"
+    },
+    "observations": [],
+    "verdict": "review",
+    "evaluator": "Example reviewer",
+    "limitations": [
+      "No actual agent run has been evaluated"
+    ]
+  }
+}

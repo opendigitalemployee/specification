@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:organization",
+  "version": "1.0.0",
+  "kind": "Organization",
+  "layer": "environment",
+  "title": "Organization",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "identity": {
+      "name": "Demo Clinic"
+    },
+    "owners": [
+      "Example owner"
+    ],
+    "accessBoundary": "Only the selected synthetic fixture is in scope",
+    "environmentRefs": [
+      {
+        "objectId": "urn:dep:demo:company-environment",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

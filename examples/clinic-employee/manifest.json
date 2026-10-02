@@ -1,0 +1,307 @@
+{
+  "format": "digital-employee-package",
+  "specVersion": "0.1.0-draft",
+  "id": "urn:dep:package:clinic-employee",
+  "version": "0.1.0-draft",
+  "profile": "client",
+  "title": "Synthetic clinic employee package",
+  "entrypoints": {
+    "dna": [
+      {
+        "objectId": "urn:dep:demo:dna",
+        "version": "1.0.0"
+      }
+    ],
+    "environments": [
+      {
+        "objectId": "urn:dep:demo:company-environment",
+        "version": "1.0.0"
+      }
+    ],
+    "agents": [
+      {
+        "objectId": "urn:dep:demo:employee",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:dep:demo:second-employee",
+        "version": "1.0.0"
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "urn:dep:demo:organization",
+      "version": "1.0.0",
+      "kind": "Organization",
+      "path": "environments/demo/1.0.0/organization.json"
+    },
+    {
+      "id": "urn:dep:demo:company-environment",
+      "version": "1.0.0",
+      "kind": "Environment",
+      "path": "environments/demo/1.0.0/company-environment.json"
+    },
+    {
+      "id": "urn:dep:demo:appointment-type",
+      "version": "1.0.0",
+      "kind": "EntityType",
+      "path": "environments/demo/1.0.0/appointment-type.json"
+    },
+    {
+      "id": "urn:dep:demo:world-model",
+      "version": "1.0.0",
+      "kind": "WorldModel",
+      "path": "environments/demo/1.0.0/world-model.json"
+    },
+    {
+      "id": "urn:dep:demo:storage",
+      "version": "1.0.0",
+      "kind": "Storage",
+      "path": "environments/demo/1.0.0/storage.json"
+    },
+    {
+      "id": "urn:dep:demo:source",
+      "version": "1.0.0",
+      "kind": "Source",
+      "path": "environments/demo/1.0.0/source.json"
+    },
+    {
+      "id": "urn:dep:demo:source-receipt",
+      "version": "1.0.0",
+      "kind": "SourceReceipt",
+      "path": "state/demo/1.0.0/source-receipt.json"
+    },
+    {
+      "id": "urn:dep:demo:transform",
+      "version": "1.0.0",
+      "kind": "Transformation",
+      "path": "environments/demo/1.0.0/transform.json"
+    },
+    {
+      "id": "urn:dep:demo:appointments",
+      "version": "1.0.0",
+      "kind": "DataProduct",
+      "path": "environments/demo/1.0.0/appointments.json"
+    },
+    {
+      "id": "urn:dep:demo:appointments-snapshot",
+      "version": "1.0.0",
+      "kind": "DataSnapshot",
+      "path": "state/demo/1.0.0/appointments-snapshot.json"
+    },
+    {
+      "id": "urn:dep:demo:appointment-record",
+      "version": "1.0.0",
+      "kind": "EntityRecord",
+      "path": "state/demo/1.0.0/appointment-record.json"
+    },
+    {
+      "id": "urn:dep:demo:master-record",
+      "version": "1.0.0",
+      "kind": "MasterData",
+      "path": "environments/demo/1.0.0/master-record.json"
+    },
+    {
+      "id": "urn:dep:demo:fact",
+      "version": "1.0.0",
+      "kind": "Fact",
+      "path": "state/demo/1.0.0/fact.json"
+    },
+    {
+      "id": "urn:dep:demo:catalog",
+      "version": "1.0.0",
+      "kind": "CatalogIndex",
+      "path": "environments/demo/1.0.0/catalog.json"
+    },
+    {
+      "id": "urn:dep:demo:local-connection",
+      "version": "1.0.0",
+      "kind": "Connection",
+      "path": "environments/demo/1.0.0/local-connection.json"
+    },
+    {
+      "id": "urn:dep:demo:commercial-role",
+      "version": "1.0.0",
+      "kind": "Role",
+      "path": "dna/demo/1.0.0/commercial-role.json"
+    },
+    {
+      "id": "urn:dep:demo:style",
+      "version": "1.0.0",
+      "kind": "DecisionStyle",
+      "path": "dna/demo/1.0.0/style.json"
+    },
+    {
+      "id": "urn:dep:demo:goals",
+      "version": "1.0.0",
+      "kind": "GoalMap",
+      "path": "agents/demo/1.0.0/goals.json"
+    },
+    {
+      "id": "urn:dep:demo:brief-skill",
+      "version": "1.0.0",
+      "kind": "Skill",
+      "path": "dna/demo/1.0.0/brief-skill.json"
+    },
+    {
+      "id": "urn:dep:demo:check-performance",
+      "version": "1.0.0",
+      "kind": "Check",
+      "path": "dna/demo/1.0.0/check-performance.json"
+    },
+    {
+      "id": "urn:dep:demo:check-reliability",
+      "version": "1.0.0",
+      "kind": "Check",
+      "path": "dna/demo/1.0.0/check-reliability.json"
+    },
+    {
+      "id": "urn:dep:demo:check-alignment",
+      "version": "1.0.0",
+      "kind": "Check",
+      "path": "dna/demo/1.0.0/check-alignment.json"
+    },
+    {
+      "id": "urn:dep:demo:read-records",
+      "version": "1.0.0",
+      "kind": "ToolDefinition",
+      "path": "dna/demo/1.0.0/read-records.json"
+    },
+    {
+      "id": "urn:dep:demo:review-policy",
+      "version": "1.0.0",
+      "kind": "Policy",
+      "path": "dna/demo/1.0.0/review-policy.json"
+    },
+    {
+      "id": "urn:dep:demo:brief-method",
+      "version": "1.0.0",
+      "kind": "Work",
+      "path": "dna/demo/1.0.0/brief-method.json"
+    },
+    {
+      "id": "urn:dep:demo:client-brief",
+      "version": "1.0.0",
+      "kind": "Work",
+      "path": "agents/demo/1.0.0/client-brief.json"
+    },
+    {
+      "id": "urn:dep:demo:read-binding",
+      "version": "1.0.0",
+      "kind": "ToolBinding",
+      "path": "agents/demo/1.0.0/read-binding.json"
+    },
+    {
+      "id": "urn:dep:demo:activation",
+      "version": "1.0.0",
+      "kind": "ActivationBinding",
+      "path": "agents/demo/1.0.0/activation.json"
+    },
+    {
+      "id": "urn:dep:demo:interaction",
+      "version": "1.0.0",
+      "kind": "InteractionContract",
+      "path": "agents/demo/1.0.0/interaction.json"
+    },
+    {
+      "id": "urn:dep:demo:dna",
+      "version": "1.0.0",
+      "kind": "AgentDNA",
+      "path": "dna/demo/1.0.0/dna.json"
+    },
+    {
+      "id": "urn:dep:demo:employee",
+      "version": "1.0.0",
+      "kind": "ClientAgent",
+      "path": "agents/demo/1.0.0/employee.json"
+    },
+    {
+      "id": "urn:dep:demo:second-employee",
+      "version": "1.0.0",
+      "kind": "ClientAgent",
+      "path": "agents/demo/1.0.0/second-employee.json"
+    },
+    {
+      "id": "urn:dep:demo:deployment",
+      "version": "1.0.0",
+      "kind": "Deployment",
+      "path": "deployments/demo/1.0.0/deployment.json"
+    },
+    {
+      "id": "urn:dep:demo:pending-run",
+      "version": "1.0.0",
+      "kind": "Run",
+      "path": "state/demo/1.0.0/pending-run.json"
+    },
+    {
+      "id": "urn:dep:demo:evidence",
+      "version": "1.0.0",
+      "kind": "Evidence",
+      "path": "state/demo/1.0.0/evidence.json"
+    },
+    {
+      "id": "urn:dep:demo:change",
+      "version": "1.0.0",
+      "kind": "ChangeSet",
+      "path": "agents/demo/1.0.0/change.json"
+    },
+    {
+      "id": "urn:dep:demo:acceptance-decision",
+      "version": "1.0.0",
+      "kind": "Decision",
+      "path": "environments/demo/1.0.0/acceptance-decision.json"
+    }
+  ],
+  "resources": [
+    {
+      "path": "native/skills/prepare-owner-brief/SKILL.md",
+      "mediaType": "text/markdown",
+      "role": "native",
+      "standardId": "agent-skills"
+    },
+    {
+      "path": "native/skills/prepare-owner-brief/references/acceptance.md",
+      "mediaType": "text/markdown",
+      "role": "native",
+      "standardId": "agent-skills"
+    },
+    {
+      "path": "assets/normalization.md",
+      "mediaType": "text/markdown",
+      "role": "attachment"
+    },
+    {
+      "path": "native/schemas/appointment.schema.json",
+      "mediaType": "application/schema+json",
+      "role": "native",
+      "standardId": "json-schema"
+    },
+    {
+      "path": "snapshots/appointments.json",
+      "mediaType": "application/json",
+      "role": "snapshot"
+    }
+  ],
+  "externalDependencies": [],
+  "standards": [
+    {
+      "id": "agent-skills",
+      "url": "https://agentskills.io/specification",
+      "revision": "69ef37e9424c0a7ea9dd2293b559e43ec8176379",
+      "required": true
+    },
+    {
+      "id": "json-schema",
+      "url": "https://json-schema.org/draft/2020-12/schema",
+      "revision": "2020-12",
+      "required": true
+    }
+  ],
+  "extensions": {
+    "org.example.notes": {
+      "synthetic": true,
+      "purpose": "Package demonstration"
+    }
+  }
+}

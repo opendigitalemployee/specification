@@ -1,0 +1,2745 @@
+{
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "kind",
+    "layer",
+    "id",
+    "version",
+    "title",
+    "status",
+    "provenance",
+    "spec"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "0.1.0-draft"
+    },
+    "kind": {
+      "enum": [
+        "AgentDNA",
+        "Role",
+        "Work",
+        "Skill",
+        "ToolDefinition",
+        "DecisionStyle",
+        "GoalMap",
+        "ClientAgent",
+        "ActivationBinding",
+        "ToolBinding",
+        "InteractionContract",
+        "Policy",
+        "Check",
+        "Organization",
+        "Environment",
+        "Storage",
+        "Source",
+        "SourceReceipt",
+        "Transformation",
+        "WorldModel",
+        "EntityType",
+        "EntityRecord",
+        "MasterData",
+        "Fact",
+        "DataProduct",
+        "DataSnapshot",
+        "CatalogIndex",
+        "Connection",
+        "Deployment",
+        "Run",
+        "Evidence",
+        "ChangeSet",
+        "Decision"
+      ]
+    },
+    "layer": {
+      "enum": [
+        "dna",
+        "environment",
+        "agent",
+        "deployment",
+        "state"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "proposed",
+        "agreed",
+        "retired"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "ownerRef": {
+      "$ref": "#/$defs/ref"
+    },
+    "spec": {
+      "type": "object"
+    },
+    "refs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ref"
+      },
+      "uniqueItems": true
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "ref": {
+      "type": "object",
+      "required": [
+        "objectId",
+        "version"
+      ],
+      "properties": {
+        "objectId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*:)[^\\x00]+$"
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+      }
+    }
+  },
+  "title": "Digital employee object",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "AgentDNA"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "outcome",
+              "workRefs",
+              "environmentRequirements"
+            ],
+            "properties": {
+              "outcome": {
+                "type": "string",
+                "minLength": 1
+              },
+              "roleRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "workRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "goalOptions": {
+                "type": "array"
+              },
+              "styleRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "metaSkillRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "checkRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "policyRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "environmentRequirements": {
+                "type": "array"
+              },
+              "onboardingWorkRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Role"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "purpose",
+              "responsibilityBounds"
+            ],
+            "properties": {
+              "purpose": {
+                "type": "string",
+                "minLength": 1
+              },
+              "responsibilityBounds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "workRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "goalRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Work"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "workKind",
+              "outcome",
+              "input",
+              "output",
+              "steps",
+              "acceptanceRefs"
+            ],
+            "properties": {
+              "workKind": {
+                "enum": [
+                  "one-off",
+                  "recurring"
+                ]
+              },
+              "outcome": {
+                "type": "string",
+                "minLength": 1
+              },
+              "input": {
+                "type": "object"
+              },
+              "output": {
+                "type": "object"
+              },
+              "contributionHypothesis": {
+                "type": "string",
+                "minLength": 1
+              },
+              "steps": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "input",
+                    "output",
+                    "contributions"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "input": {
+                      "type": "object"
+                    },
+                    "output": {
+                      "type": "object"
+                    },
+                    "contributions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "actor",
+                          "action",
+                          "output"
+                        ],
+                        "properties": {
+                          "actor": {
+                            "enum": [
+                              "agent",
+                              "human",
+                              "system",
+                              "other-agent"
+                            ]
+                          },
+                          "action": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "output": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "performerRef": {
+                            "$ref": "#/$defs/ref"
+                          },
+                          "skillRefs": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/$defs/ref"
+                            },
+                            "uniqueItems": true
+                          },
+                          "toolBindingRefs": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/$defs/ref"
+                            },
+                            "uniqueItems": true
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "skillRefs": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/$defs/ref"
+                      },
+                      "uniqueItems": true
+                    },
+                    "toolBindingRefs": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/$defs/ref"
+                      },
+                      "uniqueItems": true
+                    },
+                    "nextStepIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "uniqueItems": true
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "acceptanceRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "skillRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "toolRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "dataRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "toolRequirements": {
+                "type": "array"
+              },
+              "dataRequirements": {
+                "type": "array"
+              },
+              "policyRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "trigger": {
+                "type": "object"
+              },
+              "stopConditions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "instructions": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "basedOn": {
+                "$ref": "#/$defs/ref"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Skill"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "artifact",
+              "input",
+              "output"
+            ],
+            "properties": {
+              "artifact": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "input": {
+                "type": "object"
+              },
+              "output": {
+                "type": "object"
+              },
+              "preconditions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "checkRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "assetPaths": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "skillKind": {
+                "enum": [
+                  "skill",
+                  "meta-skill"
+                ]
+              },
+              "basedOn": {
+                "$ref": "#/$defs/ref"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "ToolDefinition"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "operation",
+              "inputSchema",
+              "outputSchema",
+              "effects",
+              "errors"
+            ],
+            "properties": {
+              "operation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "inputSchema": {
+                "type": "object"
+              },
+              "outputSchema": {
+                "type": "object"
+              },
+              "effects": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "errors": {
+                "type": "array"
+              },
+              "dataRequirements": {
+                "type": "array"
+              },
+              "protocol": {
+                "type": "string",
+                "minLength": 1
+              },
+              "artifact": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "DecisionStyle"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "decisionRules",
+              "bounds"
+            ],
+            "properties": {
+              "decisionRules": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "bounds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "tradeoffs": {
+                "type": "array"
+              },
+              "hypothesisPreferences": {
+                "type": "object"
+              },
+              "examples": {
+                "type": "array"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "GoalMap"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "objectives",
+              "metrics"
+            ],
+            "properties": {
+              "objectives": {
+                "type": "array"
+              },
+              "metrics": {
+                "type": "array"
+              },
+              "period": {
+                "type": "object"
+              },
+              "workRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "styleRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "ownerRef": {
+                "$ref": "#/$defs/ref"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "ClientAgent"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "dnaRef",
+              "organizationRef",
+              "environmentRef",
+              "workRefs"
+            ],
+            "properties": {
+              "dnaRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "organizationRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "environmentRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "workRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "roleRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "goalRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "styleRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "toolBindingRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "activationRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "interactionRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "policyRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "checkRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "customizations": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "basedOnAgentRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "requiredCapabilities": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "ActivationBinding"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "skillRef",
+              "ownerRef",
+              "trigger",
+              "enforcement"
+            ],
+            "properties": {
+              "skillRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "ownerRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "trigger": {
+                "type": "object"
+              },
+              "condition": {
+                "type": "string",
+                "minLength": 1
+              },
+              "inputMapping": {
+                "type": "object"
+              },
+              "outputMapping": {
+                "type": "object"
+              },
+              "enforcement": {
+                "enum": [
+                  "instruction",
+                  "runtime",
+                  "human"
+                ]
+              },
+              "runtimeAdapter": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "ToolBinding"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "toolRef",
+              "organizationRef",
+              "environmentRef",
+              "config",
+              "verification"
+            ],
+            "properties": {
+              "toolRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "organizationRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "environmentRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "connectionRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "dataRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "sourceRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "methodRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "policyRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "config": {
+                "type": "object"
+              },
+              "secretRefs": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "verification": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "InteractionContract"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "participants",
+              "allowedIntent",
+              "attentionBudget"
+            ],
+            "properties": {
+              "participants": {
+                "type": "array"
+              },
+              "allowedIntent": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "attentionBudget": {
+                "type": "object"
+              },
+              "channelRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "proactivity": {
+                "type": "object"
+              },
+              "decisionBrief": {
+                "type": "object"
+              },
+              "policyRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Policy"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "environment",
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "actions",
+              "resourceScope",
+              "mode",
+              "enforcement"
+            ],
+            "properties": {
+              "actions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "resourceScope": {
+                "type": "object"
+              },
+              "mode": {
+                "enum": [
+                  "allow",
+                  "deny",
+                  "approval-required"
+                ]
+              },
+              "enforcement": {
+                "enum": [
+                  "instruction",
+                  "runtime",
+                  "human"
+                ]
+              },
+              "principalRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "approver": {
+                "type": "string",
+                "minLength": 1
+              },
+              "enforcementRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "revocation": {
+                "type": "object"
+              },
+              "audit": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Check"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "pillar",
+              "case",
+              "expected",
+              "passRule",
+              "failureAction"
+            ],
+            "properties": {
+              "pillar": {
+                "enum": [
+                  "performance",
+                  "reliability",
+                  "alignment"
+                ]
+              },
+              "case": {
+                "type": "string",
+                "minLength": 1
+              },
+              "expected": {
+                "type": "string",
+                "minLength": 1
+              },
+              "passRule": {
+                "type": "string",
+                "minLength": 1
+              },
+              "failureAction": {
+                "type": "string",
+                "minLength": 1
+              },
+              "subjectRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "inputFixture": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "threshold": {
+                "type": "object"
+              },
+              "evaluator": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Organization"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "identity",
+              "accessBoundary"
+            ],
+            "properties": {
+              "identity": {
+                "type": "object"
+              },
+              "accessBoundary": {
+                "type": "string",
+                "minLength": 1
+              },
+              "owners": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "environmentRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "worldModelRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "agentRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Environment"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "organizationRef",
+              "readiness"
+            ],
+            "properties": {
+              "organizationRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "readiness": {
+                "enum": [
+                  "design",
+                  "configured",
+                  "verified"
+                ]
+              },
+              "storageRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "sourceRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "transformationRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "worldModelRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "connectionRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "governance": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Storage"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "logicalZone",
+              "format",
+              "retention",
+              "backup"
+            ],
+            "properties": {
+              "logicalZone": {
+                "type": "string",
+                "minLength": 1
+              },
+              "format": {
+                "type": "string",
+                "minLength": 1
+              },
+              "retention": {
+                "type": "object"
+              },
+              "backup": {
+                "type": "object"
+              },
+              "location": {
+                "type": "object"
+              },
+              "datasetRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "schemaRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "policyRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "owner": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Source"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "sourceKind",
+              "coverage",
+              "freshness"
+            ],
+            "properties": {
+              "sourceKind": {
+                "type": "string",
+                "minLength": 1
+              },
+              "coverage": {
+                "type": "object"
+              },
+              "freshness": {
+                "type": "object"
+              },
+              "locator": {
+                "type": "object"
+              },
+              "owner": {
+                "type": "string",
+                "minLength": 1
+              },
+              "schemaRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "policyRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "catalogRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "receiptRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "SourceReceipt"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "sourceRef",
+              "receivedAt",
+              "original",
+              "coverage"
+            ],
+            "properties": {
+              "sourceRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "receivedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "original": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "coverage": {
+                "type": "object"
+              },
+              "digest": {
+                "type": "string",
+                "minLength": 1
+              },
+              "errors": {
+                "type": "array"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Transformation"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "inputRefs",
+              "outputSchemaRefs",
+              "logic",
+              "trigger",
+              "qualityCheckRefs"
+            ],
+            "properties": {
+              "inputRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "outputSchemaRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "logic": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "trigger": {
+                "type": "object"
+              },
+              "qualityCheckRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "executorRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "failurePolicy": {
+                "type": "object"
+              },
+              "owner": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "WorldModel"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "organizationRef",
+              "instanceId",
+              "schemaRefs",
+              "governance"
+            ],
+            "properties": {
+              "organizationRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "instanceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "schemaRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "governance": {
+                "type": "object"
+              },
+              "factRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "masterRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "dataProductRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "acceptedSnapshotRef": {
+                "$ref": "#/$defs/ref"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "EntityType"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "definition",
+              "fieldSchemas",
+              "identityRules",
+              "relations"
+            ],
+            "properties": {
+              "definition": {
+                "type": "string",
+                "minLength": 1
+              },
+              "fieldSchemas": {
+                "type": "object"
+              },
+              "identityRules": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "relations": {
+                "type": "array"
+              },
+              "stateTransitions": {
+                "type": "array"
+              },
+              "owner": {
+                "type": "string",
+                "minLength": 1
+              },
+              "artifact": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "EntityRecord"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "entityTypeRef",
+              "recordId",
+              "attributes"
+            ],
+            "properties": {
+              "entityTypeRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "recordId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "attributes": {
+                "type": "object"
+              },
+              "validTime": {
+                "type": "object"
+              },
+              "sourceRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "MasterData"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment",
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "entityTypeRef",
+              "canonicalId",
+              "attributes",
+              "mergeRule"
+            ],
+            "properties": {
+              "entityTypeRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "canonicalId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "attributes": {
+                "type": "object"
+              },
+              "mergeRule": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceKeys": {
+                "type": "array"
+              },
+              "validFrom": {
+                "type": "string",
+                "minLength": 1
+              },
+              "authoritySourceRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "decisionRef": {
+                "$ref": "#/$defs/ref"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Fact"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "subjectRef",
+              "predicate",
+              "value",
+              "observedAt",
+              "confidence"
+            ],
+            "properties": {
+              "subjectRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "predicate": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {},
+              "observedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "sourceRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "sourceSpan": {
+                "type": "object"
+              },
+              "extractionRunRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "validTime": {
+                "type": "object"
+              },
+              "supersedes": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "decisionRef": {
+                "$ref": "#/$defs/ref"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "DataProduct"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "contract",
+              "schemaRef",
+              "inputRefs",
+              "storageRef"
+            ],
+            "properties": {
+              "contract": {
+                "type": "object"
+              },
+              "schemaRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "inputRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "storageRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "transformRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "consumerRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "freshness": {
+                "type": "object"
+              },
+              "coverage": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "DataSnapshot"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "subjectRef",
+              "asOf",
+              "coverage",
+              "artifact",
+              "qualityState"
+            ],
+            "properties": {
+              "subjectRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "asOf": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "coverage": {
+                "type": "object"
+              },
+              "artifact": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              },
+              "qualityState": {
+                "enum": [
+                  "unknown",
+                  "checked",
+                  "failed"
+                ]
+              },
+              "inputSnapshotRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "transformationRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "receiptRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "CatalogIndex"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment",
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "indexedRefs",
+              "indexMethod",
+              "coverage",
+              "invalidationRule"
+            ],
+            "properties": {
+              "indexedRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "indexMethod": {
+                "type": "string",
+                "minLength": 1
+              },
+              "coverage": {
+                "type": "object"
+              },
+              "invalidationRule": {
+                "type": "string",
+                "minLength": 1
+              },
+              "builtAt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "accessFilter": {
+                "type": "object"
+              },
+              "artifact": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "format"
+                ],
+                "properties": {
+                  "path": {
+                    "$ref": "#/$defs/path"
+                  },
+                  "format": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "standardId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Connection"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "protocol",
+              "configurationRequirements",
+              "secretRefs"
+            ],
+            "properties": {
+              "protocol": {
+                "type": "string",
+                "minLength": 1
+              },
+              "configurationRequirements": {
+                "type": "object"
+              },
+              "secretRefs": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "status": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Deployment"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "deployment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "agentRef",
+              "environmentRef",
+              "runtimeAdapter",
+              "capabilities",
+              "admission"
+            ],
+            "properties": {
+              "agentRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "environmentRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "runtimeAdapter": {
+                "type": "string",
+                "minLength": 1
+              },
+              "capabilities": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "admission": {
+                "type": "object"
+              },
+              "principal": {
+                "type": "string",
+                "minLength": 1
+              },
+              "endpointRef": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Run"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "specRef",
+              "inputSnapshotRefs",
+              "executor",
+              "startedAt",
+              "status"
+            ],
+            "properties": {
+              "specRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "inputSnapshotRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "executor": {
+                "type": "object"
+              },
+              "startedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "status": {
+                "enum": [
+                  "pending",
+                  "running",
+                  "completed",
+                  "failed",
+                  "interrupted"
+                ]
+              },
+              "outputRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "modelAndAdapterPins": {
+                "type": "object"
+              },
+              "receipt": {
+                "type": "object"
+              },
+              "unfinishedActions": {
+                "type": "array"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Evidence"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "checkRef",
+              "observations",
+              "verdict",
+              "evaluator",
+              "limitations"
+            ],
+            "properties": {
+              "checkRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "observations": {
+                "type": "array"
+              },
+              "verdict": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "review"
+                ]
+              },
+              "evaluator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "runRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "artifacts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "path",
+                    "format"
+                  ],
+                  "properties": {
+                    "path": {
+                      "$ref": "#/$defs/path"
+                    },
+                    "format": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "standardId": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "ChangeSet"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "environment",
+              "agent"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "targetRefs",
+              "reason",
+              "beforeAfter"
+            ],
+            "properties": {
+              "targetRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "beforeAfter": {
+                "type": "array"
+              },
+              "affectedConsumers": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "migration": {
+                "type": "object"
+              },
+              "checkRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "decisionRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "rollback": {
+                "type": "object"
+              },
+              "releasePins": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "Decision"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "dna",
+              "environment",
+              "agent",
+              "state"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "question",
+              "decision",
+              "responsible"
+            ],
+            "properties": {
+              "question": {
+                "type": "string",
+                "minLength": 1
+              },
+              "decision": {
+                "type": "string",
+                "minLength": 1
+              },
+              "responsible": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidenceRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ref"
+                },
+                "uniqueItems": true
+              },
+              "effectiveFrom": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ]
+}

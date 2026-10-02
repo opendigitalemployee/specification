@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "0.1.0-draft",
+  "id": "urn:dep:demo:acceptance-decision",
+  "version": "1.0.0",
+  "kind": "Decision",
+  "layer": "environment",
+  "title": "Acceptance Decision",
+  "status": "draft",
+  "provenance": {
+    "source": "Synthetic public example; no real customer data or live connection"
+  },
+  "spec": {
+    "question": "May the fixture be used as an example?",
+    "decision": "Use for testing the package structure only",
+    "responsible": "Example author"
+  }
+}

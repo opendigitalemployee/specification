@@ -1,0 +1,1630 @@
+{
+  "format": "digital-employee-glossary",
+  "version": "0.1",
+  "referenceLanguage": "en",
+  "requiredLanguages": [
+    "ru",
+    "en"
+  ],
+  "languagePolicy": "English is the reference language for normative publication. This first terminology pass is draft in both languages and does not establish new runtime requirements.",
+  "groups": [
+    {
+      "id": "core",
+      "ru": "Основные сущности",
+      "en": "Core concepts",
+      "status": "draft",
+      "description": {
+        "ru": "Кто участвует в модели, из каких описаний собирается цифровой сотрудник и где он работает.",
+        "en": "Who participates in the model, which descriptions make up a digital employee, and where it works."
+      }
+    },
+    {
+      "id": "execution",
+      "ru": "Работа и исполнение",
+      "en": "Work and execution",
+      "status": "draft",
+      "description": {
+        "ru": "Что поручают сотруднику и как роли, процессы, навыки и инструменты участвуют в выполнении.",
+        "en": "What is assigned to an employee and how roles, workflows, skills, and tools participate in execution."
+      }
+    },
+    {
+      "id": "person",
+      "ru": "Человек и сведения",
+      "en": "Person and information",
+      "status": "draft",
+      "description": {
+        "ru": "Как представляют человека и разделяют устойчивые сведения, договорённости, текущее состояние и историю.",
+        "en": "How a person is represented and how stable information, agreements, current state, and history are distinguished."
+      }
+    },
+    {
+      "id": "preservation",
+      "ru": "Сохранение и миграция",
+      "en": "Preservation and migration",
+      "status": "draft",
+      "description": {
+        "ru": "Как выбранные описания и данные фиксируют, восстанавливают и применяют в другой среде исполнения.",
+        "en": "How selected descriptions and data are captured, restored, and applied in another execution environment."
+      }
+    },
+    {
+      "id": "evaluation",
+      "ru": "Оценка",
+      "en": "Evaluation",
+      "status": "draft",
+      "description": {
+        "ru": "По каким сферам, опорам и направлениям оценивают результат и качество совместной работы.",
+        "en": "Which spheres, pillars, and directions are used to assess outcomes and the quality of collaboration."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "ISO 704 — методология (аннотация)",
+      "url": "https://www.iso.org/standard/79077.html"
+    },
+    {
+      "title": "W3C SKOS — понятия и языковые названия",
+      "url": "https://www.w3.org/TR/skos-reference/"
+    },
+    {
+      "title": "W3C — языковые теги BCP 47",
+      "url": "https://www.w3.org/International/articles/language-tags/"
+    },
+    {
+      "title": "CNCF — локализация и ревью",
+      "url": "https://github.com/cncf/glossary/blob/main/LOCALIZATION.md"
+    },
+    {
+      "title": "CNCF — простой язык и ссылки",
+      "url": "https://glossary.cncf.io/style-guide/"
+    },
+    {
+      "title": "TBX — будущий обмен терминологией",
+      "url": "https://www.tbxinfo.net/"
+    }
+  ],
+  "terms": [
+    {
+      "id": "digital-employee",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Цифровой сотрудник",
+          "aliases": [],
+          "definition": "Агент, которому в организационном контексте назначены роли, ожидаемые результаты, полномочия и правила оценки.",
+          "example": "Помощник отдела продаж с назначенными работами и лимитом действий.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Digital employee",
+          "aliases": [],
+          "definition": "An agent assigned roles, expected outcomes, authority and evaluation rules within an organizational context.",
+          "example": "A sales assistant with assigned work and action limits.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "ClientAgent"
+      ],
+      "seeAlso": [
+        "agent",
+        "agent-dna",
+        "package"
+      ],
+      "docs": [
+        "overview.html#entity-employee"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "agent",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Агент",
+          "aliases": [],
+          "definition": "Система, которая выбирает и выполняет действия для достижения заданной цели в доступных ей пределах.",
+          "example": "Агент выбирает, какой источник проверить следующим.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Agent",
+          "aliases": [],
+          "definition": "A system that selects and performs actions toward a specified goal within its available scope.",
+          "example": "An agent chooses which source to inspect next.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "digital-employee",
+        "workflow"
+      ],
+      "docs": [
+        "standard.html#workflow"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Общее понятие; отдельного вида Agent в контракте 0.1 нет. Определение ограничено контекстом нашего стандарта."
+    },
+    {
+      "id": "agent-dna",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "ДНК агента",
+          "aliases": [
+            "Профессиональная ДНК"
+          ],
+          "definition": "Переиспользуемая профессиональная основа: роли, работы, методы, навыки и требования, из которых создают конкретного сотрудника.",
+          "example": "Общая основа коммерческого директора для разных компаний.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Agent DNA",
+          "aliases": [],
+          "definition": "A reusable professional foundation of roles, work definitions, methods, skills and requirements used to create a specific employee.",
+          "example": "A shared commercial-director foundation for different organizations.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "AgentDNA"
+      ],
+      "seeAlso": [
+        "digital-employee",
+        "blueprint"
+      ],
+      "docs": [
+        "standard.html#layers"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Agent DNA — метафора нашего проекта; проверить её понятность международной аудитории."
+    },
+    {
+      "id": "blueprint",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Блюпринт",
+          "aliases": [
+            "Проект сотрудника"
+          ],
+          "definition": "Проект цифрового сотрудника: описание его устройства, поведения и требований для последующего применения.",
+          "example": "Проект сотрудника до выбора конкретных подключений.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Blueprint",
+          "aliases": [],
+          "definition": "A design describing the structure, behavior and requirements of a digital employee for subsequent application.",
+          "example": "An employee design before specific connections are selected.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "package",
+        "agent-dna"
+      ],
+      "docs": [
+        "standard.html#purpose"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Выбрать предпочтительный русский вариант: «блюпринт» или «проект сотрудника». Пока сохранено рабочее название."
+    },
+    {
+      "id": "package",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Пакет цифрового сотрудника",
+          "aliases": [
+            "DEP"
+          ],
+          "definition": "Единица хранения и обмена с манифестом, выбранными объектами и ресурсами описания сотрудника; включение данных и состояния задаётся явно.",
+          "example": "Папка с ДНК, средой, сотрудником и выбранным снимком данных.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Digital employee package",
+          "aliases": [],
+          "definition": "A storage and exchange unit containing a manifest and selected employee-description objects and resources; included data and state are declared explicitly.",
+          "example": "A folder containing DNA, an environment, an employee and a selected data snapshot.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "blueprint",
+        "backup"
+      ],
+      "docs": [
+        "standard.html#files"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Публичное название стандарта и сокращение DEP остаются открытым решением."
+    },
+    {
+      "id": "organization",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Организация",
+          "aliases": [
+            "Компания"
+          ],
+          "definition": "Участник модели, задающий общий контекст ответственности, целей, правил и ресурсов совместной работы.",
+          "example": "Компания, для которой развёрнуты несколько сотрудников.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Organization",
+          "aliases": [],
+          "definition": "A modeled organization providing shared accountability, goals, rules and resources for collaborative work.",
+          "example": "A company for which several digital employees are deployed.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Organization"
+      ],
+      "seeAlso": [
+        "company-environment"
+      ],
+      "docs": [
+        "overview.html#entity-company"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "company-environment",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Среда компании",
+          "aliases": [
+            "Среда работы"
+          ],
+          "definition": "Описание организационного контекста работы: модель мира, источники, хранилища и подключения.",
+          "example": "Модель клиентов, источник CRM и подключение к нему.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Company environment",
+          "aliases": [],
+          "definition": "A description of the organizational work context, including its world model, sources, stores and connections.",
+          "example": "A customer model, a CRM source and its connection.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Environment"
+      ],
+      "seeAlso": [
+        "world-model",
+        "runtime"
+      ],
+      "docs": [
+        "standard.html#files"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "world-model",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Модель мира",
+          "aliases": [
+            "WorldModel"
+          ],
+          "definition": "Структурированное описание понятий, сущностей и отношений рабочего мира внутри среды компании.",
+          "example": "Понятия «клиент», «заказ» и связь между ними.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "World model",
+          "aliases": [],
+          "definition": "A structured description of concepts, entities and relationships in the working world within a company environment.",
+          "example": "The concepts customer and order and the relationship between them.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "WorldModel"
+      ],
+      "seeAlso": [
+        "company-environment"
+      ],
+      "docs": [
+        "report-standards-fit.html#world"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Здесь организационная модель знаний; не утверждение о предсказательной world model в других областях ИИ."
+    },
+    {
+      "id": "runtime",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Среда исполнения",
+          "aliases": [
+            "Рантайм",
+            "Runtime"
+          ],
+          "definition": "Программа или сервис, исполняющие сотрудника с определёнными механизмами действий, состояния и ограничений.",
+          "example": "Claude Code, Codex или DeepSeek Harness как целевая среда.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Execution environment",
+          "aliases": [],
+          "definition": "Software or a service that executes an employee with particular mechanisms for actions, state and constraints.",
+          "example": "Claude Code, Codex or DeepSeek Harness as a target environment.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "company-environment",
+        "deployment"
+      ],
+      "docs": [
+        "standard.html#migration"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "deployment",
+      "group": "core",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Развёртывание",
+          "aliases": [],
+          "definition": "Описание применения сотрудника в выбранной среде исполнения, включая конфигурацию и результаты проверки допуска.",
+          "example": "Проекция пакета и отчёт об ограничениях адаптера Codex.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Deployment",
+          "aliases": [],
+          "definition": "A description of applying an employee in a selected execution environment, including configuration and readiness assessment.",
+          "example": "A package projection and a Codex adapter limitations report.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Deployment"
+      ],
+      "seeAlso": [
+        "runtime",
+        "run"
+      ],
+      "docs": [
+        "standard.html#runtimes"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "role",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Роль",
+          "aliases": [],
+          "definition": "Область ответственности, определяющая вклад сотрудника, его работы и границы участия.",
+          "example": "Один сотрудник совмещает роли аналитика и ассистента.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Role",
+          "aliases": [],
+          "definition": "An area of responsibility defining an employee’s contribution, work and boundaries of participation.",
+          "example": "One employee combines analyst and assistant roles.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Role"
+      ],
+      "seeAlso": [
+        "digital-employee",
+        "work"
+      ],
+      "docs": [
+        "profile-map.html#generic-files"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "work",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Работа",
+          "aliases": [],
+          "definition": "Контракт поручаемого результата: входы, ожидаемые выходы, ограничения и критерии приёмки.",
+          "example": "Подготовить недельный отчёт с согласованными показателями.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Work",
+          "aliases": [],
+          "definition": "A contract for an assigned outcome specifying inputs, expected outputs, constraints and acceptance criteria.",
+          "example": "Prepare a weekly report containing agreed metrics.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Work"
+      ],
+      "seeAlso": [
+        "workflow",
+        "skill",
+        "run"
+      ],
+      "docs": [
+        "standard.html#workflow"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Work в этом стандарте — определение поручаемой работы, не один факт выполнения и не job в планировщике."
+    },
+    {
+      "id": "workflow",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Процесс исполнения",
+          "aliases": [
+            "Воркфлоу"
+          ],
+          "definition": "Определение маршрута исполнения с шагами, переходами и правилами управления; нативный граф сохраняется в выбранном формате.",
+          "example": "Получить данные → проверить → подготовить отчёт → согласовать.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Workflow",
+          "aliases": [],
+          "definition": "An execution-route definition with steps, transitions and control rules; its native graph is preserved in the selected format.",
+          "example": "Fetch data → validate → prepare the report → request approval.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Workflow"
+      ],
+      "seeAlso": [
+        "work",
+        "run"
+      ],
+      "docs": [
+        "standard.html#workflow"
+      ],
+      "externalMappings": [
+        {
+          "relation": "conceptual-reference",
+          "label": "Anthropic: Workflows and agents",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "note": "Основание различения управления процессом и выбора действий агентом."
+        }
+      ],
+      "reviewNote": "«Процесс» без уточнения слишком широк. Предопределённый маршрут не гарантирует одинаковый ответ модели."
+    },
+    {
+      "id": "workflow-binding",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Привязка процесса",
+          "aliases": [],
+          "definition": "Настройка применения определения процесса у конкретного сотрудника: участники шагов, ресурсы, версии и подключения.",
+          "example": "Шаг проверки назначен аналитику, данные берутся из CRM компании.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Workflow binding",
+          "aliases": [],
+          "definition": "Configuration applying a workflow definition to a specific employee: step participants, resources, versions and connections.",
+          "example": "The validation step is assigned to an analyst and uses the company CRM.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "WorkflowBinding"
+      ],
+      "seeAlso": [
+        "workflow",
+        "tool-binding"
+      ],
+      "docs": [
+        "profile-map.html#future-files"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "skill",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Навык",
+          "aliases": [],
+          "definition": "Переиспользуемый метод выполнения действий, описанный инструкциями и необходимыми ресурсами.",
+          "example": "Навык анализа отчёта с инструкцией в SKILL.md.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Skill",
+          "aliases": [],
+          "definition": "A reusable method for performing actions, described through instructions and required resources.",
+          "example": "A report-analysis skill with instructions in SKILL.md.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Skill"
+      ],
+      "seeAlso": [
+        "work",
+        "tool"
+      ],
+      "docs": [
+        "standard.html#workflow"
+      ],
+      "externalMappings": [
+        {
+          "relation": "artifact-format",
+          "label": "Agent Skills",
+          "url": "https://agentskills.io/specification",
+          "note": "Формат ресурса навыка; не эквивалент всей нашей модели Skill."
+        }
+      ],
+      "reviewNote": "Понятие нашего профиля и формат Agent Skills связаны через ресурс. Навык человека требует собственного контекста."
+    },
+    {
+      "id": "tool",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Инструмент",
+          "aliases": [],
+          "definition": "Доступная для вызова операция с определёнными входами, выходами, эффектами и ошибками.",
+          "example": "Операция чтения заказа через MCP или API.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Tool",
+          "aliases": [],
+          "definition": "An invocable operation with specified inputs, outputs, effects and errors.",
+          "example": "An order-reading operation exposed through MCP or an API.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "ToolDefinition"
+      ],
+      "seeAlso": [
+        "skill",
+        "tool-binding"
+      ],
+      "docs": [
+        "standard.html#workflow"
+      ],
+      "externalMappings": [
+        {
+          "relation": "protocol-option",
+          "label": "MCP Tools",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+          "note": "Один протокол вызова инструмента; другие интерфейсы допустимы."
+        }
+      ],
+      "reviewNote": ""
+    },
+    {
+      "id": "tool-binding",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Привязка инструмента",
+          "aliases": [],
+          "definition": "Выбор конкретного подключения и параметров использования определения инструмента у сотрудника.",
+          "example": "Инструмент чтения связан с CRM клиента и доступом только на чтение.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Tool binding",
+          "aliases": [],
+          "definition": "Selection of a concrete connection and usage parameters for a tool definition assigned to an employee.",
+          "example": "A read tool is connected to the customer’s CRM with read-only access.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "ToolBinding"
+      ],
+      "seeAlso": [
+        "tool",
+        "workflow-binding"
+      ],
+      "docs": [
+        "profile-map.html#generic-files"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "run",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Запуск",
+          "aliases": [],
+          "definition": "Одно выполнение работы или процесса с конкретными входами, действиями, результатами и состоянием завершения.",
+          "example": "Подготовка отчёта за конкретную неделю.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Run",
+          "aliases": [],
+          "definition": "One execution of work or a workflow, with concrete inputs, actions, results and completion state.",
+          "example": "Preparation of the report for a particular week.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Run"
+      ],
+      "seeAlso": [
+        "work",
+        "workflow"
+      ],
+      "docs": [
+        "standard.html#workflow"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "person",
+      "group": "person",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Человек",
+          "aliases": [],
+          "definition": "Участник взаимодействия с сотрудником, имеющий собственные цели, роли, возможности и границы.",
+          "example": "Руководитель согласует правила работы со своим помощником.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Person",
+          "aliases": [],
+          "definition": "A participant interacting with an employee, with their own goals, roles, capabilities and boundaries.",
+          "example": "A manager agrees working rules with their assistant.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Person"
+      ],
+      "seeAlso": [
+        "person-profile",
+        "digital-employee"
+      ],
+      "docs": [
+        "person-profile.html#relationship"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "person-profile",
+      "group": "person",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Устойчивый профиль",
+          "aliases": [],
+          "definition": "Относительно устойчивые сведения о возможностях, опыте, предпочтениях и границах человека с основаниями и правилами пересмотра.",
+          "example": "Предпочтение кратких записок и подтверждённый опыт в финансах.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Stable person profile",
+          "aliases": [],
+          "definition": "Relatively stable information about a person’s capabilities, experience, preferences and boundaries, with provenance and revision rules.",
+          "example": "A preference for concise briefs and confirmed finance experience.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "PersonModel"
+      ],
+      "seeAlso": [
+        "current-state",
+        "agreement",
+        "history"
+      ],
+      "docs": [
+        "person-profile.html#lifecycle"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Профиль человека в широком смысле может включать несколько представлений. Здесь — только устойчивый слой."
+    },
+    {
+      "id": "personal-space",
+      "group": "person",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Личный контур человека",
+          "aliases": [],
+          "definition": "Отдельная область хранения и использования сведений под управлением человека; рабочий сотрудник получает только разрешённый доступ.",
+          "example": "Личные сведения остаются отдельно, сотрудник получает разрешённое правило.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Personal data space",
+          "aliases": [],
+          "definition": "A separate scope for storing and using information under a person’s control; a work employee receives only authorized access.",
+          "example": "Personal information stays separate while the employee receives an authorized rule.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "PersonModel",
+        "Consent"
+      ],
+      "seeAlso": [
+        "company-environment",
+        "consent"
+      ],
+      "docs": [
+        "person-profile.html#privacy"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Personal data space — рабочий перевод; не заявление о соответствии внешней архитектуре data spaces."
+    },
+    {
+      "id": "consent",
+      "group": "person",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Согласие на использование данных",
+          "aliases": [],
+          "definition": "Явное разрешение человека на определённое использование его сведений с целью, охватом, сроком и возможностью отзыва.",
+          "example": "Разрешение использовать рабочие предпочтения до его отзыва.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Data-use consent",
+          "aliases": [],
+          "definition": "A person’s explicit authorization for a defined use of their information, with purpose, scope, duration and revocation.",
+          "example": "Permission to use work preferences until revoked.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Consent"
+      ],
+      "seeAlso": [
+        "agreement",
+        "personal-space"
+      ],
+      "docs": [
+        "person-profile.html#privacy"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "agreement",
+      "group": "person",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Договорённости",
+          "aliases": [],
+          "definition": "Согласованные цели периода, правила взаимодействия и пределы делегирования с условиями действия и пересмотра.",
+          "example": "Расходы выше установленного лимита согласовывать с человеком.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Working agreements",
+          "aliases": [],
+          "definition": "Agreed goals for a period, interaction rules and delegation limits, with conditions for validity and revision.",
+          "example": "Ask the person to approve expenditure above an agreed limit.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "InteractionContract",
+        "Policy",
+        "GoalMap"
+      ],
+      "seeAlso": [
+        "consent",
+        "person-profile"
+      ],
+      "docs": [
+        "person-profile.html#lifecycle"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "current-state",
+      "group": "person",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Состояние сейчас",
+          "aliases": [
+            "Текущее состояние"
+          ],
+          "definition": "Изменяющиеся сведения, актуальность которых зависит от источника, времени наблюдения и допустимого срока использования.",
+          "example": "Сегодня у человека 20 минут на согласования.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Current state",
+          "aliases": [],
+          "definition": "Changing information whose validity depends on its source, observation time and permitted period of use.",
+          "example": "Today the person has 20 minutes available for approvals.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "RoleState"
+      ],
+      "seeAlso": [
+        "person-profile",
+        "snapshot",
+        "history"
+      ],
+      "docs": [
+        "person-profile.html#lifecycle"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "history",
+      "group": "person",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "История",
+          "aliases": [],
+          "definition": "Датированные сведения о произошедших событиях, действиях и решениях с сохранением происхождения.",
+          "example": "Вчера человек отклонил первый вариант и выбрал второй.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "History",
+          "aliases": [],
+          "definition": "Dated information about past events, actions and decisions, preserving provenance.",
+          "example": "Yesterday the person rejected the first option and selected the second.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "Run",
+        "Evidence",
+        "Decision"
+      ],
+      "seeAlso": [
+        "current-state",
+        "snapshot"
+      ],
+      "docs": [
+        "person-profile.html#lifecycle"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "snapshot",
+      "group": "preservation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Снимок",
+          "aliases": [],
+          "definition": "Зафиксированное представление выбранных данных или состояния на указанное время.",
+          "example": "Копия выбранных записей CRM на конец дня.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Snapshot",
+          "aliases": [],
+          "definition": "A captured representation of selected data or state at a stated time.",
+          "example": "A copy of selected CRM records at the end of a day.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [
+        "DataSnapshot"
+      ],
+      "seeAlso": [
+        "current-state",
+        "backup"
+      ],
+      "docs": [
+        "standard.html#backup"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Метаданные снимка и фактически сохранённые байты различаются; одно не доказывает наличие другого."
+    },
+    {
+      "id": "backup",
+      "group": "preservation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Резервная копия",
+          "aliases": [
+            "Бекап"
+          ],
+          "definition": "Сохранённый набор описаний, ресурсов и явно включённых данных с указанным охватом восстановления и внешними зависимостями.",
+          "example": "Пакет сотрудника плюс выбранные данные и перечень невключённых сервисов.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Backup",
+          "aliases": [],
+          "definition": "A saved set of descriptions, resources and explicitly included data, with a stated recovery scope and external dependencies.",
+          "example": "An employee package plus selected data and an inventory of excluded services.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "snapshot",
+        "package",
+        "restore"
+      ],
+      "docs": [
+        "standard.html#backup"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "restore",
+      "group": "preservation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Восстановление",
+          "aliases": [],
+          "definition": "Воссоздание сохранённого состава по резервной копии с проверкой целостности, актуальности данных и действительности разрешений.",
+          "example": "Вернуть файлы, затем заново проверить подключения и согласия.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Restoration",
+          "aliases": [],
+          "definition": "Reconstitution of saved content from a backup, checking integrity, data freshness and the validity of permissions.",
+          "example": "Recover files, then recheck connections and consents.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "backup",
+        "migration"
+      ],
+      "docs": [
+        "standard.html#backup"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "migration",
+      "group": "preservation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Миграция между средами исполнения",
+          "aliases": [
+            "Миграция"
+          ],
+          "definition": "Подготовка и применение описания сотрудника в другой среде исполнения с явной проверкой поддерживаемых возможностей и ограничений.",
+          "example": "Собрать пакет для Codex и проверить отличия от Claude Code.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Migration between execution environments",
+          "aliases": [],
+          "definition": "Preparation and application of an employee description in another execution environment, explicitly assessing supported capabilities and limitations.",
+          "example": "Prepare the package for Codex and assess differences from Claude Code.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "restore",
+        "runtime"
+      ],
+      "docs": [
+        "standard.html#migration"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Перенос файлов сам по себе не доказывает эквивалентность поведения."
+    },
+    {
+      "id": "effectiveness",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Результативность",
+          "aliases": [],
+          "definition": "Опора оценки, показывающая достижение нужного человеку результата по согласованным критериям.",
+          "example": "Отчёт принят и помог принять решение.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Effectiveness",
+          "aliases": [],
+          "definition": "An evaluation pillar concerning achievement of the outcomes a person needs against agreed criteria.",
+          "example": "The report was accepted and informed a decision.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "reliability",
+        "alignment",
+        "delivers"
+      ],
+      "docs": [
+        "person-profile.html#matrix"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "reliability",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Надёжность",
+          "aliases": [],
+          "definition": "Опора оценки, показывающая, можно ли полагаться на работу: её основания, предсказуемость и обработку сбоев.",
+          "example": "Устаревшие данные обнаружены до выдачи вывода.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Reliability",
+          "aliases": [],
+          "definition": "An evaluation pillar concerning whether the work can be relied on, including its evidence, predictability and failure handling.",
+          "example": "Stale data was detected before a conclusion was delivered.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "effectiveness",
+        "alignment"
+      ],
+      "docs": [
+        "person-profile.html#matrix"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "alignment",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Согласованность",
+          "aliases": [
+            "Alignment"
+          ],
+          "definition": "Опора оценки соответствия действий намерениям, ценностям, договорённостям и границам человека.",
+          "example": "Агент учитывает запрет на автоматическую отправку и объясняет несогласие.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Alignment",
+          "aliases": [],
+          "definition": "An evaluation pillar concerning the consistency of actions with a person’s intentions, values, agreements and boundaries.",
+          "example": "The agent respects a restriction on automatic sending and explains disagreement.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "effectiveness",
+        "reliability"
+      ],
+      "docs": [
+        "person-profile.html#matrix"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Рабочая область — взаимодействие человека и сотрудника. Это не определение всей исследовательской области AI alignment."
+    },
+    {
+      "id": "knows",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Знает меня",
+          "aliases": [],
+          "definition": "Направление оценки того, насколько агент опирается на подтверждённое понимание особенностей человека и исправляет ошибки модели.",
+          "example": "После уточнения агент исправил ошибочное предпочтение.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Understands the person",
+          "aliases": [],
+          "definition": "An evaluation direction assessing whether the agent uses a grounded understanding of the person and corrects errors in that model.",
+          "example": "The agent corrected a mistaken preference after clarification.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "alignment",
+        "person-profile"
+      ],
+      "docs": [
+        "person-profile.html#alignment"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "uses",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Учитывает в решениях",
+          "aliases": [],
+          "definition": "Направление оценки того, влияют ли действующие цели и границы человека на выбор действий.",
+          "example": "При выборе варианта учтён согласованный предел бюджета.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Applies personal context in decisions",
+          "aliases": [],
+          "definition": "An evaluation direction assessing whether the person’s current goals and boundaries influence action selection.",
+          "example": "The chosen option respects the agreed budget limit.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "alignment",
+        "agreement"
+      ],
+      "docs": [
+        "person-profile.html#alignment"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "delivers",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Доводит до результата",
+          "aliases": [],
+          "definition": "Направление оценки получения принятого результата вместо одной лишь выполненной активности.",
+          "example": "Не только собраны данные, но и принят итоговый отчёт.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Delivers outcomes",
+          "aliases": [],
+          "definition": "An evaluation direction assessing delivery of an accepted outcome rather than activity alone.",
+          "example": "The final report was accepted, beyond merely collecting data.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "effectiveness",
+        "work"
+      ],
+      "docs": [
+        "person-profile.html#alignment"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "conserves",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Бережёт ресурсы",
+          "aliases": [],
+          "definition": "Направление оценки нагрузки и цены взаимодействия относительно возможностей и договорённостей человека.",
+          "example": "Вопросы объединены в один посильный блок согласования.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Respects resource limits",
+          "aliases": [],
+          "definition": "An evaluation direction assessing interaction demands and costs against the person’s capacity and agreements.",
+          "example": "Questions are combined into one manageable approval batch.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "alignment",
+        "current-state"
+      ],
+      "docs": [
+        "person-profile.html#alignment"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "interaction-quality",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Качество взаимодействия",
+          "aliases": [
+            "Между нами"
+          ],
+          "definition": "Направление оценки понятности общения, учёта обратной связи и разрешения разногласий в паре.",
+          "example": "Замечание человека учтено, причина расхождения объяснена.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Interaction quality",
+          "aliases": [],
+          "definition": "An evaluation direction assessing clarity of communication, use of feedback and resolution of disagreements within the pair.",
+          "example": "The person’s feedback is incorporated and the disagreement is explained.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "alignment"
+      ],
+      "docs": [
+        "person-profile.html#alignment"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "sphere",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Сфера",
+          "aliases": [],
+          "definition": "Область рассмотрения профиля, которую оценивают по каждой из трёх опор; набор сфер указан в соответствующем представлении.",
+          "example": "«Цели и результат» — одна из пяти сфер профиля человека.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Sphere",
+          "aliases": [],
+          "definition": "An area of a profile examined against each of the three pillars; the set of spheres is specified by the relevant view.",
+          "example": "Goals and outcomes is one of the five spheres of the person profile.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "pillar",
+        "evaluation-direction"
+      ],
+      "docs": [
+        "person-profile.html#matrix"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Sphere / domain — выбор английского названия требует редакционного ревью."
+    },
+    {
+      "id": "pillar",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Опора",
+          "aliases": [],
+          "definition": "Сквозное измерение оценки: результативность, надёжность или согласованность.",
+          "example": "Надёжность проверяется во всех пяти сферах.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Pillar",
+          "aliases": [],
+          "definition": "A cross-cutting dimension of evaluation: effectiveness, reliability or alignment.",
+          "example": "Reliability is assessed across all five spheres.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "sphere",
+        "evaluation-direction"
+      ],
+      "docs": [
+        "person-profile.html#matrix"
+      ],
+      "externalMappings": [],
+      "reviewNote": ""
+    },
+    {
+      "id": "evaluation-direction",
+      "group": "evaluation",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "ru": {
+          "preferred": "Направление оценки",
+          "aliases": [],
+          "definition": "Один из пяти вопросов о качестве совместной работы человека и сотрудника, связанный с опорой и наблюдаемыми основаниями.",
+          "example": "«Доводит до результата» связано с результативностью.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "en": {
+          "preferred": "Evaluation direction",
+          "aliases": [],
+          "definition": "One of five questions about the quality of human–employee collaboration, linked to a pillar and observable evidence.",
+          "example": "Delivers outcomes is linked to effectiveness.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "sphere",
+        "pillar"
+      ],
+      "docs": [
+        "person-profile.html#alignment"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Пять направлений не исчерпывают три опоры: надёжность имеет отдельные проверки."
+    }
+  ]
+}
