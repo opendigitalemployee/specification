@@ -1,5 +1,7 @@
 # Open Digital Employee Specification
 
+![Open Digital Employee: Tasks done. Needle moved? A digital employee celebrates completed tasks while a person checks the business-outcome gauge.](docs/assets/github-banner.png)
+
 <!-- project-badges:start -->
 [![documentation: read](docs/badges/documentation.svg)](https://github.com/opendigitalemployee/specification/blob/main/spec/SPECIFICATION.md)
 [![overview: read](docs/badges/overview.svg)](https://github.com/opendigitalemployee/specification/blob/main/docs/OVERVIEW.md)
@@ -9,7 +11,7 @@
 [![docs license: CC BY 4.0](docs/badges/docs-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt)
 <!-- project-badges:end -->
 
-**Draft release 0.1.0-draft.5 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
+**Draft release 0.1.0-draft.6 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
 
 Design a digital employee around a **measurable business outcome**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Preserve that design independently of a runtime.
 
@@ -31,7 +33,7 @@ CLI tools and runtime adapters are **not included in this first release**. Schem
 ## What is included
 
 - A versioned specification, JSON Schema, reference rules and type catalog.
-- An EN/RU [glossary](spec/glossary.json); [composition notes](spec/COMPOSITION.md) currently remain in Russian.
+- An EN/RU [glossary](spec/glossary.json) and English [composition notes](spec/COMPOSITION.md) explaining how existing formats fit together.
 - One synthetic employee scenario and its file backup, with native skill resources.
 - [Change history](CHANGELOG.md), [contribution guidance](CONTRIBUTING.md), and a generated [release manifest](release-manifest.json) recording sources, hashes and checks.
 

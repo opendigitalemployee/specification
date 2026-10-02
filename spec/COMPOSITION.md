@@ -1,45 +1,61 @@
-# Композиция с внешними стандартами
+# Compose with existing formats
 
-Согласованное решение: JSON описывает наши сущности, связи и состав пакета; встроенные стандарты сохраняют свои файлы и правила. Пакет соединяет эти компоненты с профессиональными работами, средой компании и конкретным сотрудником.
+The package connects existing formats to a digital employee's **measurable business outcomes**, work, company context, and decision rights. JSON describes our objects, references, and package inventory. Embedded formats keep their own files and rules; the package does not turn them into a competing format.
 
-Единый [рабочий отчёт всех стыков](../docs/OVERVIEW.md#existing-formats) обновляет прежний industry-fit: включает workflow, общие файловые пути, собственные дополнения и фактический объём поддержки. Исходные схемы остаются внутри как датированные основания. [Work / Workflow / Skill / ToolDefinition](../docs/OVERVIEW.md#existing-formats) различаются по смыслу: работа задаёт результат и приёмку, workflow — процесс исполнения, Skill — метод, ToolDefinition — отдельный инструмент. Старый SKILL.md работы сохраняется как Work.instructions; формат файла не превращает работу в Skill автоматически.
+The [standards map](../docs/OVERVIEW.md#existing-formats) connects these integration boundaries to the wider design. [Work, Workflow, Skill, and ToolDefinition](../docs/OVERVIEW.md#existing-formats) have different roles:
 
-Для версии 0.2 принято отдельное описание Workflow и его WorkflowBinding. Нативные файлы предполагаются в `native/workflows/<name>/<version>/`; общий JSON не дублирует граф как второй источник истины. Кандидаты: Open Workflow Specification, BPMN, Arazzo и Agent Spec Flow; n8n, LangGraph, Temporal — платформы/нативные артефакты. Соответствующие валидаторы, исполнение и преобразования ещё не реализованы. Обязательный единый DSL не выбран. Поля и ограничения — [../STATUS.md#next-version-proposals](../STATUS.md#next-version-proposals).
+- **Work** defines a deliverable, its inputs, and acceptance criteria. Selecting that work is a hypothesis about how to contribute to an outcome.
+- **Workflow** defines an execution process with steps and transitions. A process can use skills, tools, and human actions.
+- **Skill** provides a reusable method for carrying out work.
+- **ToolDefinition** describes an action interface, such as reading data or calling a system. Tool access and permission are separate from knowing a method.
 
-## Навык Agent Skills
+A `SKILL.md` file previously used as work instructions can remain a `Work.instructions` resource. Its filename alone does not make the business object a Skill.
+
+## Native Agent Skills resources
 
 ```text
-dna/commercial-director/1.0.0/prepare-brief.skill.json
-native/skills/prepare-owner-brief/
+dna/<dna-id>/<version>/<skill-id>.skill.json
+native/skills/<skill-name>/
   SKILL.md
-  references/acceptance.md
+  references/
+  scripts/
 ```
 
-JSON-объект `Skill` хранит ID, версию, происхождение, входной и выходной контракт, проверки и ссылку на `native/skills/prepare-owner-brief/SKILL.md`. Имя, описание и инструкции самого навыка находятся в его нативном файле. Работа ссылается на Skill; `ActivationBinding` задаёт конкретную точку использования навыка у сотрудника.
+The optional resource subdirectories follow the embedded format. These placeholder paths explain the general layout; the synthetic example uses concrete names.
 
-Манифест фиксирует первоисточник Agent Skills и прочитанную редакцию спецификации. Все файлы каталога перечислены в инвентаре и защищены контрольными суммами. При упаковке и переносе YAML-шапка, инструкции, приложения и исполняемые файлы сохраняются побайтно. Упаковка сама их не исполняет.
+The JSON `Skill` object records identity, version, provenance, input/output contracts, checks, and a reference to the native `SKILL.md`. The skill's name, description, and instructions remain in its native file. Work references the skill; an `ActivationBinding` describes a specific activation point for the employee.
 
-Рантайм получает проекцию: каталог навыка помещается в его поддерживаемое место, а инструкции сотрудника связывают метод с нужной работой и данными. Стандарт результата, полномочия и применение остаются отдельными объектами нашего пакета.
+The manifest identifies the upstream Agent Skills specification and the revision read. The resource inventory lists the included skill files with checksums. Preserving a package preserves the YAML front matter, instructions, supporting resources, and executable files byte for byte. Reading or preserving these files does not execute them.
 
-## Какие форматы включаем
+A runtime-specific implementation places the skill directory where that runtime expects it and connects the method to the employee's selected work and data. Outcome requirements, acceptance criteria, and authority remain separate package objects. Supporting a skill format does not by itself establish support for the whole employee design.
 
-| Компонент | Собственное представление | Что добавляет наш пакет |
-|---|---|---|
-| Навык | Agent Skills `SKILL.md` и каталог | Версия объекта, вход/выход, рабочие связи, активация и происхождение |
-| Схема данных или инструмента | JSON Schema | Связь с сущностью, набором, операцией и проверкой |
-| Подключение MCP | Нативное описание протокола и настройка рантайма | Контракт инструмента, назначение подключения и требования к правам/секретам |
-| Описание Agent Spec | Его JSON/YAML | Явная проекция поддерживаемых работ и отчёт о соответствии |
-| Пакет Agent Companies | Его Markdown и sidecar-настройки | Проекция организации и сотрудников для Paperclip |
+## Integration boundaries
 
-В первом инструменте поддерживаются структурная проверка Agent Skills и JSON Schema. Остальные строки задают точки интеграции для адаптеров. Они не означают, что соответствующие экспортёры уже реализованы.
+| Component | Existing representation | What the package adds | Public draft 0.1 scope |
+|---|---|---|---|
+| Skill | Agent Skills `SKILL.md` and supporting directory | Object identity and version, input/output contracts, work references, activation, and provenance | Native resources in the synthetic example; structural checks during release verification |
+| Data or tool schema | JSON Schema | References to a business concept, dataset, operation, or check | Schemas for package objects and manifests; automated schema/example checks |
+| MCP connection | MCP protocol and runtime configuration | Tool contract, connection purpose, and permission/secret requirements | Integration boundary; no live MCP connector distributed |
+| Agent discovery and communication | A2A / OASF and their own representations | Mapping of the employee's identity, capabilities, and interaction requirements | Research and mapping; no protocol compatibility certified |
+| Agent Spec description | Its JSON/YAML | A projection of supported design requirements and an explicit support report | Integration candidate; no exporter distributed |
+| Agent Companies package | Its Markdown and configuration sidecars | An organization and employee projection for Paperclip | Integration candidate; no exporter distributed |
+| Workflow | An existing workflow definition in its native format | Business work references, requirements, and runtime bindings | Next-version proposal; not a normative kind in draft 0.1 |
 
-## Проверка и расширение
+The public release contains **documentation, schemas, and synthetic examples**. CLI tools and runtime adapters remain outside this release. Automated description checks do not certify execution, enforce permissions, or establish business outcomes.
 
-Проверка проходит отдельно по слоям: наши JSON-схемы; типы и точные ссылки; инвентарь ресурсов; встроенные форматы; контрольные суммы; возможности рантайма. Для Agent Skills проверка минимального структурного контракта не оценивает качество инструкций и не гарантирует одинакового поведения моделей.
+## Workflow: next-version design
 
-Неизвестное необязательное расширение сохраняется. Требование к неизвестному обязательному формату или расширению сообщается как блокирующий пробел. Новые валидаторы и адаптеры регистрируются по идентификатору стандарта и заявляют проверенный объём поддержки.
+The proposed extension separates `Workflow` from `WorkflowBinding`. Native definitions are planned under `native/workflows/<name>/<version>/`. The common JSON description would reference the native graph rather than duplicate it as a second source of truth.
 
-Нативные метаданные не дублируются как независимый источник истины в JSON. Поля нашей модели описывают иной уровень: ID бизнес-объекта и его версию, применение, результат, полномочия и связь с компанией. Если представления расходятся, редактор показывает конфликт до принятия изменения.
+Candidate formats include Serverless Workflow / Open Workflow Specification, BPMN, Arazzo, and Agent Spec Flow. n8n, LangGraph, and Temporal are execution platforms with their own artifacts. No single mandatory workflow DSL has been selected. Workflow validation, execution, and conversion are not implemented by this public draft. See the [next-version design](../STATUS.md#next-version-proposals).
+
+## Validation and extension
+
+Keep separate checks for package schemas, exact typed references, the resource inventory, embedded formats, checksums, and runtime capabilities. A minimal Agent Skills structural check does not evaluate the quality of its instructions or guarantee identical behavior across models.
+
+Preserve unknown optional extensions. An unknown required format or extension is a blocking support gap. Future validators and adapters should identify the format they support and report the scope actually checked.
+
+Native metadata should not be copied into JSON as an independent source of truth. Package fields describe a different level: business-object identity and version, intended use, outcome contribution, authority, and company context. When representations disagree, surface the conflict before accepting a change.
 
 ---
 Copyright 2026 Taras Pustovoy and contributors. Licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).

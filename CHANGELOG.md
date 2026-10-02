@@ -1,5 +1,9 @@
 # Change history
 
+## 0.1.0-draft.6 — illustrated overview and English composition notes
+
+Added a GitHub README banner about the difference between completed tasks and measurable outcomes. Composition notes are now in English and distinguish current integration boundaries from next-version proposals. Schemas and synthetic package bytes remain unchanged.
+
 ## 0.1.0-draft.5 — documentation badges
 
 Added linked documentation, overview, format, schema-check and license badges to README. The check badge links to CI and does not assert runtime certification or a static passing result. Package semantics, schemas and example bytes remain unchanged.
