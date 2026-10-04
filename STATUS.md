@@ -1,6 +1,6 @@
 # Status and scope
 
-Draft release **0.1.0-draft.9**, package format **0.1.0-draft**. The format describes a digital employee; it is not a runtime, marketplace, certification system, or guarantee of business outcomes.
+Draft release **0.1.0-draft.10**, package format **0.1.0-draft**. The format describes a digital employee; it is not a runtime, marketplace, certification system, or guarantee of business outcomes.
 
 ## Current contract
 

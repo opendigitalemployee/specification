@@ -1,11 +1,25 @@
 {
   "binaryAssets": {
     "docs/assets/github-banner.png": {
-      "bytes": 1526092,
-      "height": 725,
+      "bytes": 1746104,
+      "height": 724,
       "mimeType": "image/png",
-      "sha256": "7ad67bd73d1ca3f5f5ce40d996ca130c368d49cbba20e90abc5ae813abe699ff",
-      "width": 2170
+      "sha256": "9a1a56531b9a7d8fa40011a05d7659396924333ba5d43568b1ba7bf8e34b76aa",
+      "width": 2172
+    },
+    "docs/assets/ode-mark.png": {
+      "bytes": 349674,
+      "height": 1254,
+      "mimeType": "image/png",
+      "sha256": "c9ddb7b05175c391aee28d33fdcd4b163720f4529cf160277a2ecc3b75f422c1",
+      "width": 1254
+    },
+    "docs/assets/ode-repository-avatar.png": {
+      "bytes": 349674,
+      "height": 1254,
+      "mimeType": "image/png",
+      "sha256": "c9ddb7b05175c391aee28d33fdcd4b163720f4529cf160277a2ecc3b75f422c1",
+      "width": 1254
     }
   },
   "checks": {
@@ -24,63 +38,63 @@
       "license": "Apache-2.0",
       "sha256": "c16cce57572ddc9f9a3ccfd71dcaecaa2a2290eada0cdd0beec691b0df43af82",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     ".github/ISSUE_TEMPLATE/02-problem.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "e6c7042b7799ebf317c95c08d3f8c9fdd37ad96344ffc1cb03b5d98a1c3268b0",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     ".github/ISSUE_TEMPLATE/config.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "814f4d43c2c84e0e545924ea093852909e3180edcf3a71fe709ef32ca7efa829",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     ".github/workflows/check.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "c91bbdaf41d0932131ce376e6ef1c597103399ceff55819d4be25fbfa8bbf440",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     ".gitignore": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "daa1621cef56cfbce76f76b5a024ad3c94c5057fcaebcb4bd31996ea592cd403",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "AGENTS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "3d65982e24f12049d8b6f5a94dfb761774218d95f170aeae2c3d4f222ad2b5cf",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "CHANGELOG.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "e309aa6f73ce89d52db5b41dc0fa484fdef83c72b9217454c775e5de974c77a7",
+      "sha256": "4f8e158673c2a59e6e8ea417548c6bd12116359e96789d63f8073825ed764d52",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "CONTRIBUTING.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "f00b3192503ace5a0991bdb2858046cb66d1513c5dd045dfee796e09d2d8e97b",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "CONTRIBUTORS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "8683e3393b0223bb324908ae5ac7ffacdbc94ff97dde5da86f77b685a049ad1a",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "LICENSE": {
       "adapted": false,
@@ -101,42 +115,63 @@
       "license": "CC-BY-4.0",
       "sha256": "678caaaddf86febf1d29d9a9ba2cc6f150a482d952ed2e3642496721f463e4a4",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "NOTICE": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "3a552cc2f12ce3bf8f7262bdd8ab289d56be43c8836cf32d49a7c0288a727151",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "README.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "b32ca45b1ddaaa562eb169b102ee47614baa384100205f8475459944b9570a78",
+      "sha256": "3a747997407408c2f5c75dd50f7d41395a513fe906f31b7f6f162922b55e0952",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "STATUS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "7468d598adc80e0866c53cc5c8e867d4eca8dc01d9728810a6d9feae62d2a851",
+      "sha256": "bf3146edf327870803928de04148105d91f29054424b5c08417057feaf3ea863",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+    },
+    "docs/BRAND.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "d89b382c0edd1eb8460e74f8445d587e566292e511de57793d502eee9ddad7c1",
+      "source": "spec/public-export.json",
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "docs/OVERVIEW.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "7c198c9eac376847cf5cdae07a51f3c94d243b5c5ae045c71affce7f046a3c5a",
       "source": "spec/public-export.json",
-      "sourceSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df"
+      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
     },
     "docs/assets/github-banner.png": {
       "adapted": false,
       "license": "CC-BY-4.0",
-      "sha256": "7ad67bd73d1ca3f5f5ce40d996ca130c368d49cbba20e90abc5ae813abe699ff",
+      "sha256": "9a1a56531b9a7d8fa40011a05d7659396924333ba5d43568b1ba7bf8e34b76aa",
       "source": "spec/public-media/github-banner.png",
-      "sourceSha256": "7ad67bd73d1ca3f5f5ce40d996ca130c368d49cbba20e90abc5ae813abe699ff"
+      "sourceSha256": "9a1a56531b9a7d8fa40011a05d7659396924333ba5d43568b1ba7bf8e34b76aa"
+    },
+    "docs/assets/ode-mark.png": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "c9ddb7b05175c391aee28d33fdcd4b163720f4529cf160277a2ecc3b75f422c1",
+      "source": "spec/public-media/ode-mark.png",
+      "sourceSha256": "c9ddb7b05175c391aee28d33fdcd4b163720f4529cf160277a2ecc3b75f422c1"
+    },
+    "docs/assets/ode-repository-avatar.png": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "c9ddb7b05175c391aee28d33fdcd4b163720f4529cf160277a2ecc3b75f422c1",
+      "source": "spec/public-media/ode-repository-avatar.png",
+      "sourceSha256": "c9ddb7b05175c391aee28d33fdcd4b163720f4529cf160277a2ecc3b75f422c1"
     },
     "docs/badges/catalog.json": {
       "adapted": false,
@@ -889,10 +924,10 @@
     ]
   },
   "publication": "local-candidate; no repository created or pushed",
-  "releaseVersion": "0.1.0-draft.9",
+  "releaseVersion": "0.1.0-draft.10",
   "rightsHolder": "Taras Pustovoy and contributors",
   "sourcePlan": "spec/public-export.json",
-  "sourcePlanSha256": "5ea4806cecf0f9357436cb328421e4ac711fa7e843dd6fb9631fbbfb27c9d5df",
+  "sourcePlanSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872",
   "specVersion": "0.1.0-draft",
   "verificationSources": {
     "tools/dep.py": "6c9cb30df0265e96c88ce7b8465f15ab12165096f63237644295b394f15672d0",

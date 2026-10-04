@@ -1,5 +1,9 @@
 # Change history
 
+## 0.1.0-draft.10 — shared-language visual identity
+
+Adopted the square-and-round project mark and the shared-outcome banner. Added transparent square PNGs for the common mark and repository avatar, with a short asset guide. The banner connects shared language, coordinated action and measurable outcomes. Package format, normative specification, schemas and synthetic example bytes remain unchanged.
+
 ## 0.1.0-draft.9 — English contribution communication
 
 Use English for issues, pull requests and comments. Removed Russian labels and bilingual submission guidance from the intake forms and contribution instructions.

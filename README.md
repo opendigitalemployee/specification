@@ -1,6 +1,6 @@
-# Open Digital Employee Specification
+# <img src="docs/assets/ode-mark.png" width="48" height="48" alt=""> Open Digital Employee Specification
 
-![Open Digital Employee: Tasks done. Needle moved? A digital employee celebrates completed tasks while a person checks the business-outcome gauge.](docs/assets/github-banner.png)
+![Open Digital Employee — Shared language. Coordinated action. Measurable outcomes. A digital hand and a human hand point toward a shared outcome.](docs/assets/github-banner.png)
 
 <!-- project-badges:start -->
 [![documentation: read](docs/badges/documentation.svg)](https://github.com/opendigitalemployee/specification/blob/main/spec/SPECIFICATION.md)
@@ -11,7 +11,7 @@
 [![docs license: CC BY 4.0](docs/badges/docs-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt)
 <!-- project-badges:end -->
 
-**Draft release 0.1.0-draft.9 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
+**Draft release 0.1.0-draft.10 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
 
 Design a digital employee around a **measurable business outcome**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Preserve that design independently of a runtime.
 
@@ -46,6 +46,8 @@ The website is [opendigitalemployee.org](https://opendigitalemployee.org). Defin
 ## Maintainers and licensing
 
 Copyright 2026 Taras Pustovoy and contributors. See [contributors](CONTRIBUTORS.md) and [license scope](LICENSING.md). This is the **Open Digital Employee Specification**, an experimental draft open for review and integration work.
+
+[Project mark, square icon and banner](docs/BRAND.md).
 
 ---
 Copyright 2026 Taras Pustovoy and contributors. Licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
