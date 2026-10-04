@@ -1,5 +1,11 @@
 # Change history
 
+## 0.2.0-draft.2 — 2026-10-04
+
+- Added a latest-release link and a concise summary of the 0.2 draft changes to README: personal/shared affiliations, the agent procedure index and four complete worked packages.
+- Fixed historical changelog version labels so future exports retain the original release and format numbers.
+- Documentation only. Normative format, schemas, contracts and example bytes remain unchanged.
+
 ## 0.2.0-draft.1 — 2026-10-04
 
 - New normative format `0.2.0-draft`: versioned party-category catalog generated with the schema; Party categories person, family, team, organization and named other; separate served party, authority and environment control. ClientAgent, Environment, ToolBinding and WorldModel no longer require an organization. Role/class and permissions remain independent.
@@ -7,7 +13,7 @@
 - Preserved 0.1 schema bytes for version-directed readers. Existing clinic and Aster examples keep their identities, versions and bytes. Migration to 0.2 requires reviewed new object versions and updated pins.
 - Added the agent-facing procedure index and AFFILIATION-01. Moved SELF-01 to `docs/agents/procedures/` with an old-path pointer, documented conditional ordering and the actual coverage of all nine issue #2 scenarios.
 
-## 0.2.0-draft.1 — experimental personal-agent self-description
+## 0.1.0-draft.11 — experimental personal-agent self-description
 
 Added an agent-facing entry and a finite self-description procedure: profile, concrete composition, linked self-diagnosis and exact index. Added reusable experimental index/composition/assessment schemas, a blank collection, 25 design questions and 15 quality questions, and the synthetic Aster 0.2.0 collection with native identity/instructions, memory, shared basis and selected/unselected skills.
 
@@ -43,7 +49,7 @@ Added linked documentation, overview, format, schema-check and license badges to
 
 ## 0.1.0-draft.4 — first public draft
 
-Selected the 0.2.0-draft specification, generated schemas, glossary, synthetic employee and file-backup examples, documentation and automated schema/example checks. Added a compact outcome-led overview and explicit status boundaries.
+Selected the 0.1.0-draft specification, generated schemas, glossary, synthetic employee and file-backup examples, documentation and automated schema/example checks. Added a compact outcome-led overview and explicit status boundaries.
 
 The export manifest records source and output hashes. Informative next-version paragraphs and internal documentation links are adapted explicitly by the private export plan. Normative sections 1–9 and native package bytes retain their source meaning; Workflow and Person are not promoted to 0.1 kinds. Configured Apache-2.0 for the normative specification, schemas, examples and automated checks, and CC BY 4.0 for explanatory documentation and glossary. Export does not publish to GitHub.
 

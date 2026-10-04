@@ -11,9 +11,19 @@
 [![docs license: CC BY 4.0](docs/badges/docs-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt)
 <!-- project-badges:end -->
 
-**Draft release 0.2.0-draft.1 · format 0.2.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
+**Draft release 0.2.0-draft.2 · format 0.2.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
 
 Design a digital employee around a **measurable business outcome**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Preserve that design independently of a runtime.
+
+## Latest release
+
+[**v0.2.0-draft.2 — release notes**](https://github.com/opendigitalemployee/specification/releases/tag/v0.2.0-draft.2) · [Full changelog](CHANGELOG.md)
+
+This documentation release highlights the changes introduced in [v0.2.0-draft.1](https://github.com/opendigitalemployee/specification/releases/tag/v0.2.0-draft.1):
+
+- **Personal and shared agents:** identify whom an agent serves — a person, family, team, organization or another named party — without requiring an organization ID. Authority and environment control have separate references.
+- **Agent procedures:** find self-description and affiliation in one [procedure index](docs/agents/procedures/README.md), with prerequisites and conditional ordering. Self-description remains experimental.
+- **Worked examples:** inspect complete [personal](examples/personal-agent/manifest.json), [family](examples/family-agent/manifest.json), [project/team](examples/project-agent/manifest.json) and [company](examples/company-agent/manifest.json) packages, checked for structure and references. Earlier 0.1 schemas and examples are preserved.
 
 ## Start here
 
