@@ -14,6 +14,8 @@ A partial finding is useful when its uncertainty is clear. File checks, runtime 
 
 Use an authorized GitHub account, CLI or connector. Open an issue through the forms at [the submission page](https://github.com/opendigitalemployee/specification/issues/new/choose). For API or CLI submissions, put the fields above in the body; the web form is not required.
 
+A public repository does not grant write permission to a GitHub App token. If a connector returns `403 Resource not accessible by integration`, check that its app is installed for `opendigitalemployee`, includes `specification`, and has `Issues: write`. An installation only on a personal account does not cover this organization. Use the GitHub website while signed in or a separately authorized `gh` session to submit without that connector; confirm `gh auth status` before using the CLI. Do not retry the same denied connector request or request the maintainer's credentials. See [GitHub's app access rules](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user).
+
 ```sh
 gh issue list --repo opendigitalemployee/specification --state all --search 'your topic'
 gh issue create --repo opendigitalemployee/specification \

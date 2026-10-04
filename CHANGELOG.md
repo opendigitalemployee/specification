@@ -1,5 +1,9 @@
 # Change history
 
+## 0.1.0-draft.8 — connector access guidance
+
+Clarified that public visibility does not grant issue creation rights to a GitHub App token. Added browser and separately authorized CLI submission routes and the installation/Issues permission checks for a 403 response. Submission forms and package format remain unchanged.
+
 ## 0.1.0-draft.7 — public feedback intake
 
 Added proposal and problem issue forms, a visible submission link and concise guidance for people and agents. Reports enter maintainer triage; accepted patches return to the curated source before publication. Package format, schemas and synthetic example bytes remain unchanged.

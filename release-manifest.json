@@ -24,63 +24,63 @@
       "license": "Apache-2.0",
       "sha256": "f12f689c3f278dff3da949cc6d193c2686bdc4673448b33cd638154b97f94e8a",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     ".github/ISSUE_TEMPLATE/02-problem.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "43d1775e7e21c6fac8493a6d79ce20de3ec3e45fd5850f595c2d521c7f093ed4",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     ".github/ISSUE_TEMPLATE/config.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "cd1c07bb954a2f080b8f96d740998edbf27e7e6ffd4b3cb02d63ea346225c069",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     ".github/workflows/check.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "c91bbdaf41d0932131ce376e6ef1c597103399ceff55819d4be25fbfa8bbf440",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     ".gitignore": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "daa1621cef56cfbce76f76b5a024ad3c94c5057fcaebcb4bd31996ea592cd403",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "AGENTS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "5b6c89f43459078d589c621048ac4980889a0797190a19167db477f7e8e82bcf",
+      "sha256": "f9a8b240036204e868da44859aa2f6110e6bbb18b94fd586cef815ae1210afcb",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "CHANGELOG.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "566f7c201a4b7a6e2fc9fddcdb7680338b721d18237ba6de30d971b799dfa995",
+      "sha256": "1b61aef5a0de1a46210654ac6cfbf768da345fc7ca7af8dfcd62ddda782d0d3a",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "CONTRIBUTING.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "3921a74d166ca87a994d65eea29f4b2b3f366523afa684002ff8eed020bda23d",
+      "sha256": "5071f084e0822da1e5becd15ecc7cff8f635c66ee1eb085229fa7303d0044c27",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "CONTRIBUTORS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "8683e3393b0223bb324908ae5ac7ffacdbc94ff97dde5da86f77b685a049ad1a",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "LICENSE": {
       "adapted": false,
@@ -101,35 +101,35 @@
       "license": "CC-BY-4.0",
       "sha256": "678caaaddf86febf1d29d9a9ba2cc6f150a482d952ed2e3642496721f463e4a4",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "NOTICE": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "3a552cc2f12ce3bf8f7262bdd8ab289d56be43c8836cf32d49a7c0288a727151",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "README.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "537bd280821f7f3e80aa2b8c06d1e1636a46f1312f3513df18f214647452ff99",
+      "sha256": "39ad9bf1a6137f30173e43d6e8643b71bcc293a0c4bfa5d97f75b95da2f53d32",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "STATUS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "7fec3a166b365e2610e44cb5a8e8a8502b4e922cc72706be42b73f1b0c1e10de",
+      "sha256": "4e390fb7d142acecf8d074c68fceb9355e167f6bc087fd1bc763121b9d5d74a6",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "docs/OVERVIEW.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "7c198c9eac376847cf5cdae07a51f3c94d243b5c5ae045c71affce7f046a3c5a",
       "source": "spec/public-export.json",
-      "sourceSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d"
+      "sourceSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760"
     },
     "docs/assets/github-banner.png": {
       "adapted": false,
@@ -889,10 +889,10 @@
     ]
   },
   "publication": "local-candidate; no repository created or pushed",
-  "releaseVersion": "0.1.0-draft.7",
+  "releaseVersion": "0.1.0-draft.8",
   "rightsHolder": "Taras Pustovoy and contributors",
   "sourcePlan": "spec/public-export.json",
-  "sourcePlanSha256": "8c3003400ca45e359d616ebe6974e40d1c7f5d2aa3504073acfc0a2643a2b74d",
+  "sourcePlanSha256": "4196a043d5a237d1ae569707db49f7e32ade46dc36be854060cd580691208760",
   "specVersion": "0.1.0-draft",
   "verificationSources": {
     "tools/dep.py": "6c9cb30df0265e96c88ce7b8465f15ab12165096f63237644295b394f15672d0",
