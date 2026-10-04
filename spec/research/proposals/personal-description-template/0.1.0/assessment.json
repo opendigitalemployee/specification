@@ -1,0 +1,556 @@
+{
+  "format": "ode.experimental.self-diagnosis-assessment",
+  "version": "0.1.0",
+  "assessedAt": null,
+  "evaluator": null,
+  "synthetic": false,
+  "scope": "Replace with the intended use and source boundary of this description.",
+  "profile": {
+    "id": null,
+    "version": "0.1.0",
+    "path": "profile.json",
+    "sha256": "8d09a0bcbf8c30add531942c5a8077c53d7788181d0d12c71685f2a61b32f708"
+  },
+  "checklist": {
+    "version": "0.1.0",
+    "path": "docs/agents/self-diagnosis.checklist.json",
+    "sha256": "1b5b43aa8be28abab811f9a43b0e56409bcd3cfdf3992e7d71c53f860b393e46"
+  },
+  "designChecklist": [
+    {
+      "checkId": "D01",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D02",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D03",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D04",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D05",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D06",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D07",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D08",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D09",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D10",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D11",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D12",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D13",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D14",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D15",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D16",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D17",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D18",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D19",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D20",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D21",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D22",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D23",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D24",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D25",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    }
+  ],
+  "qualityChecklist": [
+    {
+      "checkId": "Q11",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q12",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q13",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q21",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q22",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q23",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q31",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q32",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q33",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q41",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q42",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q43",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q51",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q52",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q53",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Not assessed in the blank template.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "DESCRIBE"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    }
+  ],
+  "completionCounts": {
+    "design": {
+      "missing": 25
+    },
+    "quality": {
+      "missing": 15
+    }
+  },
+  "agreement": "not_confirmed",
+  "behavior": "not_evaluated",
+  "descriptionMaturity": "not_assigned",
+  "formatVersion": "0.1.0",
+  "status": "draft"
+}

@@ -1,0 +1,29 @@
+{
+  "format": "ode.experimental.personal-description-index",
+  "formatVersion": "0.1.0",
+  "version": "0.1.0",
+  "descriptionId": null,
+  "synthetic": false,
+  "status": "draft",
+  "completionMeaning": "Dated authored description, linked self-diagnosis and explicit dependencies with routed gaps; no backup or runtime claim.",
+  "artifacts": [
+    {
+      "role": "reflective_profile",
+      "path": "profile.json",
+      "sha256": "8d09a0bcbf8c30add531942c5a8077c53d7788181d0d12c71685f2a61b32f708"
+    },
+    {
+      "role": "structured_composition",
+      "path": "components.json",
+      "sha256": "f5bd8f900381c45c373b57091ae4f036a25b9215c80bb06d23bc814b1932a73d"
+    },
+    {
+      "role": "assessment",
+      "path": "assessment.json",
+      "sha256": "e5c9925e7527afebe4279b824a17f7db6333e5039bcf27b721fbed84617e0526"
+    }
+  ],
+  "resources": [],
+  "dependencyView": "components.json#/dependencies",
+  "backup": "not_created"
+}

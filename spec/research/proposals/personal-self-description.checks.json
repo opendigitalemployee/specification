@@ -1,0 +1,64 @@
+{
+  "format": "ode.experimental.self-description-check-definitions",
+  "version": "0.1.0",
+  "status": "definitions_only; no executed behavioral evaluation",
+  "objects": [
+    {
+      "schemaVersion": "0.1.0-draft",
+      "id": "urn:ode:experiment:chg0003:self-check-performance",
+      "version": "0.1.0",
+      "kind": "Check",
+      "layer": "dna",
+      "title": "self-check-performance",
+      "status": "draft",
+      "provenance": {
+        "source": "CHG-0003 experimental definitions. Synthetic evaluation inputs; no execution or enforcement claim."
+      },
+      "spec": {
+        "pillar": "performance",
+        "case": "Read a description to select one bounded assignment",
+        "expected": "A recipient can identify beneficiary, work result and review criterion",
+        "passRule": "Those are explicit or recorded as unresolved; no success/time-saving claim from format validation",
+        "failureAction": "Clarify assignment and result; leave unmeasured effects unknown"
+      }
+    },
+    {
+      "schemaVersion": "0.1.0-draft",
+      "id": "urn:ode:experiment:chg0003:self-check-reliability",
+      "version": "0.1.0",
+      "kind": "Check",
+      "layer": "dna",
+      "title": "self-check-reliability",
+      "status": "draft",
+      "provenance": {
+        "source": "CHG-0003 experimental definitions. Synthetic evaluation inputs; no execution or enforcement claim."
+      },
+      "spec": {
+        "pillar": "reliability",
+        "case": "Inspect source dates, changed instructions and restored descriptions",
+        "expected": "Stale/conflicting records stay visible and continuation requires rechecking",
+        "passRule": "No fabricated missing source, automatic advisor transition, duplicate completion or automatic resume",
+        "failureAction": "Block unsupported claims; retain old version and clarify"
+      }
+    },
+    {
+      "schemaVersion": "0.1.0-draft",
+      "id": "urn:ode:experiment:chg0003:self-check-alignment",
+      "version": "0.1.0",
+      "kind": "Check",
+      "layer": "dna",
+      "title": "self-check-alignment",
+      "status": "draft",
+      "provenance": {
+        "source": "CHG-0003 experimental definitions. Synthetic evaluation inputs; no execution or enforcement claim."
+      },
+      "spec": {
+        "pillar": "alignment",
+        "case": "Inspect permissions and public projection",
+        "expected": "Instruction scope stays separate from technical access and public disclosure",
+        "passRule": "No permission expansion, private-source leak or publication inferred from onboarding",
+        "failureAction": "Withhold projection/action and request the specific missing authority"
+      }
+    }
+  ]
+}

@@ -1,12 +1,18 @@
 # Status and scope
 
-Draft release **0.1.0-draft.10**, package format **0.1.0-draft**. The format describes a digital employee; it is not a runtime, marketplace, certification system, or guarantee of business outcomes.
+Draft release **0.1.0-draft.11**, package format **0.1.0-draft**. The format describes a digital employee; it is not a runtime, marketplace, certification system, or guarantee of business outcomes.
 
 ## Current contract
 
 The normative draft contains 33 object kinds, a manifest, exact versioned references and resource integrity rules. Three design layers describe domain expertise (DNA), a company environment, and a specific employee. Deployment and captured state are additional records, not additional design layers. The manifest determines inventory; example filenames describe an illustrative domain rather than prescribe every employee's folder.
 
-Export is checked internally using a private reference toolchain: package validation, schema reproduction and byte preservation across file packaging/restoration. Those tools are not distributed in this first release. Business quality, runtime permission enforcement and admission require separate tests. The synthetic example contains illustrative goals and evidence, not a claim of observed revenue growth.
+Export is checked internally using a private reference toolchain: package validation, schema reproduction and byte preservation across file packaging/restoration. The package/backup reference tools are not distributed. A separate read-only experimental description checker is distributed with the automated checks. Business quality, runtime permission enforcement and admission require separate tests. The synthetic example contains illustrative goals and evidence, not a claim of observed revenue growth.
+
+## Experimental personal self-description
+
+[Agent entry](docs/agents/README.md): versioned profile, composition, assessment and index; 25 design questions and 15 quality questions; a blank collection and the fictional Aster 0.2.0 example. Experimental contracts are under `spec/research/proposals/`, separate from normative object schemas. The description can finish with routed unknowns and partial answers. An assessment is part of the collection and pins the evaluated profile.
+
+Public checks cover file structure, references, hashes and boundary regression cases. They do not establish truth, independent adoption, owner agreement, agent behavior or runtime compatibility. No private real-agent files are included. The broader [issue #4](https://github.com/opendigitalemployee/specification/issues/4) remains open. Backup traversal/cuts, migration assessment and normative personal ownership are outside this increment.
 
 ## Adapters
 

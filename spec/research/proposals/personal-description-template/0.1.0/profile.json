@@ -1,0 +1,40 @@
+{
+  "format": "ode.experimental.personal-self-description",
+  "formatVersion": "0.1.0",
+  "descriptionId": null,
+  "version": "0.1.0",
+  "visibility": "private",
+  "status": "draft",
+  "describedAt": null,
+  "applicationContext": {
+    "scenario": "SELF-01",
+    "profile": "personal foundation",
+    "origin": "https://github.com/opendigitalemployee/specification/issues/2",
+    "versionStatus": "issue proposal; no published profile/scenario version claimed"
+  },
+  "statements": [],
+  "authority": [],
+  "continuity": {
+    "preserved": [],
+    "externalOrMissing": [],
+    "restorePolicy": "manual_recheck",
+    "freshnessRule": "Retain original dates. Recheck current authority and unresolved work before continuing."
+  },
+  "unknowns": [],
+  "checkRefs": [
+    {
+      "objectId": "urn:ode:experiment:chg0003:self-check-performance",
+      "version": "0.1.0"
+    },
+    {
+      "objectId": "urn:ode:experiment:chg0003:self-check-reliability",
+      "version": "0.1.0"
+    },
+    {
+      "objectId": "urn:ode:experiment:chg0003:self-check-alignment",
+      "version": "0.1.0"
+    }
+  ],
+  "sources": [],
+  "basedOn": null
+}

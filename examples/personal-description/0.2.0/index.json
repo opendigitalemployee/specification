@@ -1,0 +1,76 @@
+{
+  "format": "ode.experimental.personal-description-index",
+  "formatVersion": "0.1.0",
+  "version": "0.2.0",
+  "descriptionId": "urn:ode:example:aster:self-description",
+  "synthetic": true,
+  "status": "agent_self_report",
+  "completionMeaning": "Dated authored description, linked self-diagnosis and explicit dependencies with routed gaps; no backup or runtime claim.",
+  "artifacts": [
+    {
+      "role": "reflective_profile",
+      "path": "profile.json",
+      "sha256": "3a6f615ad94ac0b33687cd50cb14e852304455b7895608ef6ac542d62cdc127a"
+    },
+    {
+      "role": "structured_composition",
+      "path": "components.json",
+      "sha256": "09832d7fda4bd65d1cabd441e35d9fbd8c836fef5366817c14ae9d4777ae2bd1"
+    },
+    {
+      "role": "assessment",
+      "path": "assessment.json",
+      "sha256": "4ec72c1a783ef1d2068423bec8a00fc343ee8422918b09f356a802aab393460f"
+    },
+    {
+      "role": "walkthrough",
+      "path": "README.md",
+      "sha256": "6f412a569ba537a5e9ad27d5bb7ca2e7b658fe872838867b77c23393cee6ec90"
+    },
+    {
+      "role": "walkthrough",
+      "path": "README.ru.md",
+      "sha256": "920318a5a73a4d06398f142ef5fb22f4ae8cb4c94ff9e71057eddbe5d7acf42e"
+    }
+  ],
+  "resources": [
+    {
+      "id": "R01",
+      "path": "native/IDENTITY.md",
+      "sha256": "00741c776e490a45fc90bd2247412e92d16d6eb7f17f0d3ec98ecb3437d5ed1e",
+      "relationship": "agent_component"
+    },
+    {
+      "id": "R02",
+      "path": "native/AGENTS.md",
+      "sha256": "897b8acc5c389a3595468696262b50a1315039301629d1eab5f55c146a442c2a",
+      "relationship": "agent_component"
+    },
+    {
+      "id": "R03",
+      "path": "native/memory/PINNED.md",
+      "sha256": "570b30ed88d180056a8db46f68df340dc6ba23d072753d387b8d4cb448b070cc",
+      "relationship": "agent_component"
+    },
+    {
+      "id": "R04",
+      "path": "basis/principles.md",
+      "sha256": "b14aeb496eda88f6b81d78043b7f1501576b76c891668a3359a75c06f9a0d70b",
+      "relationship": "shared_basis"
+    },
+    {
+      "id": "R05",
+      "path": "native/skills/draft-note/SKILL.md",
+      "sha256": "f8b7d1a4d8c86acec418f358a71ccf0aacfc488176ef34532b65352feea30238",
+      "relationship": "shared_basis"
+    },
+    {
+      "id": "R06",
+      "path": "native/skills/draft-note/references/quality.md",
+      "sha256": "0cef6f27f41c538c63b2dad3ba816a40d1b92c42c466c42ece7c143c295a6c22",
+      "relationship": "shared_basis"
+    }
+  ],
+  "dependencyView": "components.json#/dependencies",
+  "backup": "not_created"
+}

@@ -1,5 +1,15 @@
 # Change history
 
+## 0.1.0-draft.11 — experimental personal-agent self-description
+
+Added an agent-facing entry and a finite self-description procedure: profile, concrete composition, linked self-diagnosis and exact index. Added reusable experimental index/composition/assessment schemas, a blank collection, 25 design questions and 15 quality questions, and the synthetic Aster 0.2.0 collection with native identity/instructions, memory, shared basis and selected/unselected skills.
+
+The structural checker and automated regression cases verify sources, hashes, assessment pins, explicit gaps and agent/environment boundaries. A second independently constructed author fixture exercises different file paths and no selected skills. This is not independent agent repetition or a behavioral evaluation. Filled answers, agreement, capability, authority and runtime readiness remain separate.
+
+Self-description ends at indexed files and meaningful dependencies. Traversal, tail cutting, archive assembly and restoration remain separate activities. No private real-agent description is published. Normative package format 0.1.0-draft, its 33 kinds and existing clinic example bytes are unchanged. Person/personal ownership is still a proposal.
+
+This release completes a first public slice of [issue #4](https://github.com/opendigitalemployee/specification/issues/4); multi-day onboarding, useful work, feedback and longitudinal improvement remain open. Publication is incremental, not closure of the full request.
+
 ## 0.1.0-draft.10 — shared-language visual identity
 
 Adopted the square-and-round project mark and the shared-outcome banner. Added transparent square PNGs for the common mark and repository avatar, with a short asset guide. The banner connects shared language, coordinated action and measurable outcomes. Package format, normative specification, schemas and synthetic example bytes remain unchanged.

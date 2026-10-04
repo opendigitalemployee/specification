@@ -1,0 +1,194 @@
+{
+  "format": "ode.experimental.personal-description-components",
+  "version": "0.2.0",
+  "agentDescriptionId": "urn:ode:example:aster:self-description",
+  "synthetic": true,
+  "scope": "Existing described agent and explicit dependencies; no backup plan or full environment description",
+  "entryRoute": [
+    "R02",
+    "R01",
+    "R04",
+    "R03"
+  ],
+  "dependencies": [
+    {
+      "dependencyId": "R01",
+      "relationship": "agent_component",
+      "purpose": "Identity, entry instruction or own pinned memory",
+      "locator": {
+        "path": "native/IDENTITY.md"
+      },
+      "revision": {
+        "status": "known",
+        "value": "0.1.0"
+      },
+      "sha256": "00741c776e490a45fc90bd2247412e92d16d6eb7f17f0d3ec98ecb3437d5ed1e",
+      "descriptionInclusion": "included_file",
+      "captureSelection": "not_selected",
+      "basis": "authored_synthetic_definition"
+    },
+    {
+      "dependencyId": "R02",
+      "relationship": "agent_component",
+      "purpose": "Identity, entry instruction or own pinned memory",
+      "locator": {
+        "path": "native/AGENTS.md"
+      },
+      "revision": {
+        "status": "known",
+        "value": "0.1.0"
+      },
+      "sha256": "897b8acc5c389a3595468696262b50a1315039301629d1eab5f55c146a442c2a",
+      "descriptionInclusion": "included_file",
+      "captureSelection": "not_selected",
+      "basis": "authored_synthetic_definition"
+    },
+    {
+      "dependencyId": "R03",
+      "relationship": "agent_component",
+      "purpose": "Identity, entry instruction or own pinned memory",
+      "locator": {
+        "path": "native/memory/PINNED.md"
+      },
+      "revision": {
+        "status": "known",
+        "value": "0.1.0"
+      },
+      "sha256": "570b30ed88d180056a8db46f68df340dc6ba23d072753d387b8d4cb448b070cc",
+      "descriptionInclusion": "included_file",
+      "captureSelection": "not_selected",
+      "basis": "authored_synthetic_definition"
+    },
+    {
+      "dependencyId": "R04",
+      "relationship": "shared_basis",
+      "purpose": "Selected shared guidance",
+      "locator": {
+        "path": "basis/principles.md"
+      },
+      "revision": {
+        "status": "known",
+        "value": "0.1.0"
+      },
+      "sha256": "b14aeb496eda88f6b81d78043b7f1501576b76c891668a3359a75c06f9a0d70b",
+      "descriptionInclusion": "included_file",
+      "captureSelection": "not_selected",
+      "basis": "authored_synthetic_definition"
+    },
+    {
+      "dependencyId": "R05",
+      "relationship": "shared_basis",
+      "purpose": "Selected native method or supporting guidance",
+      "locator": {
+        "path": "native/skills/draft-note/SKILL.md"
+      },
+      "revision": {
+        "status": "known",
+        "value": "0.1.0"
+      },
+      "sha256": "f8b7d1a4d8c86acec418f358a71ccf0aacfc488176ef34532b65352feea30238",
+      "descriptionInclusion": "included_file",
+      "captureSelection": "not_selected",
+      "basis": "authored_synthetic_definition"
+    },
+    {
+      "dependencyId": "R06",
+      "relationship": "shared_basis",
+      "purpose": "Selected native method or supporting guidance",
+      "locator": {
+        "path": "native/skills/draft-note/references/quality.md"
+      },
+      "revision": {
+        "status": "known",
+        "value": "0.1.0"
+      },
+      "sha256": "0cef6f27f41c538c63b2dad3ba816a40d1b92c42c466c42ece7c143c295a6c22",
+      "descriptionInclusion": "included_file",
+      "captureSelection": "not_selected",
+      "basis": "authored_synthetic_definition"
+    },
+    {
+      "dependencyId": "ENV01",
+      "relationship": "environment_dependency",
+      "purpose": "Alex supplies task-specific project material for future note drafting",
+      "locator": {
+        "uri": "urn:ode:fictional:alex:project-workspace"
+      },
+      "revision": {
+        "status": "unknown",
+        "value": null
+      },
+      "descriptionInclusion": "external_reference",
+      "captureSelection": "not_selected",
+      "accessStatus": "not_verified",
+      "boundary": "A logical workspace requirement; no directory selection or snapshot implied",
+      "basis": "authored_synthetic_definition"
+    },
+    {
+      "dependencyId": "ENV02",
+      "relationship": "environment_dependency",
+      "purpose": "Illustrate an available method that Aster has not selected",
+      "locator": {
+        "uri": "urn:ode:fictional:skill:schedule-meeting"
+      },
+      "revision": {
+        "status": "unknown",
+        "value": null
+      },
+      "descriptionInclusion": "external_reference",
+      "captureSelection": "not_selected",
+      "accessStatus": "not_verified",
+      "boundary": "Availability is fictional catalog metadata; no ability or authority claim",
+      "basis": "authored_synthetic_definition"
+    }
+  ],
+  "methods": [
+    {
+      "methodId": "draft-note",
+      "dependencyRefs": [
+        "R05",
+        "R06"
+      ],
+      "availability": "included_native_files",
+      "selected": true,
+      "applicationStatus": "not_run",
+      "capabilityEvidence": []
+    },
+    {
+      "methodId": "schedule-meeting",
+      "dependencyRefs": [
+        "ENV02"
+      ],
+      "availability": "reported_available",
+      "selected": false,
+      "applicationStatus": "not_selected",
+      "capabilityEvidence": []
+    }
+  ],
+  "formalWorks": [],
+  "formalWorkStatus": "not_defined",
+  "preservation": {
+    "descriptionOnly": true,
+    "backupCreated": false,
+    "capturePlan": null,
+    "restoreStatus": "not_assessed"
+  },
+  "followUps": [
+    {
+      "id": "FUP01",
+      "route": "owner_conversation",
+      "question": "Choose useful work and acceptance/cost baseline"
+    },
+    {
+      "id": "FUP02",
+      "route": "source_analysis",
+      "question": "Check selected runtime and specifically supplied data/access"
+    },
+    {
+      "id": "FUP03",
+      "route": "standard_design",
+      "question": "Personal principal remains a proposal; gather experience with this experimental output contract"
+    }
+  ],
+  "formatVersion": "0.1.0"
+}

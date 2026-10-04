@@ -36,3 +36,8 @@ jobs:
               assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == item['sha256'], name
           print('PASS: JSON, schemas, example objects and exported hashes; no runtime tests claimed')
           PYTHON
+      - name: Check experimental self-description and regression cases
+        run: |
+          python -B .github/checks/self_description.py --standard-root . --index examples/personal-description/0.2.0/index.json
+          python -B .github/checks/self_description.py --standard-root . --index spec/research/proposals/personal-description-template/0.1.0/index.json --allow-draft
+          python -B -m unittest discover -s .github/checks -p 'test_self_description.py' -v

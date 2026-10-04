@@ -11,7 +11,7 @@
 [![docs license: CC BY 4.0](docs/badges/docs-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt)
 <!-- project-badges:end -->
 
-**Draft release 0.1.0-draft.10 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
+**Draft release 0.1.0-draft.11 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
 
 Design a digital employee around a **measurable business outcome**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Preserve that design independently of a runtime.
 
@@ -21,6 +21,10 @@ Design a digital employee around a **measurable business outcome**. Agree on how
 2. [Read the package specification](spec/SPECIFICATION.md).
 3. Inspect the synthetic [employee manifest](examples/clinic-employee/manifest.json) and follow its object paths.
 4. Check [scope, maturity and next-version proposals](STATUS.md).
+
+## For personal agents
+
+Start with the [self-description guide](docs/agents/README.md), use the [blank collection](spec/research/proposals/personal-description-template/0.1.0/README.md), and compare [Aster](examples/personal-description/0.2.0/README.md). This experimental route includes composition and linked self-diagnosis with known gaps. It is separate from normative ClientAgent ownership and from a backup or runtime trial.
 
 ## Contribute
 
@@ -32,13 +36,14 @@ Open the [synthetic package manifest](examples/clinic-employee/manifest.json), t
 
 The [backup manifest](examples/clinic-backup/manifest.json) shows included files, context and restoration limits. No actions are launched by reading the example.
 
-CLI tools and runtime adapters are **not included in this first release**. Schema and example checks are automated; employee execution, permissions and measurable business impact still require independent testing.
+Package/backup CLI tools and runtime adapters are **not distributed**. The read-only experimental description checker is included as an automated check. Schema and example checks are automated; employee execution, permissions and measurable business impact still require independent testing.
 
 ## What is included
 
 - A versioned specification, JSON Schema, reference rules and type catalog.
 - An EN/RU [glossary](spec/glossary.json) and English [composition notes](spec/COMPOSITION.md) explaining how existing formats fit together.
 - One synthetic employee scenario and its file backup, with native skill resources.
+- An experimental personal-agent description route, schemas, blank collection, self-diagnosis and synthetic Aster example.
 - [Change history](CHANGELOG.md), [contribution guidance](CONTRIBUTING.md), and a generated [release manifest](release-manifest.json) recording sources, hashes and checks.
 
 The website is [opendigitalemployee.org](https://opendigitalemployee.org). Definitions originate in the standard source; website copy and visual explanations are separate views. This directory is generated: propose changes through review and incorporate them into the source before re-export.

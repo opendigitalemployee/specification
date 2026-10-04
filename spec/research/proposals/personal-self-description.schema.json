@@ -1,0 +1,437 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ode:experiment:chg0003:personal-self-description:0.1.0",
+  "title": "Experimental personal self-description output, CHG-0003, 0.1.0",
+  "description": "A bounded experiment output contract. Not an ODE normative object, package profile, permission enforcement or Person contract. Schema validity does not prove truth or useful behavior.",
+  "type": "object",
+  "required": [
+    "format",
+    "formatVersion",
+    "descriptionId",
+    "version",
+    "visibility",
+    "status",
+    "describedAt",
+    "applicationContext",
+    "statements",
+    "authority",
+    "continuity",
+    "unknowns",
+    "checkRefs",
+    "sources",
+    "basedOn"
+  ],
+  "properties": {
+    "format": {
+      "const": "ode.experimental.personal-self-description"
+    },
+    "formatVersion": {
+      "const": "0.1.0"
+    },
+    "descriptionId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "visibility": {
+      "enum": [
+        "private",
+        "public_candidate"
+      ]
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "agent_self_report",
+        "owner_reviewed"
+      ]
+    },
+    "describedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "applicationContext": {
+      "type": "object",
+      "required": [
+        "scenario",
+        "profile",
+        "origin",
+        "versionStatus"
+      ],
+      "properties": {
+        "scenario": {
+          "const": "SELF-01"
+        },
+        "profile": {
+          "const": "personal foundation"
+        },
+        "origin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "versionStatus": {
+          "const": "issue proposal; no published profile/scenario version claimed"
+        }
+      },
+      "additionalProperties": false
+    },
+    "statements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claimId",
+          "topic",
+          "text",
+          "basis",
+          "sourceRefs",
+          "scope",
+          "asOf",
+          "reviewState",
+          "qualityAreas",
+          "designConditions",
+          "storagePlacement"
+        ],
+        "properties": {
+          "claimId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "topic": {
+            "enum": [
+              "identity",
+              "purpose",
+              "role",
+              "person-relation",
+              "values",
+              "interaction",
+              "environment",
+              "memory",
+              "authority",
+              "current-work",
+              "development",
+              "limitation"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "enum": [
+              "source_document",
+              "current_instruction",
+              "observed_action",
+              "agent_self_report",
+              "inference"
+            ]
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "sourceId",
+                "version"
+              ],
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "scope": {
+            "enum": [
+              "stable_definition",
+              "current_assignment",
+              "historical_record",
+              "current_observation"
+            ]
+          },
+          "asOf": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reviewState": {
+            "enum": [
+              "unreviewed",
+              "source_checked",
+              "disputed",
+              "owner_confirmed"
+            ]
+          },
+          "qualityAreas": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "work-outcomes",
+                "interaction",
+                "knowledge-memory",
+                "authority-safety",
+                "oversight-development"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "designConditions": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "outcomes-alignment",
+                "domain-expertise",
+                "working-environment",
+                "governance",
+                "platform-evolution"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "storagePlacement": {
+            "enum": [
+              "dna",
+              "environment",
+              "agent",
+              "state",
+              "needs_design"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "authority": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "action",
+          "scope",
+          "status",
+          "sourceRefs",
+          "enforcement"
+        ],
+        "properties": {
+          "action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "authorized",
+              "prohibited",
+              "requires_specific_request",
+              "unknown"
+            ]
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "sourceId",
+                "version"
+              ],
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "enforcement": {
+            "enum": [
+              "instruction",
+              "not_verified"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "continuity": {
+      "type": "object",
+      "required": [
+        "preserved",
+        "externalOrMissing",
+        "restorePolicy",
+        "freshnessRule"
+      ],
+      "properties": {
+        "preserved": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "externalOrMissing": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "restorePolicy": {
+          "const": "manual_recheck"
+        },
+        "freshnessRule": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "question",
+          "sourceRefs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "sourceId",
+                "version"
+              ],
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "checkRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "objectId",
+          "version"
+        ],
+        "properties": {
+          "objectId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceId",
+          "version",
+          "kind"
+        ],
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "basedOn": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "descriptionId",
+            "version"
+          ],
+          "properties": {
+            "descriptionId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

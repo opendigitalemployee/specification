@@ -1,0 +1,316 @@
+{
+  "format": "ode.experimental.self-diagnosis-checklists",
+  "version": "0.1.0",
+  "date": "2026-10-04",
+  "status": "informative_experiment",
+  "role": "Agent describing and diagnosing its current description",
+  "taskContext": "CHG-0003 / SELF-01; not a new normative role or profile kind",
+  "fillStatuses": {
+    "filled": "Adequate answer for the declared scope, with a resolvable basis where needed; not proof of behavior.",
+    "partial": "Some answer exists but required details remain unresolved.",
+    "missing": "No substantive answer. An explicit unknown stays visible but does not fill the answer.",
+    "not_applicable": "Excluded for a stated scope-specific reason, never silently counted as filled."
+  },
+  "independentAxes": {
+    "agreementStatus": "not_confirmed / agreed for review of the assessment; retain the description claim basis and reviewState separately",
+    "behaviorEvidence": "not_evaluated / scoped_observation / tested_with_evidence; never inferred from fill status"
+  },
+  "designConditions": [
+    {
+      "id": "outcomes-alignment",
+      "title": "Outcome and alignment"
+    },
+    {
+      "id": "domain-expertise",
+      "title": "Domain expertise"
+    },
+    {
+      "id": "working-environment",
+      "title": "Prepared environment"
+    },
+    {
+      "id": "governance",
+      "title": "Governance"
+    },
+    {
+      "id": "platform-evolution",
+      "title": "Platform and evolution"
+    }
+  ],
+  "qualityAreas": [
+    {
+      "id": "work-outcomes",
+      "title": "Work and outcomes"
+    },
+    {
+      "id": "interaction",
+      "title": "Interaction"
+    },
+    {
+      "id": "knowledge-memory",
+      "title": "Knowledge and memory"
+    },
+    {
+      "id": "authority-safety",
+      "title": "Authority and safety"
+    },
+    {
+      "id": "oversight-development",
+      "title": "Oversight and development"
+    }
+  ],
+  "pillars": [
+    {
+      "id": "performance",
+      "title": "Performance"
+    },
+    {
+      "id": "reliability",
+      "title": "Reliability"
+    },
+    {
+      "id": "alignment",
+      "title": "Alignment"
+    }
+  ],
+  "designChecklist": [
+    {
+      "checkId": "D01",
+      "condition": "outcomes-alignment",
+      "question": "Who benefits and why does this agent exist?"
+    },
+    {
+      "checkId": "D02",
+      "condition": "outcomes-alignment",
+      "question": "Which roles are stable, and which assignment is current?"
+    },
+    {
+      "checkId": "D03",
+      "condition": "outcomes-alignment",
+      "question": "What useful outcomes, work outputs and acceptance criteria are expected?"
+    },
+    {
+      "checkId": "D04",
+      "condition": "outcomes-alignment",
+      "question": "Which priorities and decision rules resolve competing goals?"
+    },
+    {
+      "checkId": "D05",
+      "condition": "outcomes-alignment",
+      "question": "How will benefit, baseline and human review/correction costs be assessed?"
+    },
+    {
+      "checkId": "D06",
+      "condition": "domain-expertise",
+      "question": "Which domains, capabilities and qualification limits are claimed?"
+    },
+    {
+      "checkId": "D07",
+      "condition": "domain-expertise",
+      "question": "Which repeatable professional methods and steps are used?"
+    },
+    {
+      "checkId": "D08",
+      "condition": "domain-expertise",
+      "question": "What inputs, outputs and prerequisites does each selected work require?"
+    },
+    {
+      "checkId": "D09",
+      "condition": "domain-expertise",
+      "question": "What professional acceptance rules and checks apply to selected work?"
+    },
+    {
+      "checkId": "D10",
+      "condition": "domain-expertise",
+      "question": "What evidence and limits support each capability claim?"
+    },
+    {
+      "checkId": "D11",
+      "condition": "working-environment",
+      "question": "Which workspaces and knowledge sources serve which tasks?"
+    },
+    {
+      "checkId": "D12",
+      "condition": "working-environment",
+      "question": "Which tools and connections exist, and what support is verified?"
+    },
+    {
+      "checkId": "D13",
+      "condition": "working-environment",
+      "question": "How are required data coverage, freshness and conflicts handled?"
+    },
+    {
+      "checkId": "D14",
+      "condition": "working-environment",
+      "question": "How is memory organized and selected for the current task?"
+    },
+    {
+      "checkId": "D15",
+      "condition": "working-environment",
+      "question": "Which data boundaries and external dependencies limit the work?"
+    },
+    {
+      "checkId": "D16",
+      "condition": "governance",
+      "question": "Who assigns work, reviews it and bears responsibility for decisions?"
+    },
+    {
+      "checkId": "D17",
+      "condition": "governance",
+      "question": "Which actions are currently allowed, forbidden or unresolved, on what basis?"
+    },
+    {
+      "checkId": "D18",
+      "condition": "governance",
+      "question": "What standing autonomy, approval and escalation rules apply?"
+    },
+    {
+      "checkId": "D19",
+      "condition": "governance",
+      "question": "What happens on revocation, cancellation, stale authority or failure?"
+    },
+    {
+      "checkId": "D20",
+      "condition": "governance",
+      "question": "Which personal information and relationships may be used or disclosed?"
+    },
+    {
+      "checkId": "D21",
+      "condition": "platform-evolution",
+      "question": "Which runtime/model/configuration versions and supported capabilities are used?"
+    },
+    {
+      "checkId": "D22",
+      "condition": "platform-evolution",
+      "question": "Which resource, attention, time and operating limits apply?"
+    },
+    {
+      "checkId": "D23",
+      "condition": "platform-evolution",
+      "question": "What is actually preserved, external or missing from this description snapshot?"
+    },
+    {
+      "checkId": "D24",
+      "condition": "platform-evolution",
+      "question": "Which checks and manual decisions precede restoration and continuation?"
+    },
+    {
+      "checkId": "D25",
+      "condition": "platform-evolution",
+      "question": "How are changes versioned, reviewed, regression-checked and rolled back?"
+    }
+  ],
+  "qualityChecklist": [
+    {
+      "checkId": "Q11",
+      "area": "work-outcomes",
+      "pillar": "performance",
+      "question": "What useful output, contribution and cost are expected?"
+    },
+    {
+      "checkId": "Q12",
+      "area": "work-outcomes",
+      "pillar": "reliability",
+      "question": "How is work output checked and how are exceptions handled?"
+    },
+    {
+      "checkId": "Q13",
+      "area": "work-outcomes",
+      "pillar": "alignment",
+      "question": "How does work follow priorities and commitments?"
+    },
+    {
+      "checkId": "Q21",
+      "area": "interaction",
+      "pillar": "performance",
+      "question": "What response or initiative helps the person take the next decision?"
+    },
+    {
+      "checkId": "Q22",
+      "area": "interaction",
+      "pillar": "reliability",
+      "question": "How is context retained and a handoff or misunderstanding reconciled?"
+    },
+    {
+      "checkId": "Q23",
+      "area": "interaction",
+      "pillar": "alignment",
+      "question": "Who is addressed, what tone is appropriate and what can be disclosed?"
+    },
+    {
+      "checkId": "Q31",
+      "area": "knowledge-memory",
+      "pillar": "performance",
+      "question": "Which knowledge must be available for the chosen work?"
+    },
+    {
+      "checkId": "Q32",
+      "area": "knowledge-memory",
+      "pillar": "reliability",
+      "question": "How are source revisions, dates, contradictions and staleness exposed?"
+    },
+    {
+      "checkId": "Q33",
+      "area": "knowledge-memory",
+      "pillar": "alignment",
+      "question": "What privacy, consent and data-boundary rules apply?"
+    },
+    {
+      "checkId": "Q41",
+      "area": "authority-safety",
+      "pillar": "performance",
+      "question": "Which access is necessary and actually available for the work?"
+    },
+    {
+      "checkId": "Q42",
+      "area": "authority-safety",
+      "pillar": "reliability",
+      "question": "How are consequences limited and stop/recovery behavior defined?"
+    },
+    {
+      "checkId": "Q43",
+      "area": "authority-safety",
+      "pillar": "alignment",
+      "question": "Which permission and approval constrains each action?"
+    },
+    {
+      "checkId": "Q51",
+      "area": "oversight-development",
+      "pillar": "performance",
+      "question": "How are effect and total human/agent costs measured?"
+    },
+    {
+      "checkId": "Q52",
+      "area": "oversight-development",
+      "pillar": "reliability",
+      "question": "What monitoring, regression checks and rollback follow a change?"
+    },
+    {
+      "checkId": "Q53",
+      "area": "oversight-development",
+      "pillar": "alignment",
+      "question": "Who approves changes and how are goals and permissions preserved?"
+    }
+  ],
+  "descriptionMaturityProposal": {
+    "status": "proposed_for_discussion",
+    "scope": "Maturity of a versioned description for an explicitly selected use; separate from definition status, capability evidence, permissions and runtime readiness.",
+    "levels": [
+      {
+        "level": 1,
+        "name": "Orientation",
+        "criterion": "Purpose, beneficiary, roles and current boundaries are explicit; sources and unknowns are visible."
+      },
+      {
+        "level": 2,
+        "name": "Working description",
+        "criterion": "All applicable checklist questions for the declared use have adequate answers, relationships and dependencies; exceptions and unresolved blockers are explicit. Any non-applicable item has a reason."
+      },
+      {
+        "level": 3,
+        "name": "Maintained description",
+        "criterion": "Level 2 plus responsible-party review, consistent current source/version pins, ownership, revision triggers and a defined change/review cycle. No passing behavior or expanded authority is implied."
+      }
+    ]
+  }
+}

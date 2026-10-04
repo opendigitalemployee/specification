@@ -23,6 +23,7 @@
     }
   },
   "checks": {
+    "experimentalSelfDescription": true,
     "fileAdapters": [],
     "liveRuntimeTested": false,
     "markdownLinks": true,
@@ -38,63 +39,77 @@
       "license": "Apache-2.0",
       "sha256": "c16cce57572ddc9f9a3ccfd71dcaecaa2a2290eada0cdd0beec691b0df43af82",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     ".github/ISSUE_TEMPLATE/02-problem.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "e6c7042b7799ebf317c95c08d3f8c9fdd37ad96344ffc1cb03b5d98a1c3268b0",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     ".github/ISSUE_TEMPLATE/config.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "814f4d43c2c84e0e545924ea093852909e3180edcf3a71fe709ef32ca7efa829",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
+    },
+    ".github/checks/self_description.py": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "78ff9da0d6eb4a439e7ba1f02611c1dc4267c33ef288ddb5c03e09fe5e2eea26",
+      "source": ".github/checks/self_description.py",
+      "sourceSha256": "78ff9da0d6eb4a439e7ba1f02611c1dc4267c33ef288ddb5c03e09fe5e2eea26"
+    },
+    ".github/checks/test_self_description.py": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "954ae78b9bbb5e8b3118d9c08d684fc9d3454d9b965915d6fd7b015ffb1da023",
+      "source": ".github/checks/test_self_description.py",
+      "sourceSha256": "954ae78b9bbb5e8b3118d9c08d684fc9d3454d9b965915d6fd7b015ffb1da023"
     },
     ".github/workflows/check.yml": {
       "adapted": true,
       "license": "Apache-2.0",
-      "sha256": "c91bbdaf41d0932131ce376e6ef1c597103399ceff55819d4be25fbfa8bbf440",
+      "sha256": "bfa5b54c0f53ac63bfde7ab3ea0f832a4443b31cc97944a64332efb762115a28",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     ".gitignore": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "daa1621cef56cfbce76f76b5a024ad3c94c5057fcaebcb4bd31996ea592cd403",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "AGENTS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "3d65982e24f12049d8b6f5a94dfb761774218d95f170aeae2c3d4f222ad2b5cf",
+      "sha256": "fa62bed90a0f89f4f69eac13ee8b5f35829b3250ccdb6082c7d0234dbee8d0a8",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "CHANGELOG.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "4f8e158673c2a59e6e8ea417548c6bd12116359e96789d63f8073825ed764d52",
+      "sha256": "d8ca1761bfeb9a97f870a3d97c84778c08a91134b7cffc9737d83d508f0c204f",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "CONTRIBUTING.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "f00b3192503ace5a0991bdb2858046cb66d1513c5dd045dfee796e09d2d8e97b",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "CONTRIBUTORS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "8683e3393b0223bb324908ae5ac7ffacdbc94ff97dde5da86f77b685a049ad1a",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "LICENSE": {
       "adapted": false,
@@ -115,42 +130,91 @@
       "license": "CC-BY-4.0",
       "sha256": "678caaaddf86febf1d29d9a9ba2cc6f150a482d952ed2e3642496721f463e4a4",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "NOTICE": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "3a552cc2f12ce3bf8f7262bdd8ab289d56be43c8836cf32d49a7c0288a727151",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "README.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "3a747997407408c2f5c75dd50f7d41395a513fe906f31b7f6f162922b55e0952",
+      "sha256": "e0ab1a558acd78c1c7cbb1596299f42562388f2487fdb3d4fc68dfff92dd61e2",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "STATUS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "bf3146edf327870803928de04148105d91f29054424b5c08417057feaf3ea863",
+      "sha256": "0862a36cf01d99ec5e5e70a33fe656788ec99762f2313a7bee231646210c4056",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "docs/BRAND.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "d89b382c0edd1eb8460e74f8445d587e566292e511de57793d502eee9ddad7c1",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
     },
     "docs/OVERVIEW.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "7c198c9eac376847cf5cdae07a51f3c94d243b5c5ae045c71affce7f046a3c5a",
       "source": "spec/public-export.json",
-      "sourceSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872"
+      "sourceSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097"
+    },
+    "docs/agents/README.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "29c8f3458eb6f9b7c0a57213465345661b067a99203f2335ca2a878b57b7a14c",
+      "source": "docs/agents/README.md",
+      "sourceSha256": "ce83b64f38ade74a1485ea70c9ca08e2715ec1fd944d8593d0532705e87171da"
+    },
+    "docs/agents/aster-self-diagnosis.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "e2c6adf8433d96692c5321e333fb7cf3d8638793745a6eee3c8cdd433fbc8cd0",
+      "source": "docs/agents/aster-self-diagnosis.md",
+      "sourceSha256": "47749f3fbbf4fc366743e282fa79d8a9b3f7019ffbbf5705c0d2ee86ad134ba4"
+    },
+    "docs/agents/component-description.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "a532920d4792f413ef506b94e4e8b67165fd239b697a0f60a7323f18c115278a",
+      "source": "docs/agents/component-description.md",
+      "sourceSha256": "a2ac2c7354f31f51ed271b1b73b233af93b8a5a3e5f1f549f878383f36f09d5c"
+    },
+    "docs/agents/description-and-restoration.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "23ef196514ac5223d241f4b4b9895785b79e9fe9264c788a1b3fc014be59e1d8",
+      "source": "docs/agents/description-and-restoration.md",
+      "sourceSha256": "8a64c9faa7a677892e76865e2ae8d033a1cbf20868bcdaa3a65041d4ded84e29"
+    },
+    "docs/agents/self-description-contract.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "2147c99d3c1d74bb3b6c7a18856ee13c3d43f335df6700b7e747a4df227e1c85",
+      "source": "docs/agents/self-description-contract.md",
+      "sourceSha256": "867d42fb00f7a655523c2e62508ebab751a6db7f7c412831b8eb0e816fc5df07"
+    },
+    "docs/agents/self-diagnosis.checklist.json": {
+      "adapted": false,
+      "license": "CC-BY-4.0",
+      "sha256": "1b5b43aa8be28abab811f9a43b0e56409bcd3cfdf3992e7d71c53f860b393e46",
+      "source": "docs/agents/self-diagnosis.checklist.json",
+      "sourceSha256": "1b5b43aa8be28abab811f9a43b0e56409bcd3cfdf3992e7d71c53f860b393e46"
+    },
+    "docs/agents/self-diagnosis.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "40888587852cbd1bab40bbdfd5c31dfab55f8572109072fa3acf2d48cff6940c",
+      "source": "docs/agents/self-diagnosis.md",
+      "sourceSha256": "3dad2fd7791286b59c6c2495223849bdfa2eaa648cb0765e79706499267641db"
     },
     "docs/assets/github-banner.png": {
       "adapted": false,
@@ -838,6 +902,90 @@
       "source": "examples/clinic-employee/state/demo/1.0.0/source-receipt.json",
       "sourceSha256": "2cfafa09a4f0d57d7e48ff936fc3556d62cd10b41376be9c3ba8a28d2e6373d7"
     },
+    "examples/personal-description/0.2.0/README.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "6f412a569ba537a5e9ad27d5bb7ca2e7b658fe872838867b77c23393cee6ec90",
+      "source": "examples/personal-description/0.2.0/README.md",
+      "sourceSha256": "6f412a569ba537a5e9ad27d5bb7ca2e7b658fe872838867b77c23393cee6ec90"
+    },
+    "examples/personal-description/0.2.0/README.ru.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "920318a5a73a4d06398f142ef5fb22f4ae8cb4c94ff9e71057eddbe5d7acf42e",
+      "source": "examples/personal-description/0.2.0/README.ru.md",
+      "sourceSha256": "920318a5a73a4d06398f142ef5fb22f4ae8cb4c94ff9e71057eddbe5d7acf42e"
+    },
+    "examples/personal-description/0.2.0/assessment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "4ec72c1a783ef1d2068423bec8a00fc343ee8422918b09f356a802aab393460f",
+      "source": "examples/personal-description/0.2.0/assessment.json",
+      "sourceSha256": "4ec72c1a783ef1d2068423bec8a00fc343ee8422918b09f356a802aab393460f"
+    },
+    "examples/personal-description/0.2.0/basis/principles.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "b14aeb496eda88f6b81d78043b7f1501576b76c891668a3359a75c06f9a0d70b",
+      "source": "examples/personal-description/0.2.0/basis/principles.md",
+      "sourceSha256": "b14aeb496eda88f6b81d78043b7f1501576b76c891668a3359a75c06f9a0d70b"
+    },
+    "examples/personal-description/0.2.0/components.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "09832d7fda4bd65d1cabd441e35d9fbd8c836fef5366817c14ae9d4777ae2bd1",
+      "source": "examples/personal-description/0.2.0/components.json",
+      "sourceSha256": "09832d7fda4bd65d1cabd441e35d9fbd8c836fef5366817c14ae9d4777ae2bd1"
+    },
+    "examples/personal-description/0.2.0/index.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "f5daaf90ecb41514fd8f6643f6a1c93db05350bdd5263fbfdc05ad239d8e12aa",
+      "source": "examples/personal-description/0.2.0/index.json",
+      "sourceSha256": "f5daaf90ecb41514fd8f6643f6a1c93db05350bdd5263fbfdc05ad239d8e12aa"
+    },
+    "examples/personal-description/0.2.0/native/AGENTS.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "897b8acc5c389a3595468696262b50a1315039301629d1eab5f55c146a442c2a",
+      "source": "examples/personal-description/0.2.0/native/AGENTS.md",
+      "sourceSha256": "897b8acc5c389a3595468696262b50a1315039301629d1eab5f55c146a442c2a"
+    },
+    "examples/personal-description/0.2.0/native/IDENTITY.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "00741c776e490a45fc90bd2247412e92d16d6eb7f17f0d3ec98ecb3437d5ed1e",
+      "source": "examples/personal-description/0.2.0/native/IDENTITY.md",
+      "sourceSha256": "00741c776e490a45fc90bd2247412e92d16d6eb7f17f0d3ec98ecb3437d5ed1e"
+    },
+    "examples/personal-description/0.2.0/native/memory/PINNED.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "570b30ed88d180056a8db46f68df340dc6ba23d072753d387b8d4cb448b070cc",
+      "source": "examples/personal-description/0.2.0/native/memory/PINNED.md",
+      "sourceSha256": "570b30ed88d180056a8db46f68df340dc6ba23d072753d387b8d4cb448b070cc"
+    },
+    "examples/personal-description/0.2.0/native/skills/draft-note/SKILL.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "f8b7d1a4d8c86acec418f358a71ccf0aacfc488176ef34532b65352feea30238",
+      "source": "examples/personal-description/0.2.0/native/skills/draft-note/SKILL.md",
+      "sourceSha256": "f8b7d1a4d8c86acec418f358a71ccf0aacfc488176ef34532b65352feea30238"
+    },
+    "examples/personal-description/0.2.0/native/skills/draft-note/references/quality.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "0cef6f27f41c538c63b2dad3ba816a40d1b92c42c466c42ece7c143c295a6c22",
+      "source": "examples/personal-description/0.2.0/native/skills/draft-note/references/quality.md",
+      "sourceSha256": "0cef6f27f41c538c63b2dad3ba816a40d1b92c42c466c42ece7c143c295a6c22"
+    },
+    "examples/personal-description/0.2.0/profile.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "3a6f615ad94ac0b33687cd50cb14e852304455b7895608ef6ac542d62cdc127a",
+      "source": "examples/personal-description/0.2.0/profile.json",
+      "sourceSha256": "3a6f615ad94ac0b33687cd50cb14e852304455b7895608ef6ac542d62cdc127a"
+    },
     "spec/COMPOSITION.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
@@ -858,6 +1006,83 @@
       "sha256": "2736784ee8bc7bbc30809c911986cb545c1932468220af5eaa7bc35cc6ab9eae",
       "source": "spec/glossary.json",
       "sourceSha256": "2736784ee8bc7bbc30809c911986cb545c1932468220af5eaa7bc35cc6ab9eae"
+    },
+    "spec/research/proposals/personal-description-components.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "3746ea801983a7137ccbcaf14f8160216f511742411632487f698b751d9c3540",
+      "source": "spec/research/proposals/personal-description-components.schema.json",
+      "sourceSha256": "3746ea801983a7137ccbcaf14f8160216f511742411632487f698b751d9c3540"
+    },
+    "spec/research/proposals/personal-description-index.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "480de2f3a617756f8b2e0644b5867ac2ace0b2ddc491c75a4cf935792ac49721",
+      "source": "spec/research/proposals/personal-description-index.schema.json",
+      "sourceSha256": "480de2f3a617756f8b2e0644b5867ac2ace0b2ddc491c75a4cf935792ac49721"
+    },
+    "spec/research/proposals/personal-description-template/0.1.0/README.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "572455352399a76cc4ef477d0a2e5efcc09e5ce1a0e828b56769be4589ce14a9",
+      "source": "spec/research/proposals/personal-description-template/0.1.0/README.md",
+      "sourceSha256": "d7c087a3cf3b27a0d857386f708171b3795f42120c01cea577c00d69957d2a58"
+    },
+    "spec/research/proposals/personal-description-template/0.1.0/assessment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "e5c9925e7527afebe4279b824a17f7db6333e5039bcf27b721fbed84617e0526",
+      "source": "spec/research/proposals/personal-description-template/0.1.0/assessment.json",
+      "sourceSha256": "e5c9925e7527afebe4279b824a17f7db6333e5039bcf27b721fbed84617e0526"
+    },
+    "spec/research/proposals/personal-description-template/0.1.0/components.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "f5bd8f900381c45c373b57091ae4f036a25b9215c80bb06d23bc814b1932a73d",
+      "source": "spec/research/proposals/personal-description-template/0.1.0/components.json",
+      "sourceSha256": "f5bd8f900381c45c373b57091ae4f036a25b9215c80bb06d23bc814b1932a73d"
+    },
+    "spec/research/proposals/personal-description-template/0.1.0/index.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "fbe5315fc3d9c573e520e292f731f09492e312cbf114eb0b38f13e2941b484b2",
+      "source": "spec/research/proposals/personal-description-template/0.1.0/index.json",
+      "sourceSha256": "fbe5315fc3d9c573e520e292f731f09492e312cbf114eb0b38f13e2941b484b2"
+    },
+    "spec/research/proposals/personal-description-template/0.1.0/profile.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "8d09a0bcbf8c30add531942c5a8077c53d7788181d0d12c71685f2a61b32f708",
+      "source": "spec/research/proposals/personal-description-template/0.1.0/profile.json",
+      "sourceSha256": "8d09a0bcbf8c30add531942c5a8077c53d7788181d0d12c71685f2a61b32f708"
+    },
+    "spec/research/proposals/personal-self-description.checks.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "ec3b35251468ea1d7364ecac74b902652ae1498a6b86702eb80ec86e80169b50",
+      "source": "spec/research/proposals/personal-self-description.checks.json",
+      "sourceSha256": "ec3b35251468ea1d7364ecac74b902652ae1498a6b86702eb80ec86e80169b50"
+    },
+    "spec/research/proposals/personal-self-description.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "0cea9c0dad4a736696240be33d88d66113d95654de8d9fcfabc5442292ca16b1",
+      "source": "spec/research/proposals/personal-self-description.schema.json",
+      "sourceSha256": "0cea9c0dad4a736696240be33d88d66113d95654de8d9fcfabc5442292ca16b1"
+    },
+    "spec/research/proposals/personal-self-diagnosis.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "0b62dcae40d6efc3574a4d03e2e652fa780cc24a2298e8ab72ba0bef97450fa5",
+      "source": "spec/research/proposals/personal-self-diagnosis.schema.json",
+      "sourceSha256": "0b62dcae40d6efc3574a4d03e2e652fa780cc24a2298e8ab72ba0bef97450fa5"
+    },
+    "spec/research/proposals/personal-starter-slice.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "ce915f8c7451b5d15bfeae98edef082706956f837c0b3566f22a8dad6fe87adc",
+      "source": "spec/research/proposals/personal-starter-slice.md",
+      "sourceSha256": "8296a3d1ac4db46fcd693eb4152dabf20a26bd7df197c119c6c9e3a1d7843c23"
     },
     "spec/schema/manifest.schema.json": {
       "adapted": false,
@@ -918,16 +1143,17 @@
           "spec/glossary.json",
           "adapters/README.md",
           "CONTRIBUTORS.md",
-          "AGENTS.md"
+          "AGENTS.md",
+          "spec/research/proposals/*.md"
         ]
       }
     ]
   },
   "publication": "local-candidate; no repository created or pushed",
-  "releaseVersion": "0.1.0-draft.10",
+  "releaseVersion": "0.1.0-draft.11",
   "rightsHolder": "Taras Pustovoy and contributors",
   "sourcePlan": "spec/public-export.json",
-  "sourcePlanSha256": "11bfdaa278c06fb42ad4223df582c3707c866d1c93968a22ca24902e1fef3872",
+  "sourcePlanSha256": "7ea8024808603aea4934f51b3d695b3d7e802941daa607d05665c6d2fc838097",
   "specVersion": "0.1.0-draft",
   "verificationSources": {
     "tools/dep.py": "6c9cb30df0265e96c88ce7b8465f15ab12165096f63237644295b394f15672d0",

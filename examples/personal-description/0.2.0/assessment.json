@@ -1,0 +1,610 @@
+{
+  "format": "ode.experimental.self-diagnosis-assessment",
+  "version": "0.2.0",
+  "assessedAt": "2026-10-04T08:59:22Z",
+  "evaluator": "fixture author",
+  "synthetic": true,
+  "scope": "Author assessment of explicit profile statements; fictional document checks are not observed agent behavior",
+  "profile": {
+    "id": "urn:ode:example:aster:self-description",
+    "version": "0.2.0",
+    "path": "profile.json",
+    "sha256": "3a6f615ad94ac0b33687cd50cb14e852304455b7895608ef6ac542d62cdc127a"
+  },
+  "checklist": {
+    "version": "0.1.0",
+    "path": "docs/agents/self-diagnosis.checklist.json",
+    "sha256": "1b5b43aa8be28abab811f9a43b0e56409bcd3cfdf3992e7d71c53f860b393e46"
+  },
+  "designChecklist": [
+    {
+      "checkId": "D01",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F01",
+        "F02"
+      ],
+      "reason": "Beneficiary and purpose are explicit.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D02",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F03"
+      ],
+      "reason": "Role and current assignment are distinct.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D03",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F03"
+      ],
+      "reason": "Formal useful-work acceptance remains undefined.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP01"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D04",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F04",
+        "F08"
+      ],
+      "reason": "Safety/context rules exist; competing priorities are undefined.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D05",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "No benefit/cost baseline.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP01"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D06",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F06",
+        "F09"
+      ],
+      "reason": "A selected method exists; qualification is not evaluated.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D07",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F06"
+      ],
+      "reason": "Method steps and quality guidance are explicit.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D08",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F03",
+        "F06"
+      ],
+      "reason": "Future method inputs/output exist; no separately agreed Work.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP01"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D09",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F06"
+      ],
+      "reason": "Method guidance is defined; professional acceptance is not agreed.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP01"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D10",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F06",
+        "F09"
+      ],
+      "reason": "No ability evidence; limitation is explicit.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D11",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F07"
+      ],
+      "reason": "Logical source use is known; actual supplied data is not.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D12",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F09"
+      ],
+      "reason": "Runtime and access are unknown.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D13",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F05",
+        "F07"
+      ],
+      "reason": "Freshness/conflict rules exist; actual coverage is unknown.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D14",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F05"
+      ],
+      "reason": "Own memory path, entry and selection are explicit.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D15",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F05",
+        "F07"
+      ],
+      "reason": "Data boundary and outside dependencies are explicit.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D16",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F08"
+      ],
+      "reason": "Assignment/review/consequences are explicit in fictional instructions.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D17",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F08"
+      ],
+      "reason": "Permission distinctions and basis are stated.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D18",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F08"
+      ],
+      "reason": "Bounded drafting autonomy and stop rule.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D19",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F08"
+      ],
+      "reason": "Cancellation/revocation/unknown permission stop the affected action.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D20",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F04",
+        "F08"
+      ],
+      "reason": "Inputs remain private absent a specific disclosure request.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D21",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F09"
+      ],
+      "reason": "Runtime/model support is unknown.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D22",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "Operating and attention budgets are not supplied.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP01"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D23",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F10"
+      ],
+      "reason": "Preserved files and outside state are distinguished.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D24",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F10"
+      ],
+      "reason": "Manual context/authority recheck; no restore claim.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "D25",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F10"
+      ],
+      "reason": "Version/review rules exist; behavior regression is absent.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    }
+  ],
+  "qualityChecklist": [
+    {
+      "checkId": "Q11",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F02",
+        "F03"
+      ],
+      "reason": "Benefit/cost and work acceptance are open.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP01"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q12",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F06"
+      ],
+      "reason": "Method checks exist; work was not run.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q13",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F04",
+        "F08"
+      ],
+      "reason": "Boundaries exist; competing priorities are undefined.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q21",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F04"
+      ],
+      "reason": "Plain explanation of grounds, uncertainty and gaps.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q22",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F04",
+        "F05"
+      ],
+      "reason": "Context/corrections/unresolved handoff are explicit.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q23",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F04",
+        "F08"
+      ],
+      "reason": "Recipient, plain language and disclosure boundary.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q31",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F05",
+        "F07"
+      ],
+      "reason": "Required source use is described; data availability is unknown.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q32",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F05"
+      ],
+      "reason": "Source dates, conflicts and local corrections are exposed.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q33",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F05",
+        "F08"
+      ],
+      "reason": "Memory/task data and disclosure boundaries.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q41",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F07",
+        "F09"
+      ],
+      "reason": "Necessary source access is unverified.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q42",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F08"
+      ],
+      "reason": "Stop/manual reconciliation limits consequences.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q43",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F08"
+      ],
+      "reason": "Drafting versus specific-request actions are distinct.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q51",
+      "fillStatus": "missing",
+      "profileRefs": [],
+      "reason": "No effect/cost measurement.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP01"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q52",
+      "fillStatus": "partial",
+      "profileRefs": [
+        "F10"
+      ],
+      "reason": "Versioning exists; behavior regression was not run.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [
+        "FUP02"
+      ],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    },
+    {
+      "checkId": "Q53",
+      "fillStatus": "filled",
+      "profileRefs": [
+        "F08",
+        "F10"
+      ],
+      "reason": "Alex reviews stable changes and authority is rechecked.",
+      "agreementStatus": "not_confirmed",
+      "behaviorEvidence": "not_evaluated",
+      "followUpRefs": [],
+      "agreementRefs": [],
+      "behaviorEvidenceRefs": []
+    }
+  ],
+  "completionCounts": {
+    "design": {
+      "filled": 12,
+      "partial": 11,
+      "missing": 2
+    },
+    "quality": {
+      "partial": 6,
+      "filled": 8,
+      "missing": 1
+    }
+  },
+  "agreement": "not_confirmed; no real owner endorsement is simulated",
+  "behavior": "not_evaluated; no agent launched",
+  "descriptionMaturity": "not_assigned",
+  "formatVersion": "0.1.0",
+  "status": "author_assessment"
+}

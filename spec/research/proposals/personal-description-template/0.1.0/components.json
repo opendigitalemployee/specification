@@ -1,0 +1,26 @@
+{
+  "format": "ode.experimental.personal-description-components",
+  "version": "0.1.0",
+  "agentDescriptionId": null,
+  "synthetic": false,
+  "scope": "Existing described agent and explicit dependencies; no backup plan or full environment description",
+  "entryRoute": [],
+  "dependencies": [],
+  "methods": [],
+  "formalWorks": [],
+  "formalWorkStatus": "not_defined",
+  "preservation": {
+    "descriptionOnly": true,
+    "backupCreated": false,
+    "capturePlan": null,
+    "restoreStatus": "not_assessed"
+  },
+  "followUps": [
+    {
+      "id": "DESCRIBE",
+      "route": "source_analysis",
+      "question": "Read authorized sources, supply known answers and route each remaining question."
+    }
+  ],
+  "formatVersion": "0.1.0"
+}
