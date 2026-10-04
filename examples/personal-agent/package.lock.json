@@ -1,0 +1,17 @@
+{
+  "format": "digital-employee-lock",
+  "specVersion": "0.2.0-draft",
+  "packageId": "urn:ode:example:personal:package",
+  "packageVersion": "1.0.0",
+  "files": {
+    "manifest.json": "588a536dc86646ba5a72421343c0aaf16c419e6190313fa4d1d7b1ee89feb3d1",
+    "objects/agent.json": "2fc0d182e6a8808275589481faafde1eedd61ce8c3f49aca9258d53447222904",
+    "objects/binding.json": "8375fd80b5dd775376d6fa301874fea421bba33fd29460403e0cb56b461a0ba8",
+    "objects/dna.json": "1a6de0e0b3ad6a48b8100273bb7b42e16b3712d7fecfb53a3b7ba5b73c25ed19",
+    "objects/environment.json": "e34283fa42235c2b24026674201ee192b6c3c37ff8e6f2bac2ad523ed5881a85",
+    "objects/person.json": "15d370063b6bcae802a14cb0ed2eb25fb64debf578af03beb95bb50c3c1eac09",
+    "objects/read-policy.json": "5d39a40c31e7c697116110e10e76d48f9c32c06fa56a8720ab40f494e023f72d",
+    "objects/tool.json": "12ace8a43b3d85b53a8351ed48ede8bde9138d3fe854a7f744fad323066a1371",
+    "objects/world.json": "46b317e6b8940a5f4dec1258c0bea5caf24c68afb61ab6d1cf068abc04b9dd14"
+  }
+}

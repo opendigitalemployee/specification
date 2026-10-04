@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "WorldModel",
+  "layer": "environment",
+  "id": "urn:ode:example:company-agent:world",
+  "version": "1.0.0",
+  "title": "world",
+  "status": "draft",
+  "provenance": {
+    "origin": "Synthetic affiliation example; no runtime or owner agreement observed"
+  },
+  "spec": {
+    "controllerRef": {
+      "objectId": "urn:ode:example:company-agent:party",
+      "version": "1.0.0"
+    },
+    "instanceId": "synthetic-personal-world",
+    "schemaRefs": [],
+    "governance": {
+      "scope": "Design only; no personal records collected."
+    }
+  }
+}

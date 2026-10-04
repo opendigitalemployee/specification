@@ -13,31 +13,25 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install 'jsonschema>=4.25,<5'
-      - name: Check JSON, object schemas, examples and release hashes
+      - name: Check JSON, package graphs, schemas and release hashes
         run: |
           python - <<'PYTHON'
-          import hashlib, json
+          import hashlib, json, sys
           from pathlib import Path
-          from jsonschema import Draft202012Validator
+          sys.path.insert(0, '.github/checks')
+          from package_contract import check
           for p in Path('.').rglob('*.json'):
               if '.git' not in p.parts:
                   json.loads(p.read_text())
-          object_schema = json.loads(Path('spec/schema/object.schema.json').read_text())
-          manifest_schema = json.loads(Path('spec/schema/manifest.schema.json').read_text())
-          for schema in (object_schema, manifest_schema):
-              Draft202012Validator.check_schema(schema)
           for p in Path('examples').glob('*/manifest.json'):
-              manifest = json.loads(p.read_text())
-              Draft202012Validator(manifest_schema).validate(manifest)
-              for item in manifest['objects']:
-                  Draft202012Validator(object_schema).validate(json.loads((p.parent / item['path']).read_text()))
+              check(p.parent, Path('.'))
           release = json.loads(Path('release-manifest.json').read_text())
           for name, item in release['files'].items():
               assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == item['sha256'], name
-          print('PASS: JSON, schemas, example objects and exported hashes; no runtime tests claimed')
+          print('PASS: package schemas, references, affiliation, inventory and hashes; no runtime tests claimed')
           PYTHON
-      - name: Check experimental self-description and regression cases
+      - name: Check all affiliation and self-description regressions
         run: |
           python -B .github/checks/self_description.py --standard-root . --index examples/personal-description/0.2.0/index.json
           python -B .github/checks/self_description.py --standard-root . --index spec/research/proposals/personal-description-template/0.1.0/index.json --allow-draft
-          python -B -m unittest discover -s .github/checks -p 'test_self_description.py' -v
+          python -B -m unittest discover -s .github/checks -p 'test_*.py' -v

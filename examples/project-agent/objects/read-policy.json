@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Policy",
+  "layer": "agent",
+  "id": "urn:ode:example:project-agent:read-policy",
+  "version": "1.0.0",
+  "title": "read-policy",
+  "status": "draft",
+  "provenance": {
+    "origin": "Synthetic affiliation example; no runtime or owner agreement observed"
+  },
+  "spec": {
+    "actions": [
+      "read selected description files"
+    ],
+    "resourceScope": {
+      "scope": "Explicitly selected files only"
+    },
+    "mode": "approval-required",
+    "enforcement": "human",
+    "approver": "Responsible person; approval not yet supplied"
+  }
+}

@@ -1,6 +1,6 @@
 # Description views and restoration
 
-**Informative agent-facing design proposal · 0.2.0 · 4 October 2026.** This material extends the CHG-0003 discussion using the existing [composition](../../spec/COMPOSITION.md) and [package/backup rules](../../spec/SPECIFICATION.md). It does not add normative kinds, fields, profile values or a certified personal backup. The current ClientAgent still requires Organization relationships.
+**Informative agent-facing design proposal · 0.3.0 · 4 October 2026.** This material extends the CHG-0003 discussion using the existing [composition](../../spec/COMPOSITION.md) and [package/backup rules](../../spec/SPECIFICATION.md). It does not add normative kinds, fields, profile values or a certified personal backup. Normative 0.2 supports [personal and collective affiliations](procedures/affiliation.md); this guide does not specify automatic conversion of a description into a package.
 
 ## Two views of one agent
 
@@ -15,7 +15,7 @@ These are complementary views, not mandatory successive maturity grades. A conci
 
 A proposed map records each selected component's purpose, reusable/local placement, native source and version, relationships, lifecycle, current-use status, observed evidence, missing detail and disclosure boundary. Distinguish current instructions from historical bootstrap files; selected memory from the whole corpus; available methods from selected skills and tested abilities; provenance sources from work-data stores.
 
-Use existing Skill/native resources, Work references, Source/Storage/Environment and relevant policies/decisions where their semantics fit. The map is a view of this composition. Personal principal/ownership and the semantics of a shared identity/class basis remain design questions; do not invent an Organization or silently redefine professional AgentDNA. A map and a metadata audit remain separate from a normative package manifest.
+Use existing Skill/native resources, Work references, Source/Storage/Environment and relevant policies/decisions where their semantics fit. The map is a view of this composition. Affiliation is expressed through Party in 0.2. Legal ownership and the semantics of a shared identity/class basis remain separate questions; do not invent an Organization or silently redefine professional AgentDNA. A map and a metadata audit remain separate from a normative package manifest.
 
 The concrete map belongs in the owner's agent collection, beside its description and dated audits. The [experimental collection contract](self-description-contract.md) supplies an indexed composition view; local folder names remain a convention. Reusable guidance belongs here in the standard source. A private map's source paths and selected relationships are independently reviewed before disclosure.
 

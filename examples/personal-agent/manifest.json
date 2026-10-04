@@ -1,0 +1,81 @@
+{
+  "format": "digital-employee-package",
+  "specVersion": "0.2.0-draft",
+  "id": "urn:ode:example:personal:package",
+  "version": "1.0.0",
+  "profile": "client",
+  "title": "A personal agent without an organization",
+  "entrypoints": {
+    "dna": [
+      {
+        "objectId": "urn:ode:example:personal:dna",
+        "version": "1.0.0"
+      }
+    ],
+    "environments": [
+      {
+        "objectId": "urn:ode:example:personal:environment",
+        "version": "1.0.0"
+      }
+    ],
+    "agents": [
+      {
+        "objectId": "urn:ode:example:personal:agent",
+        "version": "1.0.0"
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "urn:ode:example:personal:person",
+      "version": "1.0.0",
+      "kind": "Party",
+      "path": "objects/person.json"
+    },
+    {
+      "id": "urn:ode:example:personal:dna",
+      "version": "1.0.0",
+      "kind": "AgentDNA",
+      "path": "objects/dna.json"
+    },
+    {
+      "id": "urn:ode:example:personal:environment",
+      "version": "1.0.0",
+      "kind": "Environment",
+      "path": "objects/environment.json"
+    },
+    {
+      "id": "urn:ode:example:personal:world",
+      "version": "1.0.0",
+      "kind": "WorldModel",
+      "path": "objects/world.json"
+    },
+    {
+      "id": "urn:ode:example:personal:tool",
+      "version": "1.0.0",
+      "kind": "ToolDefinition",
+      "path": "objects/tool.json"
+    },
+    {
+      "id": "urn:ode:example:personal:read-policy",
+      "version": "1.0.0",
+      "kind": "Policy",
+      "path": "objects/read-policy.json"
+    },
+    {
+      "id": "urn:ode:example:personal:binding",
+      "version": "1.0.0",
+      "kind": "ToolBinding",
+      "path": "objects/binding.json"
+    },
+    {
+      "id": "urn:ode:example:personal:agent",
+      "version": "1.0.0",
+      "kind": "ClientAgent",
+      "path": "objects/agent.json"
+    }
+  ],
+  "resources": [],
+  "externalDependencies": [],
+  "standards": []
+}

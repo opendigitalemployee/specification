@@ -31,7 +31,7 @@ A runtime-specific implementation places the skill directory where that runtime 
 
 ## Integration boundaries
 
-| Component | Existing representation | What the package adds | Public draft 0.1 scope |
+| Component | Existing representation | What the package adds | Public draft 0.2 scope |
 |---|---|---|---|
 | Skill | Agent Skills `SKILL.md` and supporting directory | Object identity and version, input/output contracts, work references, activation, and provenance | Native resources in the synthetic example; structural checks during release verification |
 | Data or tool schema | JSON Schema | References to a business concept, dataset, operation, or check | Schemas for package objects and manifests; automated schema/example checks |
@@ -39,7 +39,7 @@ A runtime-specific implementation places the skill directory where that runtime 
 | Agent discovery and communication | A2A / OASF and their own representations | Mapping of the employee's identity, capabilities, and interaction requirements | Research and mapping; no protocol compatibility certified |
 | Agent Spec description | Its JSON/YAML | A projection of supported design requirements and an explicit support report | Integration candidate; no exporter distributed |
 | Agent Companies package | Its Markdown and configuration sidecars | An organization and employee projection for Paperclip | Integration candidate; no exporter distributed |
-| Workflow | An existing workflow definition in its native format | Business work references, requirements, and runtime bindings | Next-version proposal; not a normative kind in draft 0.1 |
+| Workflow | An existing workflow definition in its native format | Business work references, requirements, and runtime bindings | Next-version proposal; not a normative kind in draft 0.2 |
 
 The public release contains **documentation, schemas, and synthetic examples**. CLI tools and runtime adapters remain outside this release. Automated description checks do not certify execution, enforce permissions, or establish business outcomes.
 

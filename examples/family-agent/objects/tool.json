@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "ToolDefinition",
+  "layer": "dna",
+  "id": "urn:ode:example:family-agent:tool",
+  "version": "1.0.0",
+  "title": "tool",
+  "status": "draft",
+  "provenance": {
+    "origin": "Synthetic affiliation example; no runtime or owner agreement observed"
+  },
+  "spec": {
+    "operation": "Read a deliberately selected local description file",
+    "inputSchema": {
+      "type": "object"
+    },
+    "outputSchema": {
+      "type": "object"
+    },
+    "effects": [],
+    "errors": []
+  }
+}

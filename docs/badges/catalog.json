@@ -2,11 +2,53 @@
   "version": 1,
   "purpose": "Documentation links and project metadata; no usage counters or runtime certification",
   "badges": [
-    {"id":"documentation","label":"documentation","value":"read","color":"#3263b9","image":"documentation.svg","href":"https://github.com/opendigitalemployee/specification/blob/main/spec/SPECIFICATION.md"},
-    {"id":"overview","label":"overview","value":"read","color":"#3263b9","image":"overview.svg","href":"https://github.com/opendigitalemployee/specification/blob/main/docs/OVERVIEW.md"},
-    {"id":"format","label":"format","value":"0.1.0-draft","color":"#9a6815","image":"format.svg","href":"https://github.com/opendigitalemployee/specification/blob/main/STATUS.md"},
-    {"id":"checks","label":"schema checks","value":"GitHub CI","color":"#3263b9","image":"checks.svg","href":"https://github.com/opendigitalemployee/specification/actions/workflows/check.yml"},
-    {"id":"spec-license","label":"spec license","value":"Apache-2.0","color":"#39713b","image":"spec-license.svg","href":"https://github.com/opendigitalemployee/specification/blob/main/LICENSE"},
-    {"id":"docs-license","label":"docs license","value":"CC BY 4.0","color":"#39713b","image":"docs-license.svg","href":"https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt"}
+    {
+      "id": "documentation",
+      "label": "documentation",
+      "value": "read",
+      "color": "#3263b9",
+      "image": "documentation.svg",
+      "href": "https://github.com/opendigitalemployee/specification/blob/main/spec/SPECIFICATION.md"
+    },
+    {
+      "id": "overview",
+      "label": "overview",
+      "value": "read",
+      "color": "#3263b9",
+      "image": "overview.svg",
+      "href": "https://github.com/opendigitalemployee/specification/blob/main/docs/OVERVIEW.md"
+    },
+    {
+      "id": "format",
+      "label": "format",
+      "value": "0.2.0-draft",
+      "color": "#9a6815",
+      "image": "format.svg",
+      "href": "https://github.com/opendigitalemployee/specification/blob/main/STATUS.md"
+    },
+    {
+      "id": "checks",
+      "label": "schema checks",
+      "value": "GitHub CI",
+      "color": "#3263b9",
+      "image": "checks.svg",
+      "href": "https://github.com/opendigitalemployee/specification/actions/workflows/check.yml"
+    },
+    {
+      "id": "spec-license",
+      "label": "spec license",
+      "value": "Apache-2.0",
+      "color": "#39713b",
+      "image": "spec-license.svg",
+      "href": "https://github.com/opendigitalemployee/specification/blob/main/LICENSE"
+    },
+    {
+      "id": "docs-license",
+      "label": "docs license",
+      "value": "CC BY 4.0",
+      "color": "#39713b",
+      "image": "docs-license.svg",
+      "href": "https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt"
+    }
   ]
 }

@@ -18,7 +18,7 @@
       "const": "digital-employee-package"
     },
     "specVersion": {
-      "const": "0.1.0-draft"
+      "const": "0.2.0-draft"
     },
     "id": {
       "type": "string",
@@ -103,6 +103,7 @@
               "InteractionContract",
               "Policy",
               "Check",
+              "Party",
               "Organization",
               "Environment",
               "Storage",

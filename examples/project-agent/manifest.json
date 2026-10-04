@@ -1,0 +1,87 @@
+{
+  "format": "digital-employee-package",
+  "specVersion": "0.2.0-draft",
+  "id": "urn:ode:example:project-agent:package",
+  "version": "1.0.0",
+  "profile": "client",
+  "title": "Example project team agent",
+  "entrypoints": {
+    "dna": [
+      {
+        "objectId": "urn:ode:example:project-agent:dna",
+        "version": "1.0.0"
+      }
+    ],
+    "environments": [
+      {
+        "objectId": "urn:ode:example:project-agent:environment",
+        "version": "1.0.0"
+      }
+    ],
+    "agents": [
+      {
+        "objectId": "urn:ode:example:project-agent:agent",
+        "version": "1.0.0"
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "urn:ode:example:project-agent:party",
+      "version": "1.0.0",
+      "kind": "Party",
+      "path": "objects/party.json"
+    },
+    {
+      "id": "urn:ode:example:project-agent:dna",
+      "version": "1.0.0",
+      "kind": "AgentDNA",
+      "path": "objects/dna.json"
+    },
+    {
+      "id": "urn:ode:example:project-agent:environment",
+      "version": "1.0.0",
+      "kind": "Environment",
+      "path": "objects/environment.json"
+    },
+    {
+      "id": "urn:ode:example:project-agent:world",
+      "version": "1.0.0",
+      "kind": "WorldModel",
+      "path": "objects/world.json"
+    },
+    {
+      "id": "urn:ode:example:project-agent:tool",
+      "version": "1.0.0",
+      "kind": "ToolDefinition",
+      "path": "objects/tool.json"
+    },
+    {
+      "id": "urn:ode:example:project-agent:read-policy",
+      "version": "1.0.0",
+      "kind": "Policy",
+      "path": "objects/read-policy.json"
+    },
+    {
+      "id": "urn:ode:example:project-agent:binding",
+      "version": "1.0.0",
+      "kind": "ToolBinding",
+      "path": "objects/binding.json"
+    },
+    {
+      "id": "urn:ode:example:project-agent:agent",
+      "version": "1.0.0",
+      "kind": "ClientAgent",
+      "path": "objects/agent.json"
+    },
+    {
+      "id": "urn:ode:example:project-agent:reviewer",
+      "version": "1.0.0",
+      "kind": "Party",
+      "path": "objects/reviewer.json"
+    }
+  ],
+  "resources": [],
+  "externalDependencies": [],
+  "standards": []
+}

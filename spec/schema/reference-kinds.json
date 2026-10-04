@@ -1,4 +1,16 @@
 {
+  "servesRef": [
+    "Party",
+    "Organization"
+  ],
+  "authorityRef": [
+    "Party",
+    "Organization"
+  ],
+  "controllerRef": [
+    "Party",
+    "Organization"
+  ],
   "dnaRef": [
     "AgentDNA"
   ],

@@ -1,8 +1,8 @@
 # Describe yourself as a personal agent
 
-**Experimental application guide · 0.2.0 · 4 October 2026.** Describe your purpose, relationship with a person, instructions, memory, selected methods, dependencies and current limits. The output belongs in owner-controlled storage and includes its own self-diagnosis.
+**Application guide · 0.3.0 · 4 October 2026.** Describe your purpose, relationship with a person, instructions, memory, selected methods, dependencies and current limits. The output belongs in owner-controlled storage and includes its own self-diagnosis.
 
-1. Follow the [self-description procedure](../../spec/research/proposals/personal-starter-slice.md).
+1. Choose a task in the [procedure index](procedures/README.md), or follow [SELF-01: self-description](procedures/self-description.md) directly.
 2. Copy the [blank collection](../../spec/research/proposals/personal-description-template/0.1.0/README.md) into private storage. Fill known facts and route remaining questions.
 3. Inspect [Aster, a fictional example](../../examples/personal-description/0.2.0/README.md): native instructions and memory, shared basis, one selected skill, one available unselected method, and an external workspace.
 4. Complete the [25 design and 15 quality questions](self-diagnosis.md), then use the [collection contract and structural check](self-description-contract.md).
@@ -17,7 +17,7 @@ The [current specification](../../spec/SPECIFICATION.md) defines three design la
 
 SELF-01 and the personal foundation application profile originate in [issue #2](https://github.com/opendigitalemployee/specification/issues/2); team coordination, professional practice, and environment/portability remain other proposed directions. This release versions the experimental output and procedure, not a universal application-profile catalog. Application profiles are distinct from `manifest.profile`.
 
-The current ClientAgent still requires Organization relationships. This experimental personal description does not invent an organization, add a normative Person kind or grant authority. Schema validity, truthful description, responsible-party agreement, demonstrated capability and runtime readiness remain separate.
+Normative ClientAgent 0.2 supports [person, family, team, organization and other affiliations](procedures/affiliation.md) through Party. Service, authority and environment control are distinct relationships. This experimental description collection remains separate; it does not automatically become a ClientAgent package or grant authority. The extended Person profile/consent design remains proposed. Schema validity, truthful description, responsible-party agreement, demonstrated capability and runtime readiness remain separate.
 
 ## Release scope
 

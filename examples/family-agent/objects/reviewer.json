@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Party",
+  "layer": "environment",
+  "id": "urn:ode:example:family-agent:reviewer",
+  "version": "1.0.0",
+  "title": "Responsible reviewer",
+  "status": "draft",
+  "provenance": {
+    "origin": "Synthetic affiliation example; no runtime or owner agreement observed"
+  },
+  "spec": {
+    "category": "person",
+    "description": "Fictional designated reviewer; scope is set by policy, not by assumed group membership."
+  }
+}

@@ -6,7 +6,7 @@ A digital employee is a repeatable contribution to a business, supported by expe
 
 1. Name the business outcome: who owns it, which metric matters, its baseline, target and time horizon. Distinguish the desired change from the artifact the employee produces.
 2. Propose work that could contribute. State the causal assumption, expected output, acceptance criteria, resources and cost. Work is a hypothesis, not proof of impact.
-3. Identify the expertise and prepare the company environment: trusted data, systems, people, rules and dependencies.
+3. Identify the expertise and prepare the working environment: trusted data, systems, people, rules and dependencies.
 4. Assign permissions, escalation and checks for performance, reliability and alignment. Select a runtime and record gaps.
 5. Test the work, measure its contribution, learn from evidence and revise the design for the next cycle.
 
@@ -20,7 +20,7 @@ A company sets goals and operating rules. A person participates as an owner, col
 
 Five business conditions guide the design: **purpose and company alignment; governance; a prepared working environment; domain expertise; and an execution platform capable of delivering results**. They describe what has to come together.
 
-Three design layers explain where descriptions belong: **DNA**, **company environment**, and **a specific employee**. Their composition forms the package. Definitions are distinct from observations and captured state.
+Three design layers explain where descriptions belong: **DNA**, **working environment**, and **a specific employee**. Their composition forms the package. Definitions are distinct from observations and captured state.
 
 Three pillars assess quality: **performance, reliability and alignment**. They are applied across work and outcomes, interaction, knowledge and memory, authority and safety, and oversight and development. These activity areas are a separate dimension from the five business conditions. A stored description or successful format validation does not itself demonstrate any pillar.
 

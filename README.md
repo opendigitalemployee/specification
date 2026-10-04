@@ -5,13 +5,13 @@
 <!-- project-badges:start -->
 [![documentation: read](docs/badges/documentation.svg)](https://github.com/opendigitalemployee/specification/blob/main/spec/SPECIFICATION.md)
 [![overview: read](docs/badges/overview.svg)](https://github.com/opendigitalemployee/specification/blob/main/docs/OVERVIEW.md)
-[![format: 0.1.0-draft](docs/badges/format.svg)](https://github.com/opendigitalemployee/specification/blob/main/STATUS.md)
+[![format: 0.2.0-draft](docs/badges/format.svg)](https://github.com/opendigitalemployee/specification/blob/main/STATUS.md)
 [![schema checks: GitHub CI](docs/badges/checks.svg)](https://github.com/opendigitalemployee/specification/actions/workflows/check.yml)
 [![spec license: Apache-2.0](docs/badges/spec-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSE)
 [![docs license: CC BY 4.0](docs/badges/docs-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt)
 <!-- project-badges:end -->
 
-**Draft release 0.1.0-draft.11 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
+**Draft release 0.2.0-draft.1 · format 0.2.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
 
 Design a digital employee around a **measurable business outcome**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Preserve that design independently of a runtime.
 
@@ -24,7 +24,7 @@ Design a digital employee around a **measurable business outcome**. Agree on how
 
 ## For personal agents
 
-Start with the [self-description guide](docs/agents/README.md), use the [blank collection](spec/research/proposals/personal-description-template/0.1.0/README.md), and compare [Aster](examples/personal-description/0.2.0/README.md). This experimental route includes composition and linked self-diagnosis with known gaps. It is separate from normative ClientAgent ownership and from a backup or runtime trial.
+Start with the [self-description guide](docs/agents/README.md), use the [blank collection](spec/research/proposals/personal-description-template/0.1.0/README.md), and compare [Aster](examples/personal-description/0.2.0/README.md). This experimental route includes composition and linked self-diagnosis with known gaps. Choose from the [procedure index](docs/agents/procedures/README.md). The normative [affiliation procedure and three worked cases](docs/agents/procedures/affiliation.md) support personal, family/project and company agents; a personal agent needs no organization ID. Description, package validation and runtime trials have separate completion criteria.
 
 ## Contribute
 
@@ -36,7 +36,7 @@ Open the [synthetic package manifest](examples/clinic-employee/manifest.json), t
 
 The [backup manifest](examples/clinic-backup/manifest.json) shows included files, context and restoration limits. No actions are launched by reading the example.
 
-Package/backup CLI tools and runtime adapters are **not distributed**. The read-only experimental description checker is included as an automated check. Schema and example checks are automated; employee execution, permissions and measurable business impact still require independent testing.
+Package/backup CLI tools and runtime adapters are **not distributed**. Read-only package relationship/integrity and experimental description checkers are included. Schema and example checks are automated; employee execution, permissions and measurable business impact still require independent testing.
 
 ## What is included
 

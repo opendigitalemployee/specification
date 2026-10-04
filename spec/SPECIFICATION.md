@@ -1,20 +1,36 @@
 # Digital Employee Package specification draft
 
-Version `0.1.0-draft`. The names and namespace are provisional. This draft defines a package for designing, preserving and adapting digital employees. It describes independently versioned objects, included resources and exact dependencies. It does not equate successful import with successful work.
+Version `0.2.0-draft`. The names and namespace are provisional. This draft defines a package for designing, preserving and adapting digital employees. It describes independently versioned objects, included resources and exact dependencies. It does not equate successful import with successful work.
 
-Informative next-version proposals separate Work (the outcome contract) from Workflow (execution), and describe a person linked to an employee. See [status and proposals](../STATUS.md#next-version-proposals). These concepts are not normative kinds in this 0.1 draft and are not implemented by its validators or adapters. Schema changes require a separately versioned specification.
+Informative future proposals separate Work (the outcome contract) from Workflow (execution), and describe extended personal profiles and consent. See [status and proposals](../STATUS.md#next-version-proposals). Party affiliation is normative in 0.2; the broader proposals are not implemented by these schemas or validators.
 
-The model has three design layers: **Agent DNA + company goals + company environment → client agent**. Deployment records and operational state are additional package contents, not additional DNA inheritance layers.
+The model has three design layers: **Agent DNA + contextual goals + working environment → client agent**. Deployment records and operational state are additional package contents, not additional DNA inheritance layers.
 
 ## 1. Three design layers
 
-**Agent DNA** describes a professional foundation: possible outcomes, roles, work definitions, skills and meta-skills, decision styles, quality checks, policies and environment requirements. Company-specific choices require deliberate generalization before becoming reusable DNA.
+**Agent DNA** describes a professional foundation: possible outcomes, roles, work definitions, skills and meta-skills, decision styles, quality checks, policies and environment requirements. Person-, family-, team- or organization-specific choices require deliberate generalization before becoming reusable DNA.
 
-**Organization environment** describes the company's concepts and operating resources. It includes the organization boundary, environment, entity types, world-model instances, sources, storage, transformations, data-product contracts, connections and knowledge governance. An environment definition is separate from the records and bytes held in its systems.
+**Working environment** describes the concepts and operating resources controlled by a person, family, team, organization or another named party. It includes party boundaries, the environment, entity types, world-model instances, sources, storage, transformations, data-product contracts, connections and knowledge governance. An environment definition is separate from the records and bytes held in its systems.
 
-**Client agent** pins a DNA version, an organization and an environment. It selects work, goals, methods and styles, records local customizations, and binds tools, skill activations and interaction contracts to the company. Several client agents may share an environment. Updating DNA or a shared object MUST NOT silently change these pins.
+**Client agent** pins a DNA version, the party it serves and an environment. It selects work, goals, methods and styles, records local customizations, and binds tools, skill activations and interaction contracts to that context. Several client agents may share an environment. Updating DNA or a shared object MUST NOT silently change these pins.
 
 The package may also contain receipts, records, facts, data snapshots, runs and evidence. Their provenance and input/definition pins MUST remain explicit. A world-model instance has its own identity; selecting an instance as current is distinct from creating a new version of a definition.
+
+### 1.1. Affiliation, authority and environment control
+
+`Party` identifies a person or collective involved in these relationships. Its `category` MUST be one of `person`, `family`, `team`, `organization` or `other`. For `other`, `categoryLabel` MUST name the local category. A Party's object ID and title identify the described party; no organization, registry number, legal name, contact details or membership roster is required. A pseudonymous identity is permitted. The [party category catalog](schema/party-categories.json) records the codes, names and definitions and is generated from the same source as the schema. Adding or redefining a global code requires a new specification version; local categories use `other` with categoryLabel. Particular party instances are kept in packages or owner-controlled libraries, not in the global category directory. Category describes the party, not the agent's role, class, ownership rights, jurisdiction or capabilities. `Role` continues to describe assistant, manager or professional responsibilities.
+
+| Relationship | Meaning | Target |
+|---|---|---|
+| `ClientAgent.spec.servesRef` (required) | Party served in this concrete agent context | Party or Organization |
+| `ClientAgent.spec.authorityRef` (optional) | Party responsible for assigning/reviewing work and deciding authority within this context | Party or Organization |
+| `Environment.spec.controllerRef` (required) | Party responsible for this environment boundary | Party or Organization |
+| `ToolBinding.spec.controllerRef` (required) | Controller of the environment containing the binding | Party or Organization |
+| `WorldModel.spec.controllerRef` (required) | Party responsible for this model instance and its governance | Party or Organization |
+
+An existing `Organization` kind remains usable at these references when its richer organization identity/access boundary is needed. It is not required for personal agents. Do not create both a Party and an Organization for the same entity without an explicit reason and identity mapping. One concrete ClientAgent has one served-party context; a team or family can represent a collective. Multiple independent service contexts use distinct agent configurations. This draft does not specify membership, legal ownership or multi-party authority resolution.
+
+Served party, authority party and environment controller MAY differ. A ToolBinding controller MUST match its referenced Environment controller by exact identity/version when included. A ClientAgent serving a different party from its Environment controller MUST declare nonempty `policyRefs` describing the access boundary. A policy reference alone MUST NOT be treated as approval or runtime enforcement. External party/environment dependencies remain unresolved requirements; consumers MUST resolve and check these relationships before admission. An omitted `authorityRef` means authority is not supplied; it MUST NOT be inferred from `servesRef` or environment control. Actual permitted actions, approvals, enforcement and revocation belong in Policy and related agreements. `ownerRef` remains separate provenance/ownership metadata; it is not a substitute for these relationships. `Policy.principalRef` and `Deployment.principal` keep their existing actor/runtime meanings.
 
 ## 2. Objects and identity
 
@@ -35,11 +51,11 @@ The four profiles are:
 | Profile | Required root | Intended use |
 |---|---|---|
 | `dna` | AgentDNA | Publish or edit a professional foundation |
-| `environment` | Environment | Describe or preserve a shared company environment |
+| `environment` | Environment | Describe or preserve a personal or shared working environment |
 | `client` | ClientAgent | Design or adapt a concrete employee with declared environment dependencies |
 | `backup` | ClientAgent and explicit backup scope | Preserve the selected employee, knowledge and optional state for restoration |
 
-A package can include multiple independently versioned roots. Inclusion does not transfer company ownership or grant runtime permissions. A portable client package can bundle selected environment objects while declaring infrastructure resources that must be provided at the destination.
+A package can include multiple independently versioned roots. Inclusion does not transfer ownership or grant runtime permissions. A portable client package can bundle selected environment objects while declaring infrastructure resources that must be provided at the destination.
 
 Included dependency closure MUST be explicit. An unresolved dependency MUST cause a validation failure. An explicitly declared external dependency is a visible requirement; validators must report it, and adapters must resolve it or report a blocking gap before launch. Merely declaring it does not make a package self-contained.
 
@@ -51,7 +67,7 @@ Objects use JSON. Human instructions and explanations use Markdown resources. Na
 manifest.json
 package.lock.json
 dna/<name>/<version>/*.json
-environments/<organization>/<version>/*.json
+environments/<environment-id>/<version>/*.json
 agents/<name>/<version>/*.json
 native/skills/<skill-name>/SKILL.md
 native/skills/<skill-name>/references/*
@@ -98,7 +114,13 @@ Conformance is scoped: a reader may preserve packages, an editor may round-trip 
 
 Migrating legacy formats MUST retain the source and report inferred mappings, unresolved decisions and unsupported semantics. Extracting client-specific content into a DNA object must remain a reviewed proposal. A migration MUST NOT fabricate verified environment connections or successful evidence.
 
-The schemas specify a typed minimum contract for 33 object kinds. Several domain-specific structures remain open JSON contracts in this draft; their detailed vocabularies require further examples and review. The initial implementation must describe these limits rather than claim complete coverage of every domain. Changes to normative semantics go through a documented proposal and a new specification version.
+The schemas specify a typed minimum contract for 34 object kinds. Several domain-specific structures remain open JSON contracts in this draft; their detailed vocabularies require further examples and review. The initial implementation must describe these limits rather than claim complete coverage of every domain. Changes to normative semantics go through a documented proposal and a new specification version.
+
+### 9.1. Compatibility with 0.1.0-draft
+
+The previous contracts remain byte-preserved under `versions/0.1.0-draft/schema/`. A consumer MUST select schemas by `manifest.specVersion` and MUST reject unknown versions or included objects whose `schemaVersion` differs from the manifest. Locks and single-file bundles MUST carry the same specification version as their package. The published clinic examples remain 0.1 packages and retain their original bytes. The new [personal package](../examples/personal-agent/manifest.json) uses 0.2 without any Organization object or organizationRef.
+
+Migration to 0.2 is explicit: review the former ClientAgent organizationRef as a candidate served party and separately identify authority; review Environment, ToolBinding and WorldModel organizationRef as candidate controllerRef. An organization may remain an Organization object. Do not infer a person, team or family from a missing organization. Preserve old definitions; issue new object/package versions, update exact references and regenerate integrity records. Merely replacing schemaVersion is not a valid migration. The experimental self-description collection retains its independent 0.1 contract and Aster 0.2.0 example; it is not a DEP package and receives no automatic conversion.
 
 ---
 Copyright 2026 Taras Pustovoy and contributors. Licensed under [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0).

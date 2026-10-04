@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "ToolBinding",
+  "layer": "agent",
+  "id": "urn:ode:example:family-agent:binding",
+  "version": "1.0.0",
+  "title": "binding",
+  "status": "draft",
+  "provenance": {
+    "origin": "Synthetic affiliation example; no runtime or owner agreement observed"
+  },
+  "spec": {
+    "toolRef": {
+      "objectId": "urn:ode:example:family-agent:tool",
+      "version": "1.0.0"
+    },
+    "controllerRef": {
+      "objectId": "urn:ode:example:family-agent:party",
+      "version": "1.0.0"
+    },
+    "environmentRef": {
+      "objectId": "urn:ode:example:family-agent:environment",
+      "version": "1.0.0"
+    },
+    "config": {
+      "status": "not configured"
+    },
+    "verification": {
+      "status": "not performed"
+    },
+    "policyRefs": [
+      {
+        "objectId": "urn:ode:example:family-agent:read-policy",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 # Describe an agent's existing composition
 
-**Informative application guide · 0.2.0 · 4 October 2026.** Use this after the reflective [self-description route](../../spec/research/proposals/personal-starter-slice.md). The result describes what exists and exposes follow-up questions. It is an experimental view over sources and existing concepts, not a new normative agent kind or a passing restoration assessment.
+**Informative application guide · 0.3.0 · 4 October 2026.** Use this after the reflective [self-description route](../../spec/research/proposals/personal-starter-slice.md). The result describes what exists and exposes follow-up questions. It is an experimental view over sources and existing concepts, not a new normative agent kind or a passing restoration assessment.
 
 ## Finish the known description
 
@@ -40,7 +40,7 @@ Complete an author pass when all selected component families have their known so
 
 ## Fit with current ODE
 
-Role/Work, Skill and ActivationBinding, Source/Storage/Environment, InteractionContract, Policy, native resources, exact references and backup inventory already cover important parts of the composition. Use them where their semantics fit. Personal ownership still requires a separate change to organization-only references; a class/identity basis is not automatically a professional AgentDNA. No fictitious Organization is introduced by this guide.
+Role/Work, Skill and ActivationBinding, Source/Storage/Environment, InteractionContract, Policy, native resources, exact references and backup inventory already cover important parts of the composition. Use them where their semantics fit. Normative 0.2 uses [Party affiliations](procedures/affiliation.md) without organization-only references; a class/identity basis is not automatically a professional AgentDNA. No fictitious Organization is introduced by this guide.
 
 Keep capture and execution explicit. A path/hash inventory cannot restore missing bytes or secrets. Full selected skill directories, chosen data and target support belong to a later scoped resource-preservation step. Migration exams are a future application need in the current case; no exam tasks, criteria or runner are designed here. See [description and restoration](description-and-restoration.md).
 

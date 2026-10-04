@@ -1,0 +1,50 @@
+{
+  "format": "ode-party-categories",
+  "version": "0.1.0",
+  "specVersion": "0.2.0-draft",
+  "field": "Party.spec.category",
+  "scope": "Categories of parties in service, authority and control relationships; not agent roles.",
+  "categories": [
+    {
+      "id": "person",
+      "title": {
+        "en": "Person",
+        "ru": "Человек"
+      },
+      "definition": "An individual person served by the agent or responsible for a declared context."
+    },
+    {
+      "id": "family",
+      "title": {
+        "en": "Family",
+        "ru": "Семья"
+      },
+      "definition": "A family or household acting as the identified collective in this context; membership and authority are separate."
+    },
+    {
+      "id": "team",
+      "title": {
+        "en": "Team",
+        "ru": "Команда"
+      },
+      "definition": "A group collaborating on a shared activity or project, without requiring a separate legal organization."
+    },
+    {
+      "id": "organization",
+      "title": {
+        "en": "Organization",
+        "ru": "Организация"
+      },
+      "definition": "An identified company, institution or other organization; this category does not require registry data."
+    },
+    {
+      "id": "other",
+      "title": {
+        "en": "Other named party",
+        "ru": "Иная именованная сторона"
+      },
+      "definition": "A party outside the listed categories, explicitly named by categoryLabel; no global code is inferred."
+    }
+  ],
+  "extensionRule": "Use other with categoryLabel for a local category. Adding or redefining a global category requires a new specification version."
+}

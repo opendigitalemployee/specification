@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Environment",
+  "layer": "environment",
+  "id": "urn:ode:example:project-agent:environment",
+  "version": "1.0.0",
+  "title": "environment",
+  "status": "draft",
+  "provenance": {
+    "origin": "Synthetic affiliation example; no runtime or owner agreement observed"
+  },
+  "spec": {
+    "controllerRef": {
+      "objectId": "urn:ode:example:project-agent:party",
+      "version": "1.0.0"
+    },
+    "readiness": "design",
+    "worldModelRefs": [
+      {
+        "objectId": "urn:ode:example:project-agent:world",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

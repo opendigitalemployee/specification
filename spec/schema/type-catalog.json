@@ -1,5 +1,5 @@
 {
-  "specVersion": "0.1.0-draft",
+  "specVersion": "0.2.0-draft",
   "types": [
     {
       "kind": "AgentDNA",
@@ -164,13 +164,14 @@
       ],
       "requiredFields": [
         "dnaRef",
-        "organizationRef",
+        "servesRef",
         "environmentRef",
         "workRefs"
       ],
       "fields": [
         "dnaRef",
-        "organizationRef",
+        "servesRef",
+        "authorityRef",
         "environmentRef",
         "workRefs",
         "roleRefs",
@@ -215,14 +216,14 @@
       ],
       "requiredFields": [
         "toolRef",
-        "organizationRef",
+        "controllerRef",
         "environmentRef",
         "config",
         "verification"
       ],
       "fields": [
         "toolRef",
-        "organizationRef",
+        "controllerRef",
         "environmentRef",
         "connectionRef",
         "dataRefs",
@@ -305,6 +306,20 @@
       ]
     },
     {
+      "kind": "Party",
+      "layers": [
+        "environment"
+      ],
+      "requiredFields": [
+        "category"
+      ],
+      "fields": [
+        "category",
+        "categoryLabel",
+        "description"
+      ]
+    },
+    {
       "kind": "Organization",
       "layers": [
         "environment"
@@ -328,11 +343,11 @@
         "environment"
       ],
       "requiredFields": [
-        "organizationRef",
+        "controllerRef",
         "readiness"
       ],
       "fields": [
-        "organizationRef",
+        "controllerRef",
         "readiness",
         "storageRefs",
         "sourceRefs",
@@ -436,13 +451,13 @@
         "environment"
       ],
       "requiredFields": [
-        "organizationRef",
+        "controllerRef",
         "instanceId",
         "schemaRefs",
         "governance"
       ],
       "fields": [
-        "organizationRef",
+        "controllerRef",
         "instanceId",
         "schemaRefs",
         "governance",

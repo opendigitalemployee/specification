@@ -13,7 +13,7 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": "0.1.0-draft"
+      "const": "0.2.0-draft"
     },
     "kind": {
       "enum": [
@@ -30,6 +30,7 @@
         "InteractionContract",
         "Policy",
         "Check",
+        "Party",
         "Organization",
         "Environment",
         "Storage",
@@ -827,7 +828,7 @@
             "type": "object",
             "required": [
               "dnaRef",
-              "organizationRef",
+              "servesRef",
               "environmentRef",
               "workRefs"
             ],
@@ -835,7 +836,10 @@
               "dnaRef": {
                 "$ref": "#/$defs/ref"
               },
-              "organizationRef": {
+              "servesRef": {
+                "$ref": "#/$defs/ref"
+              },
+              "authorityRef": {
                 "$ref": "#/$defs/ref"
               },
               "environmentRef": {
@@ -1013,7 +1017,7 @@
             "type": "object",
             "required": [
               "toolRef",
-              "organizationRef",
+              "controllerRef",
               "environmentRef",
               "config",
               "verification"
@@ -1022,7 +1026,7 @@
               "toolRef": {
                 "$ref": "#/$defs/ref"
               },
-              "organizationRef": {
+              "controllerRef": {
                 "$ref": "#/$defs/ref"
               },
               "environmentRef": {
@@ -1310,6 +1314,69 @@
       "if": {
         "properties": {
           "kind": {
+            "const": "Party"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "layer": {
+            "enum": [
+              "environment"
+            ]
+          },
+          "spec": {
+            "type": "object",
+            "required": [
+              "category"
+            ],
+            "properties": {
+              "category": {
+                "enum": [
+                  "person",
+                  "family",
+                  "team",
+                  "organization",
+                  "other"
+                ]
+              },
+              "categoryLabel": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "category": {
+                      "const": "other"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "categoryLabel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
             "const": "Organization"
           }
         },
@@ -1394,11 +1461,11 @@
           "spec": {
             "type": "object",
             "required": [
-              "organizationRef",
+              "controllerRef",
               "readiness"
             ],
             "properties": {
-              "organizationRef": {
+              "controllerRef": {
                 "$ref": "#/$defs/ref"
               },
               "readiness": {
@@ -1777,13 +1844,13 @@
           "spec": {
             "type": "object",
             "required": [
-              "organizationRef",
+              "controllerRef",
               "instanceId",
               "schemaRefs",
               "governance"
             ],
             "properties": {
-              "organizationRef": {
+              "controllerRef": {
                 "$ref": "#/$defs/ref"
               },
               "instanceId": {

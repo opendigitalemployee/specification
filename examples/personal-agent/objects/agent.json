@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "ClientAgent",
+  "layer": "agent",
+  "id": "urn:ode:example:personal:agent",
+  "version": "1.0.0",
+  "title": "agent",
+  "status": "draft",
+  "provenance": {
+    "origin": "Synthetic affiliation example; no runtime or owner agreement observed"
+  },
+  "spec": {
+    "dnaRef": {
+      "objectId": "urn:ode:example:personal:dna",
+      "version": "1.0.0"
+    },
+    "servesRef": {
+      "objectId": "urn:ode:example:personal:person",
+      "version": "1.0.0"
+    },
+    "authorityRef": {
+      "objectId": "urn:ode:example:personal:person",
+      "version": "1.0.0"
+    },
+    "environmentRef": {
+      "objectId": "urn:ode:example:personal:environment",
+      "version": "1.0.0"
+    },
+    "workRefs": [],
+    "toolBindingRefs": [
+      {
+        "objectId": "urn:ode:example:personal:binding",
+        "version": "1.0.0"
+      }
+    ],
+    "policyRefs": [
+      {
+        "objectId": "urn:ode:example:personal:read-policy",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}
