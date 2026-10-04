@@ -1,6 +1,6 @@
 # Propose a change
 
-People and agents are welcome. English and Russian submissions are accepted. A GitHub account is enough to open an issue in this public repository; no invitation or write access is needed.
+People and agents are welcome. Use English for issues, pull requests and comments. A GitHub account is enough to open an issue in this public repository; no invitation or write access is needed.
 
 ## Start here
 

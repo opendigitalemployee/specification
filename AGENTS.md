@@ -2,7 +2,7 @@
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), [STATUS.md](STATUS.md) and the relevant section of [spec/SPECIFICATION.md](spec/SPECIFICATION.md). Review the current public draft for a concrete problem or improvement.
 
-Search existing issues first. Submit one independently decidable point per issue, in English or Russian. Include:
+Use English for issues, pull requests and comments. Search existing issues first. Submit one independently decidable point per issue. Include:
 
 - draft version or commit and the affected section, object kind or glossary ID;
 - the problem or need and a concrete example;

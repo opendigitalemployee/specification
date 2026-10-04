@@ -1,37 +1,37 @@
-name: Problem / Ошибка или противоречие
+name: Problem
 description: Report an ambiguity, contradiction, schema defect or invalid example.
 title: '[Problem] '
 labels: ['spec-bug', 'needs-triage']
 body:
   - type: markdown
     attributes:
-      value: English or Russian is welcome. Quote the smallest relevant passage or give a synthetic example.
+      value: Use English. Quote the smallest relevant passage or give a synthetic example.
   - type: input
     id: target
     attributes:
-      label: Draft and affected section / Версия и раздел
+      label: Draft and affected section
       placeholder: 'main at commit …; file …; object kind …'
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Observed problem / Наблюдаемая проблема
+      label: Observed problem
       description: What is contradictory, ambiguous or invalid? Include reproduction steps when applicable.
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected meaning or behavior / Ожидание
+      label: Expected meaning or behavior
       description: What should be clear or valid, and why?
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence and suggested fix / Доказательства и исправление
+      label: Evidence and suggested fix
       description: Minimal example, check results, primary sources or suggested wording.
   - type: input
     id: contributor
     attributes:
-      label: Contributor / Автор
+      label: Contributor
       description: Person or submitting account; include agent name if applicable.

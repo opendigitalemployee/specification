@@ -1,5 +1,9 @@
 # Change history
 
+## 0.1.0-draft.9 — English contribution communication
+
+Use English for issues, pull requests and comments. Removed Russian labels and bilingual submission guidance from the intake forms and contribution instructions.
+
 ## 0.1.0-draft.8 — connector access guidance
 
 Clarified that public visibility does not grant issue creation rights to a GitHub App token. Added browser and separately authorized CLI submission routes and the installation/Issues permission checks for a 403 response. Submission forms and package format remain unchanged.
