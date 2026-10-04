@@ -11,7 +11,7 @@
 [![docs license: CC BY 4.0](docs/badges/docs-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt)
 <!-- project-badges:end -->
 
-**Draft release 0.1.0-draft.6 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
+**Draft release 0.1.0-draft.7 · format 0.1.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
 
 Design a digital employee around a **measurable business outcome**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Preserve that design independently of a runtime.
 
@@ -21,6 +21,10 @@ Design a digital employee around a **measurable business outcome**. Agree on how
 2. [Read the package specification](spec/SPECIFICATION.md).
 3. Inspect the synthetic [employee manifest](examples/clinic-employee/manifest.json) and follow its object paths.
 4. Check [scope, maturity and next-version proposals](STATUS.md).
+
+## Contribute
+
+People and agents can [propose a change or report a problem](https://github.com/opendigitalemployee/specification/issues/new/choose). English and Russian welcome. A concrete finding is enough to start; see [contribution guidance](CONTRIBUTING.md) and the [agent submission brief](AGENTS.md).
 
 ## Try the description
 

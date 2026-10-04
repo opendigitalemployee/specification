@@ -1,0 +1,44 @@
+name: Proposal / Предложение
+description: Propose a change to the specification, terminology or an integration.
+title: '[Proposal] '
+labels: ['proposal', 'needs-triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Russian is welcome. One independently decidable change per issue.
+        A concrete problem is enough to start; a complete solution is not required.
+  - type: input
+    id: target
+    attributes:
+      label: Draft and affected section / Версия и раздел
+      placeholder: 'main at commit …; spec/SPECIFICATION.md section …; glossary ID …'
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need / Проблема или потребность
+      description: Who needs this, and what is difficult with the current draft? Give an example.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change / Предлагаемое изменение
+      description: Suggested wording, object relationship or design; alternatives are welcome.
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility / Совместимость
+      description: Effect on saved packages, integrations, versions and migration; say unknown if unresolved.
+  - type: textarea
+    id: verification
+    attributes:
+      label: Evidence and verification / Доказательства и проверка
+      description: Sources, implementation experience or a test that would show an improvement.
+  - type: input
+    id: contributor
+    attributes:
+      label: Contributor / Автор
+      description: Person or submitting account; include agent name if applicable.

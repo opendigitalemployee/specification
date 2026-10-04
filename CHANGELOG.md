@@ -1,5 +1,9 @@
 # Change history
 
+## 0.1.0-draft.7 — public feedback intake
+
+Added proposal and problem issue forms, a visible submission link and concise guidance for people and agents. Reports enter maintainer triage; accepted patches return to the curated source before publication. Package format, schemas and synthetic example bytes remain unchanged.
+
 ## 0.1.0-draft.6 — illustrated overview and English composition notes
 
 Added a GitHub README banner about the difference between completed tasks and measurable outcomes. Composition notes are now in English and distinguish current integration boundaries from next-version proposals. Schemas and synthetic package bytes remain unchanged.
