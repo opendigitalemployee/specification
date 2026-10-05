@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "DecisionStyle",
+  "layer": "agent",
+  "id": "urn:ode:example:product-employee:style",
+  "version": "1.0.0",
+  "title": "Product next-step judgment",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic scenario; not runtime evidence"
+  },
+  "spec": {
+    "decisionRules": [
+      "Check applicability and authority before ranking options",
+      "Test the most material uncertainty with a bounded step"
+    ],
+    "bounds": [
+      "No contact or product change without the assigned authority"
+    ],
+    "tradeoffs": [
+      "Compare outcome contribution, time, budget and human attention"
+    ],
+    "hypothesisPreferences": {
+      "preference": "Reversible tests with interpretable evidence"
+    }
+  },
+  "extensions": {
+    "org.opendigitalemployee.decision-making": {
+      "version": "0.1.0",
+      "artifact": "decision-making.json"
+    }
+  }
+}

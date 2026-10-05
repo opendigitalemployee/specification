@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "GoalMap",
+  "layer": "agent",
+  "id": "urn:ode:example:product-employee:goal",
+  "version": "1.0.0",
+  "title": "Improve activation without added support burden",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic scenario; not runtime evidence"
+  },
+  "spec": {
+    "objectives": [
+      {
+        "id": "activation",
+        "outcome": "More teams reach first useful result within seven days."
+      }
+    ],
+    "metrics": [
+      {
+        "id": "activation-rate",
+        "baseline": "Illustrative 40%; validity to be checked",
+        "target": "Illustrative 50% by quarter end",
+        "guardrail": "Support hours per activated team must not increase"
+      }
+    ],
+    "period": {
+      "description": "Illustrative quarter"
+    },
+    "workRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:work",
+        "version": "1.0.0"
+      }
+    ],
+    "ownerRef": {
+      "objectId": "urn:ode:example:product-employee:reviewer",
+      "version": "1.0.0"
+    }
+  }
+}

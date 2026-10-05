@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "AgentDNA",
+  "layer": "dna",
+  "id": "urn:ode:example:product-employee:dna",
+  "version": "1.0.0",
+  "title": "Product development professional foundation",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic product-employee scenario; no real execution or approval observed"
+  },
+  "spec": {
+    "outcome": "Help achieve measurable product outcomes under uncertain conditions",
+    "workRefs": [],
+    "environmentRequirements": [],
+    "styleRefs": [],
+    "metaSkillRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:human-skill",
+        "version": "1.0.0"
+      }
+    ],
+    "checkRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:check",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

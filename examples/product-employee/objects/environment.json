@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Environment",
+  "layer": "environment",
+  "id": "urn:ode:example:product-employee:environment",
+  "version": "1.0.0",
+  "title": "environment",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic product-employee scenario; no real execution or approval observed"
+  },
+  "spec": {
+    "controllerRef": {
+      "objectId": "urn:ode:example:product-employee:party",
+      "version": "1.0.0"
+    },
+    "readiness": "design",
+    "worldModelRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:world",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

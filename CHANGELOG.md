@@ -1,5 +1,14 @@
 # Change history
 
+## 0.2.0-draft.3 — 2026-10-04
+
+- Added experimental decision-making contract 0.1.0: logic, applicability and application history, with contextual method profiles and explicit human responsibility.
+- Added a versioned six-category operating-conditions catalog, separate from design conditions and quality pillars.
+- Added DECISION-01 and a complete synthetic product employee package with an autonomous local step and a human-authorized pending step; no runtime execution is claimed.
+- Added schema and semantic regression checks for references, stale or unknown inputs, applicability, budgets, authorization, forecast history and action/review separation.
+- Clarified professional judgment and measurable outcomes in an imperfect world in the overview and glossary.
+- Core format 0.2.0-draft, its 34 kinds, previous schemas and existing example bytes remain unchanged.
+
 ## 0.2.0-draft.2 — 2026-10-04
 
 - Added a latest-release link and a concise summary of the 0.2 draft changes to README: personal/shared affiliations, the agent procedure index and four complete worked packages.

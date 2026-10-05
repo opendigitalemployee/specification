@@ -1,6 +1,6 @@
 # Status and scope
 
-Draft release **0.2.0-draft.2**, package format **0.2.0-draft**. The format describes a digital employee; it is not a runtime, marketplace, certification system, or guarantee of business outcomes.
+Draft release **0.2.0-draft.3**, package format **0.2.0-draft**. The format describes a digital employee; it is not a runtime, marketplace, certification system, or guarantee of business outcomes.
 
 ## Current contract
 
@@ -13,6 +13,12 @@ Export is checked internally using a private reference toolchain: package valida
 [Agent entry](docs/agents/README.md): versioned profile, composition, assessment and index; 25 design questions and 15 quality questions; a blank collection and the fictional Aster 0.2.0 example. Experimental contracts are under `spec/research/proposals/`, separate from normative object schemas. The description can finish with routed unknowns and partial answers. An assessment is part of the collection and pins the evaluated profile.
 
 Public checks cover file structure, references, hashes and boundary regression cases. They do not establish truth, independent adoption, owner agreement, agent behavior or runtime compatibility. No private real-agent files are included. The broader [issue #4](https://github.com/opendigitalemployee/specification/issues/4) remains open. Backup traversal/cuts and migration assessment remain separate. Normative 0.2 affiliation is now available through Party and explicit service, authority and environment-control references; it does not model legal ownership or the full proposed Person/Consent system. See the [procedure index](docs/agents/procedures/README.md) and [three worked affiliation cases](docs/agents/procedures/affiliation.md).
+
+## Experimental decision-making
+
+[Decision-making 0.1.0](spec/DECISION-MAKING.md) is an opt-in extension with a JSON Schema, a versioned operating-conditions catalog, [DECISION-01](docs/agents/procedures/decision-making.md), and a [synthetic product employee](examples/product-employee/README.md). It separates method logic, applicability, contextual profiles, authorization, actual actions and review. It adds no core kind and does not mandate a particular professional method.
+
+The public checker covers schema, references, freshness, resources, authority records, human requests and chronology. The example's two episodes are authored scenarios. Independent agent repetition, professional adequacy, forecast calibration, runtime enforcement and business effects remain unverified. A method profile is distinct from `manifest.profile`.
 
 ## Adapters
 

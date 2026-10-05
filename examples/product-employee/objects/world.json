@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "WorldModel",
+  "layer": "environment",
+  "id": "urn:ode:example:product-employee:world",
+  "version": "1.0.0",
+  "title": "world",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic product-employee scenario; no real execution or approval observed"
+  },
+  "spec": {
+    "controllerRef": {
+      "objectId": "urn:ode:example:product-employee:party",
+      "version": "1.0.0"
+    },
+    "instanceId": "synthetic-personal-world",
+    "schemaRefs": [],
+    "governance": {
+      "scope": "Design only; no personal records collected."
+    }
+  }
+}

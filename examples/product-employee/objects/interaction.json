@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "InteractionContract",
+  "layer": "agent",
+  "id": "urn:ode:example:product-employee:interaction",
+  "version": "1.0.0",
+  "title": "Product owner decision",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic scenario; not runtime evidence"
+  },
+  "spec": {
+    "participants": [
+      {
+        "objectId": "urn:ode:example:product-employee:agent",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:ode:example:product-employee:reviewer",
+        "version": "1.0.0"
+      }
+    ],
+    "allowedIntent": [
+      "information",
+      "expert-assessment",
+      "priorities",
+      "interest-reconciliation",
+      "resources",
+      "authorization"
+    ],
+    "attentionBudget": {
+      "minutesPerReview": 15
+    },
+    "decisionBrief": {
+      "required": [
+        "question",
+        "options",
+        "recommendation",
+        "consequences",
+        "deadline",
+        "whileWaiting"
+      ]
+    },
+    "policyRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:read-policy",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

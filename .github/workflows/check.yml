@@ -35,3 +35,5 @@ jobs:
           python -B .github/checks/self_description.py --standard-root . --index examples/personal-description/0.2.0/index.json
           python -B .github/checks/self_description.py --standard-root . --index spec/research/proposals/personal-description-template/0.1.0/index.json --allow-draft
           python -B -m unittest discover -s .github/checks -p 'test_*.py' -v
+      - name: Check experimental decision-making description
+        run: python -B .github/checks/decision_making.py --standard-root . --package examples/product-employee

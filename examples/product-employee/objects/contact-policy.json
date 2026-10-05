@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Policy",
+  "layer": "agent",
+  "id": "urn:ode:example:product-employee:contact-policy",
+  "version": "1.0.0",
+  "title": "Human authorization for customer contact",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic scenario; not runtime evidence"
+  },
+  "spec": {
+    "actions": [
+      "Contact customers",
+      "Change product behavior"
+    ],
+    "resourceScope": {
+      "scope": "Any external contact or production change"
+    },
+    "mode": "approval-required",
+    "enforcement": "human",
+    "approver": "Fictional product owner; synthetic pending example is not permission"
+  }
+}

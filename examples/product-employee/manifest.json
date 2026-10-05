@@ -1,0 +1,163 @@
+{
+  "format": "digital-employee-package",
+  "specVersion": "0.2.0-draft",
+  "id": "urn:ode:example:product-employee:package",
+  "version": "1.0.0",
+  "profile": "client",
+  "title": "Synthetic product employee: judgment under uncertainty",
+  "entrypoints": {
+    "dna": [
+      {
+        "objectId": "urn:ode:example:product-employee:dna",
+        "version": "1.0.0"
+      }
+    ],
+    "environments": [
+      {
+        "objectId": "urn:ode:example:product-employee:environment",
+        "version": "1.0.0"
+      }
+    ],
+    "agents": [
+      {
+        "objectId": "urn:ode:example:product-employee:agent",
+        "version": "1.0.0"
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "urn:ode:example:product-employee:agent",
+      "version": "1.0.0",
+      "kind": "ClientAgent",
+      "path": "objects/agent.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:binding",
+      "version": "1.0.0",
+      "kind": "ToolBinding",
+      "path": "objects/binding.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:check",
+      "version": "1.0.0",
+      "kind": "Check",
+      "path": "objects/check.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:contact-policy",
+      "version": "1.0.0",
+      "kind": "Policy",
+      "path": "objects/contact-policy.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:dna",
+      "version": "1.0.0",
+      "kind": "AgentDNA",
+      "path": "objects/dna.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:environment",
+      "version": "1.0.0",
+      "kind": "Environment",
+      "path": "objects/environment.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:goal",
+      "version": "1.0.0",
+      "kind": "GoalMap",
+      "path": "objects/goal.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:human-skill",
+      "version": "1.0.0",
+      "kind": "Skill",
+      "path": "objects/human-skill.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:interaction",
+      "version": "1.0.0",
+      "kind": "InteractionContract",
+      "path": "objects/interaction.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:party",
+      "version": "1.0.0",
+      "kind": "Party",
+      "path": "objects/party.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:read-policy",
+      "version": "1.0.0",
+      "kind": "Policy",
+      "path": "objects/read-policy.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:reviewer",
+      "version": "1.0.0",
+      "kind": "Party",
+      "path": "objects/reviewer.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:style",
+      "version": "1.0.0",
+      "kind": "DecisionStyle",
+      "path": "objects/style.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:tool",
+      "version": "1.0.0",
+      "kind": "ToolDefinition",
+      "path": "objects/tool.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:work",
+      "version": "1.0.0",
+      "kind": "Work",
+      "path": "objects/work.json"
+    },
+    {
+      "id": "urn:ode:example:product-employee:world",
+      "version": "1.0.0",
+      "kind": "WorldModel",
+      "path": "objects/world.json"
+    }
+  ],
+  "resources": [
+    {
+      "path": "README.md",
+      "mediaType": "text/markdown",
+      "role": "attachment"
+    },
+    {
+      "path": "decision-making.json",
+      "mediaType": "application/json",
+      "role": "attachment"
+    },
+    {
+      "path": "inputs/funnel.json",
+      "mediaType": "application/json",
+      "role": "attachment"
+    },
+    {
+      "path": "inputs/review.json",
+      "mediaType": "application/json",
+      "role": "attachment"
+    },
+    {
+      "path": "native/skills/human-decision-brief/SKILL.md",
+      "mediaType": "text/markdown",
+      "role": "native",
+      "standardId": "agent-skills"
+    }
+  ],
+  "externalDependencies": [],
+  "standards": [
+    {
+      "id": "agent-skills",
+      "url": "https://agentskills.io/specification",
+      "required": false,
+      "revision": "observed-2026-10-04"
+    }
+  ]
+}

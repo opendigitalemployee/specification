@@ -1,0 +1,9 @@
+{
+  "evidenceClass": "synthetic",
+  "observedAt": "2026-10-01T12:00:00Z",
+  "observation": "Authored scenario: the local evidence review identifies an unmeasured onboarding barrier",
+  "limitations": [
+    "Fictional observation for contract validation",
+    "No runtime or customer data"
+  ]
+}

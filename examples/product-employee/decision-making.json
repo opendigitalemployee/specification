@@ -1,0 +1,531 @@
+{
+  "format": "ode-decision-making",
+  "extensionVersion": "0.1.0",
+  "status": "experimental",
+  "id": "urn:ode:example:product-employee:decision-description",
+  "version": "0.1.0",
+  "catalog": {
+    "id": "org.opendigitalemployee.operating-conditions",
+    "version": "0.1.0"
+  },
+  "method": {
+    "id": "product-next-step",
+    "version": "0.1.0",
+    "title": "Product next-step method with an ODE operational supplement",
+    "sources": [
+      {
+        "url": "https://github.com/zamesin/Next-Move-Theory-Canon-and-Skills/tree/f8e87d10255b48d381ebc7fa65172960eb6d483f/Next-Move-Theory-Canon",
+        "revision": "f8e87d10255b48d381ebc7fa65172960eb6d483f",
+        "relationship": "Optional external professional method; linked only. This independently authored ODE supplement is not an endorsed or complete implementation of NMT."
+      }
+    ],
+    "logic": {
+      "inputs": [
+        "Agreed outcome and limits",
+        "Current evidence and dependencies",
+        "Authority boundaries"
+      ],
+      "candidateGeneration": "Generate alternatives including evidence gathering, bounded experiments, human decisions and stopping.",
+      "selectionPrinciples": [
+        "Check admissibility before ranking",
+        "Prefer useful information where a decision is blocked by missing evidence",
+        "Compare expected contribution and resource cost; retain rejected alternatives"
+      ],
+      "forecastApproach": "State whether the outcome is feasible and what could change that view. No numerical probability without an estimation method and calibration evidence.",
+      "resourceRules": [
+        "Sum costs of compatible experiments within the step budget",
+        "Check shared dependencies and interference"
+      ],
+      "authorityRules": [
+        "Local evidence review within mandate",
+        "Customer contact and product changes require the product owner"
+      ],
+      "stopRules": [
+        "Outside applicability",
+        "Unavailable or revoked permission",
+        "Resource limit exceeded"
+      ],
+      "reviewRules": [
+        "Compare the preserved forecast with observations",
+        "Update the method only through a reviewed version"
+      ]
+    },
+    "applicability": {
+      "domains": [
+        "Product development"
+      ],
+      "decisionClasses": [
+        "Choose a bounded discovery or activation experiment"
+      ],
+      "entryConditions": [
+        "A proposed outcome with an accountable product owner",
+        "Dated evidence and declared limits"
+      ],
+      "exclusions": [
+        "Legal or clinical decisions",
+        "Irreversible production change without approval"
+      ],
+      "horizon": "One bounded step, reviewed before committing the next",
+      "maxEvidenceAgeHours": 24,
+      "fallback": "Describe the gap; request domain advice or a human decision. Do not execute an out-of-scope recommendation."
+    }
+  },
+  "profile": {
+    "id": "fictional-product-team",
+    "version": "0.1.0",
+    "domain": "Product development",
+    "outcome": {
+      "measure": "Seven-day team activation without increasing support hours per activated team",
+      "baseline": "Illustrative 40%; cohort coverage is an explicit open item",
+      "target": "Illustrative 50%",
+      "horizon": "Quarter end",
+      "commitmentStatus": "proposed",
+      "changeAuthority": "Product owner; forecast updates do not amend the agreement"
+    },
+    "limits": {
+      "hoursPerStep": 4,
+      "budgetPerStep": 100,
+      "currency": "USD"
+    },
+    "bindings": {
+      "agentRef": {
+        "objectId": "urn:ode:example:product-employee:agent",
+        "version": "1.0.0"
+      },
+      "goalRef": {
+        "objectId": "urn:ode:example:product-employee:goal",
+        "version": "1.0.0"
+      },
+      "environmentRef": {
+        "objectId": "urn:ode:example:product-employee:environment",
+        "version": "1.0.0"
+      },
+      "workRef": {
+        "objectId": "urn:ode:example:product-employee:work",
+        "version": "1.0.0"
+      },
+      "styleRef": {
+        "objectId": "urn:ode:example:product-employee:style",
+        "version": "1.0.0"
+      },
+      "policyRefs": [
+        {
+          "objectId": "urn:ode:example:product-employee:read-policy",
+          "version": "1.0.0"
+        },
+        {
+          "objectId": "urn:ode:example:product-employee:contact-policy",
+          "version": "1.0.0"
+        }
+      ],
+      "interactionRef": {
+        "objectId": "urn:ode:example:product-employee:interaction",
+        "version": "1.0.0"
+      },
+      "metaSkillRef": {
+        "objectId": "urn:ode:example:product-employee:human-skill",
+        "version": "1.0.0"
+      }
+    },
+    "unknowns": [
+      "Confirm the baseline and cohort before any offer",
+      "Method has no independent domain review or runtime trial"
+    ],
+    "reviewStatus": "pending"
+  },
+  "episodes": [
+    {
+      "id": "step-1",
+      "version": "1.0.0",
+      "evidenceClass": "synthetic",
+      "previousEpisodeId": null,
+      "decidedAt": "2026-10-01T09:00:00Z",
+      "methodVersion": "0.1.0",
+      "profileVersion": "0.1.0",
+      "responsibleActorRef": {
+        "objectId": "urn:ode:example:product-employee:agent",
+        "version": "1.0.0"
+      },
+      "inputs": [
+        {
+          "id": "funnel",
+          "artifact": {
+            "path": "inputs/funnel.json",
+            "sha256": "c79af76ea01f7fb936675d7cad06a5b4581b27ba80b0a477e41a5cfaf4d185a4"
+          },
+          "observedAt": "2026-10-01T08:00:00Z",
+          "status": "known",
+          "limitations": [
+            "Coverage remains unverified"
+          ]
+        }
+      ],
+      "applicability": {
+        "status": "applicable",
+        "basis": "Local evidence review is within the domain, freshness window and mandate"
+      },
+      "conditions": [
+        {
+          "code": "knowledge-limits",
+          "status": "present",
+          "assessment": "Cohort coverage is incomplete",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "outcome-uncertainty",
+          "status": "present",
+          "assessment": "An activation change may not improve the quarter outcome",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "goal-interest-conflicts",
+          "status": "unknown",
+          "assessment": "Needs review with the product owner",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "resource-dependency-limits",
+          "status": "present",
+          "assessment": "Four hours and 100 USD per step",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "changing-conditions",
+          "status": "unknown",
+          "assessment": "Needs review with the product owner",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "capability-execution-limits",
+          "status": "unknown",
+          "assessment": "Needs review with the product owner",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        }
+      ],
+      "focus": "knowledge-limits",
+      "candidates": [
+        {
+          "id": "review",
+          "action": "Review local cohort coverage",
+          "workRef": {
+            "objectId": "urn:ode:example:product-employee:work",
+            "version": "1.0.0"
+          },
+          "expectedContribution": "Clarify whether the activation baseline can support an experiment",
+          "cost": {
+            "hours": 2,
+            "budget": 0
+          },
+          "admissibility": "allowed",
+          "grounds": "Read-only selected files; reversible and within time budget"
+        },
+        {
+          "id": "interviews",
+          "action": "Invite customers to interviews",
+          "workRef": {
+            "objectId": "urn:ode:example:product-employee:work",
+            "version": "1.0.0"
+          },
+          "expectedContribution": "Learn about an activation barrier",
+          "cost": {
+            "hours": 3,
+            "budget": 50
+          },
+          "admissibility": "requires-human",
+          "grounds": "Customer contact is outside the current mandate"
+        }
+      ],
+      "selection": {
+        "candidateIds": [
+          "review"
+        ],
+        "grounds": "Resolve the evidence gap before proposing external contact",
+        "compatibility": "One selected step; simultaneous review and interviews would exceed four hours",
+        "remainingResources": {
+          "hours": 2,
+          "budget": 100
+        }
+      },
+      "forecast": {
+        "madeAt": "2026-10-01T09:00:00Z",
+        "target": "Reach illustrative 50% activation by quarter end without more support per activated team",
+        "horizon": "2026-12-31T23:00:00Z",
+        "estimateKind": "unknown",
+        "estimate": "Cannot assess feasibility until the baseline and main barrier are understood",
+        "basisInputIds": [
+          "funnel"
+        ],
+        "assumptions": [
+          "Local cohort evidence can expose missing coverage"
+        ],
+        "limitations": [
+          "No calibrated probability",
+          "No business outcome observed"
+        ],
+        "reviewTrigger": "Review again after the evidence check or a context change"
+      },
+      "authorization": {
+        "status": "within-mandate",
+        "responsibleRef": {
+          "objectId": "urn:ode:example:product-employee:reviewer",
+          "version": "1.0.0"
+        },
+        "policyRef": {
+          "objectId": "urn:ode:example:product-employee:read-policy",
+          "version": "1.0.0"
+        },
+        "basis": "Synthetic policy allows only selected local read and draft actions",
+        "recordedAt": "2026-10-01T09:00:00Z"
+      },
+      "execution": {
+        "status": "completed",
+        "candidateIds": [
+          "review"
+        ],
+        "startedAt": "2026-10-01T10:00:00Z",
+        "endedAt": "2026-10-01T12:00:00Z",
+        "receipt": "Authored scenario only: inputs/review.json; not a runtime receipt"
+      },
+      "review": {
+        "status": "recorded",
+        "dueAt": "2026-10-01T13:00:00Z",
+        "observedAt": "2026-10-01T12:00:00Z",
+        "observations": "Synthetic review identifies an unmeasured onboarding barrier",
+        "forecastComparison": "Feasibility remains unknown; the next evidence need is more specific",
+        "methodLearning": "Require cohort coverage checks before proposing a growth commitment",
+        "nextAction": "Ask the product owner to authorize a bounded customer study"
+      }
+    },
+    {
+      "id": "step-2",
+      "version": "1.0.0",
+      "evidenceClass": "synthetic",
+      "previousEpisodeId": "step-1",
+      "decidedAt": "2026-10-01T13:00:00Z",
+      "methodVersion": "0.1.0",
+      "profileVersion": "0.1.0",
+      "responsibleActorRef": {
+        "objectId": "urn:ode:example:product-employee:agent",
+        "version": "1.0.0"
+      },
+      "inputs": [
+        {
+          "id": "funnel",
+          "artifact": {
+            "path": "inputs/funnel.json",
+            "sha256": "c79af76ea01f7fb936675d7cad06a5b4581b27ba80b0a477e41a5cfaf4d185a4"
+          },
+          "observedAt": "2026-10-01T08:00:00Z",
+          "status": "known",
+          "limitations": [
+            "Coverage remains unverified"
+          ]
+        },
+        {
+          "id": "review",
+          "artifact": {
+            "path": "inputs/review.json",
+            "sha256": "d8e2b1cc57f3adcd6c033e26b065788a82d5d093302bc3dfaaebc759f1bfea00"
+          },
+          "observedAt": "2026-10-01T12:00:00Z",
+          "status": "known",
+          "limitations": [
+            "Authored scenario only"
+          ]
+        }
+      ],
+      "applicability": {
+        "status": "applicable",
+        "basis": "Local evidence review is within the domain, freshness window and mandate"
+      },
+      "conditions": [
+        {
+          "code": "knowledge-limits",
+          "status": "present",
+          "assessment": "Cohort coverage is incomplete",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "outcome-uncertainty",
+          "status": "present",
+          "assessment": "An activation change may not improve the quarter outcome",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "goal-interest-conflicts",
+          "status": "unknown",
+          "assessment": "Needs review with the product owner",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "resource-dependency-limits",
+          "status": "present",
+          "assessment": "Four hours and 100 USD per step",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "changing-conditions",
+          "status": "unknown",
+          "assessment": "Needs review with the product owner",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        },
+        {
+          "code": "capability-execution-limits",
+          "status": "unknown",
+          "assessment": "Needs review with the product owner",
+          "evidenceIds": [
+            "funnel"
+          ],
+          "impact": "May change which next step is justified",
+          "response": "Review evidence and boundary before execution"
+        }
+      ],
+      "focus": "knowledge-limits",
+      "candidates": [
+        {
+          "id": "review",
+          "action": "Review local cohort coverage",
+          "workRef": {
+            "objectId": "urn:ode:example:product-employee:work",
+            "version": "1.0.0"
+          },
+          "expectedContribution": "Clarify whether the activation baseline can support an experiment",
+          "cost": {
+            "hours": 2,
+            "budget": 0
+          },
+          "admissibility": "allowed",
+          "grounds": "Read-only selected files; reversible and within time budget"
+        },
+        {
+          "id": "interviews",
+          "action": "Invite customers to interviews",
+          "workRef": {
+            "objectId": "urn:ode:example:product-employee:work",
+            "version": "1.0.0"
+          },
+          "expectedContribution": "Learn about an activation barrier",
+          "cost": {
+            "hours": 3,
+            "budget": 50
+          },
+          "admissibility": "requires-human",
+          "grounds": "Customer contact is outside the current mandate"
+        }
+      ],
+      "selection": {
+        "candidateIds": [
+          "interviews"
+        ],
+        "grounds": "Propose a customer study to test the barrier; human authorization still required",
+        "compatibility": "One proposed experiment",
+        "remainingResources": {
+          "hours": 1,
+          "budget": 50
+        }
+      },
+      "forecast": {
+        "madeAt": "2026-10-01T13:00:00Z",
+        "target": "Reach illustrative 50% activation by quarter end without more support per activated team",
+        "horizon": "2026-12-31T23:00:00Z",
+        "estimateKind": "unknown",
+        "estimate": "The barrier is a candidate explanation, not evidence that 50% activation is achievable",
+        "basisInputIds": [
+          "funnel",
+          "review"
+        ],
+        "assumptions": [
+          "Local cohort evidence can expose missing coverage"
+        ],
+        "limitations": [
+          "No calibrated probability",
+          "No business outcome observed"
+        ],
+        "reviewTrigger": "Review again after the evidence check or a context change"
+      },
+      "authorization": {
+        "status": "pending",
+        "responsibleRef": {
+          "objectId": "urn:ode:example:product-employee:reviewer",
+          "version": "1.0.0"
+        },
+        "policyRef": {
+          "objectId": "urn:ode:example:product-employee:contact-policy",
+          "version": "1.0.0"
+        },
+        "basis": "No product-owner authorization recorded",
+        "recordedAt": "2026-10-01T13:00:00Z"
+      },
+      "execution": {
+        "status": "not-started",
+        "candidateIds": []
+      },
+      "review": {
+        "status": "pending",
+        "dueAt": "2026-10-02T09:00:00Z",
+        "nextAction": "Recheck authority and freshness before action"
+      },
+      "humanRequest": {
+        "type": "authorization",
+        "recipientRef": {
+          "objectId": "urn:ode:example:product-employee:reviewer",
+          "version": "1.0.0"
+        },
+        "question": "May we invite customers to a bounded study of the onboarding barrier?",
+        "options": [
+          "Authorize the study within 3 hours and 50 USD",
+          "Keep to local evidence",
+          "Defer pending baseline clarification"
+        ],
+        "recommendation": "Authorize only the scoped study; do not promise growth yet",
+        "consequences": "Customer attention and staff time are used; the study may disconfirm the hypothesis",
+        "deadline": "2026-10-02T09:00:00Z",
+        "whileWaiting": "Prepare an internal draft only; do not contact customers. Silence is not approval."
+      }
+    }
+  ]
+}

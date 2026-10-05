@@ -1,6 +1,6 @@
 {
   "format": "digital-employee-glossary",
-  "version": "0.1",
+  "version": "0.2",
   "referenceLanguage": "en",
   "requiredLanguages": [
     "ru",
@@ -90,24 +90,24 @@
       "id": "digital-employee",
       "group": "core",
       "status": "draft",
-      "revision": 1,
+      "revision": 2,
       "locales": {
         "ru": {
           "preferred": "Цифровой сотрудник",
           "aliases": [],
-          "definition": "Агент, которому в организационном контексте назначены роли, ожидаемые результаты, полномочия и правила оценки.",
+          "definition": "Агент, спроектированный для достижения согласованных измеримых результатов в неидеальном мире, с явными ролями, полномочиями, ограничениями ресурсов и правилами оценки.",
           "example": "Помощник отдела продаж с назначенными работами и лимитом действий.",
           "status": "draft",
-          "basedOnRevision": 1,
+          "basedOnRevision": 2,
           "reviewedRevision": null
         },
         "en": {
           "preferred": "Digital employee",
           "aliases": [],
-          "definition": "An agent assigned roles, expected outcomes, authority and evaluation rules within an organizational context.",
+          "definition": "An agent designed to achieve agreed, measurable outcomes in an imperfect world, within explicit roles, authority, resource limits and evaluation rules.",
           "example": "A sales assistant with assigned work and action limits.",
           "status": "draft",
-          "basedOnRevision": 1,
+          "basedOnRevision": 2,
           "reviewedRevision": null
         }
       },
@@ -1625,6 +1625,186 @@
       ],
       "externalMappings": [],
       "reviewNote": "Пять направлений не исчерпывают три опоры: надёжность имеет отдельные проверки."
+    },
+    {
+      "id": "operating-condition",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "en": {
+          "preferred": "Operating condition",
+          "aliases": [],
+          "definition": "A contextual limitation, uncertainty, conflict or change relevant to selecting a next step.",
+          "example": "See the synthetic product employee.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "ru": {
+          "preferred": "Условие реального мира",
+          "aliases": [],
+          "definition": "Контекстное ограничение, неопределённость, конфликт или изменение, влияющее на выбор следующего шага.",
+          "example": "См. синтетический пример продуктового сотрудника.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "digital-employee",
+        "work"
+      ],
+      "docs": [
+        "spec/DECISION-MAKING.md"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Experimental decision-making vocabulary; not new core kinds."
+    },
+    {
+      "id": "professional-judgment",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "en": {
+          "preferred": "Professional judgment",
+          "aliases": [],
+          "definition": "Domain expertise used to select a justified next step under uncertainty and constraints.",
+          "example": "See the synthetic product employee.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "ru": {
+          "preferred": "Профессиональное суждение",
+          "aliases": [],
+          "definition": "Доменная экспертиза выбора обоснованного следующего шага при неопределённости и ограничениях.",
+          "example": "См. синтетический пример продуктового сотрудника.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "digital-employee",
+        "work"
+      ],
+      "docs": [
+        "spec/DECISION-MAKING.md"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Experimental decision-making vocabulary; not new core kinds."
+    },
+    {
+      "id": "method-applicability",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "en": {
+          "preferred": "Method applicability",
+          "aliases": [],
+          "definition": "The situations, evidence conditions and boundaries in which a decision method is appropriate.",
+          "example": "See the synthetic product employee.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "ru": {
+          "preferred": "Применимость метода",
+          "aliases": [],
+          "definition": "Ситуации, условия данных и границы, в которых уместно применять метод принятия решений.",
+          "example": "См. синтетический пример продуктового сотрудника.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "digital-employee",
+        "work"
+      ],
+      "docs": [
+        "spec/DECISION-MAKING.md"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Experimental decision-making vocabulary; not new core kinds."
+    },
+    {
+      "id": "decision-episode",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "en": {
+          "preferred": "Decision episode",
+          "aliases": [],
+          "definition": "A dated record separating context, alternatives, forecast, choice, authorization, action and later review.",
+          "example": "See the synthetic product employee.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "ru": {
+          "preferred": "Эпизод принятия решения",
+          "aliases": [],
+          "definition": "Датированное описание, разделяющее контекст, альтернативы, прогноз, выбор, полномочия, действие и последующую оценку.",
+          "example": "См. синтетический пример продуктового сотрудника.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "digital-employee",
+        "work"
+      ],
+      "docs": [
+        "spec/DECISION-MAKING.md"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Experimental decision-making vocabulary; not new core kinds."
+    },
+    {
+      "id": "method-profile",
+      "group": "execution",
+      "status": "draft",
+      "revision": 1,
+      "locales": {
+        "en": {
+          "preferred": "Method profile",
+          "aliases": [],
+          "definition": "A versioned selection of a method for a particular outcome, context, limits and human responsibilities; distinct from a package profile.",
+          "example": "See the synthetic product employee.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        },
+        "ru": {
+          "preferred": "Профиль метода",
+          "aliases": [],
+          "definition": "Версионированная настройка метода под результат, контекст, ограничения и ответственность человека; отличается от профиля пакета.",
+          "example": "См. синтетический пример продуктового сотрудника.",
+          "status": "draft",
+          "basedOnRevision": 1,
+          "reviewedRevision": null
+        }
+      },
+      "modelKinds": [],
+      "seeAlso": [
+        "digital-employee",
+        "work"
+      ],
+      "docs": [
+        "spec/DECISION-MAKING.md"
+      ],
+      "externalMappings": [],
+      "reviewNote": "Experimental decision-making vocabulary; not new core kinds."
     }
   ]
 }

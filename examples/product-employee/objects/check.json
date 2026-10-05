@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Check",
+  "layer": "dna",
+  "id": "urn:ode:example:product-employee:check",
+  "version": "1.0.0",
+  "title": "Decision record remains reviewable",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic scenario; not runtime evidence"
+  },
+  "spec": {
+    "pillar": "reliability",
+    "case": "Unknown data or missing authority",
+    "expected": "The record keeps the gap and avoids unauthorized execution",
+    "passRule": "Run structural checker, then review professional judgment separately",
+    "failureAction": "Do not admit the proposed step"
+  }
+}

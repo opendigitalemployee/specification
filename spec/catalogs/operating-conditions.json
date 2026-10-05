@@ -1,0 +1,101 @@
+{
+  "format": "ode-operating-conditions",
+  "id": "org.opendigitalemployee.operating-conditions",
+  "version": "0.1.0",
+  "status": "experimental",
+  "referenceLanguage": "en",
+  "principles": [
+    "Categories overlap and are not exhaustive.",
+    "Assess context-specific instances; do not put company facts in this catalog.",
+    "Select one leading focus while retaining all other constraints.",
+    "A category suggests questions, not a mandatory action.",
+    "Authority and consent are admissibility conditions across categories.",
+    "Local additions use x-<namespace>:<code>; global changes require a catalog version."
+  ],
+  "conditions": [
+    {
+      "code": "knowledge-limits",
+      "labels": {
+        "en": "Knowledge limits",
+        "ru": "Пределы знания"
+      },
+      "definition": "Missing, stale, conflicting or unreliable evidence.",
+      "example": "A funnel export predates a product change.",
+      "possibleResponses": [
+        "Collect evidence",
+        "Check provenance",
+        "Ask for information"
+      ]
+    },
+    {
+      "code": "outcome-uncertainty",
+      "labels": {
+        "en": "Outcome uncertainty",
+        "ru": "Неопределённость результата"
+      },
+      "definition": "Consequences remain uncertain and only partly controllable, even with better information.",
+      "example": "A tested improvement may fail in a different cohort.",
+      "possibleResponses": [
+        "Forecast scenarios",
+        "Run a bounded experiment",
+        "Limit exposure"
+      ]
+    },
+    {
+      "code": "goal-interest-conflicts",
+      "labels": {
+        "en": "Conflicting goals and interests",
+        "ru": "Конфликты целей и интересов"
+      },
+      "definition": "Participants, goals or requirements pull toward incompatible choices.",
+      "example": "Faster activation may conflict with support workload.",
+      "possibleResponses": [
+        "Clarify priorities",
+        "Prepare alternatives",
+        "Seek reconciliation"
+      ]
+    },
+    {
+      "code": "resource-dependency-limits",
+      "labels": {
+        "en": "Resource and dependency limits",
+        "ru": "Ограничения ресурсов и зависимостей"
+      },
+      "definition": "Time, budget, attention, competence or prerequisites limit feasible action.",
+      "example": "Two experiments need the same analyst during the same week.",
+      "possibleResponses": [
+        "Sequence work",
+        "Reduce scope",
+        "Request resources"
+      ]
+    },
+    {
+      "code": "changing-conditions",
+      "labels": {
+        "en": "Changing conditions",
+        "ru": "Изменение условий"
+      },
+      "definition": "The context, agreement, needs or permissions have changed.",
+      "example": "An earlier permission is withdrawn.",
+      "possibleResponses": [
+        "Refresh context",
+        "Recheck applicability",
+        "Propose renegotiation"
+      ]
+    },
+    {
+      "code": "capability-execution-limits",
+      "labels": {
+        "en": "Capability and execution limits",
+        "ru": "Ограничения возможностей и исполнения"
+      },
+      "definition": "A method, actor or tool may be unable to perform the required action reliably.",
+      "example": "The tool fails or the employee lacks the required domain competence.",
+      "possibleResponses": [
+        "Use a tested fallback",
+        "Seek expert help",
+        "Stop and report"
+      ]
+    }
+  ]
+}

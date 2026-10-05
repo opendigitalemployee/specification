@@ -1,0 +1,1127 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "format": {
+      "const": "ode-decision-making"
+    },
+    "extensionVersion": {
+      "const": "0.1.0"
+    },
+    "status": {
+      "const": "experimental"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "catalog": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "version"
+      ]
+    },
+    "method": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "revision": {
+                "type": "string",
+                "minLength": 1
+              },
+              "relationship": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "url",
+              "revision",
+              "relationship"
+            ]
+          },
+          "minItems": 0
+        },
+        "logic": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "inputs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "candidateGeneration": {
+              "type": "string",
+              "minLength": 1
+            },
+            "selectionPrinciples": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "forecastApproach": {
+              "type": "string",
+              "minLength": 1
+            },
+            "resourceRules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "authorityRules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "stopRules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "reviewRules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "inputs",
+            "candidateGeneration",
+            "selectionPrinciples",
+            "forecastApproach",
+            "resourceRules",
+            "authorityRules",
+            "stopRules",
+            "reviewRules"
+          ]
+        },
+        "applicability": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "domains": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "decisionClasses": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "entryConditions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "exclusions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "horizon": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maxEvidenceAgeHours": {
+              "type": "number",
+              "minimum": 0
+            },
+            "fallback": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "domains",
+            "decisionClasses",
+            "entryConditions",
+            "exclusions",
+            "horizon",
+            "maxEvidenceAgeHours",
+            "fallback"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "title",
+        "sources",
+        "logic",
+        "applicability"
+      ]
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "measure": {
+              "type": "string",
+              "minLength": 1
+            },
+            "baseline": {
+              "type": "string",
+              "minLength": 1
+            },
+            "target": {
+              "type": "string",
+              "minLength": 1
+            },
+            "horizon": {
+              "type": "string",
+              "minLength": 1
+            },
+            "commitmentStatus": {
+              "enum": [
+                "proposed",
+                "agreed"
+              ]
+            },
+            "changeAuthority": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "measure",
+            "baseline",
+            "target",
+            "horizon",
+            "commitmentStatus",
+            "changeAuthority"
+          ]
+        },
+        "limits": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "hoursPerStep": {
+              "type": "number",
+              "minimum": 0
+            },
+            "budgetPerStep": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "hoursPerStep",
+            "budgetPerStep",
+            "currency"
+          ]
+        },
+        "bindings": {
+          "$ref": "#/$defs/binding"
+        },
+        "unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "reviewStatus": {
+          "enum": [
+            "pending",
+            "reviewed"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "domain",
+        "outcome",
+        "limits",
+        "bindings",
+        "unknowns",
+        "reviewStatus"
+      ]
+    },
+    "episodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/episode"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "format",
+    "extensionVersion",
+    "status",
+    "id",
+    "version",
+    "catalog",
+    "method",
+    "profile",
+    "episodes"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opendigitalemployee.org/schemas/extensions/decision-making/0.1.0",
+  "$defs": {
+    "pin": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "objectId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "objectId",
+        "version"
+      ]
+    },
+    "resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ]
+    },
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "agentRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "goalRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "environmentRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "workRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "styleRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "policyRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pin"
+          },
+          "minItems": 1
+        },
+        "interactionRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "metaSkillRef": {
+          "$ref": "#/$defs/pin"
+        }
+      },
+      "required": [
+        "agentRef",
+        "goalRef",
+        "environmentRef",
+        "workRef",
+        "styleRef",
+        "policyRefs",
+        "interactionRef",
+        "metaSkillRef"
+      ]
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact": {
+          "$ref": "#/$defs/resource"
+        },
+        "observedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "enum": [
+            "known",
+            "unknown"
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "artifact",
+        "observedAt",
+        "status",
+        "limitations"
+      ]
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "present",
+            "absent",
+            "unknown"
+          ]
+        },
+        "assessment": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "impact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "response": {
+          "type": "string",
+          "minLength": 1
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "code",
+        "status",
+        "assessment",
+        "evidenceIds",
+        "impact",
+        "response"
+      ]
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "workRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "expectedContribution": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cost": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "hours": {
+              "type": "number",
+              "minimum": 0
+            },
+            "budget": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "hours",
+            "budget"
+          ]
+        },
+        "admissibility": {
+          "enum": [
+            "allowed",
+            "requires-human",
+            "blocked"
+          ]
+        },
+        "grounds": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "action",
+        "workRef",
+        "expectedContribution",
+        "cost",
+        "admissibility",
+        "grounds"
+      ]
+    },
+    "forecast": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "madeAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "horizon": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "estimateKind": {
+          "enum": [
+            "unknown",
+            "qualitative",
+            "probability"
+          ]
+        },
+        "estimate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basisInputIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "reviewTrigger": {
+          "type": "string",
+          "minLength": 1
+        },
+        "probability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "estimationMethod": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibrationEvidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "madeAt",
+        "target",
+        "horizon",
+        "estimateKind",
+        "estimate",
+        "basisInputIds",
+        "assumptions",
+        "limitations",
+        "reviewTrigger"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "estimateKind": {
+                "const": "probability"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "probability",
+              "estimationMethod",
+              "calibrationEvidence"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "probability"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "humanRequest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "information",
+            "expert-assessment",
+            "priorities",
+            "interest-reconciliation",
+            "resources",
+            "authorization"
+          ]
+        },
+        "recipientRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "recommendation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "consequences": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deadline": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "whileWaiting": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "type",
+        "recipientRef",
+        "question",
+        "options",
+        "recommendation",
+        "consequences",
+        "deadline",
+        "whileWaiting"
+      ]
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "within-mandate",
+            "pending",
+            "approved",
+            "denied"
+          ]
+        },
+        "responsibleRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "policyRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recordedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "status",
+        "responsibleRef",
+        "policyRef",
+        "basis",
+        "recordedAt"
+      ]
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "not-started",
+            "completed",
+            "failed",
+            "stopped"
+          ]
+        },
+        "candidateIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "startedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "receipt": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "status",
+        "candidateIds"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "not-started"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "candidateIds": {
+                "maxItems": 0
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "startedAt"
+                  ]
+                },
+                {
+                  "required": [
+                    "endedAt"
+                  ]
+                },
+                {
+                  "required": [
+                    "receipt"
+                  ]
+                }
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "startedAt",
+              "endedAt",
+              "receipt"
+            ],
+            "properties": {
+              "candidateIds": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "recorded"
+          ]
+        },
+        "dueAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "observedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "observations": {
+          "type": "string",
+          "minLength": 1
+        },
+        "forecastComparison": {
+          "type": "string",
+          "minLength": 1
+        },
+        "methodLearning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nextAction": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "status",
+        "dueAt",
+        "nextAction"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "recorded"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "observedAt",
+              "observations",
+              "forecastComparison",
+              "methodLearning"
+            ]
+          },
+          "else": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "observedAt"
+                  ]
+                },
+                {
+                  "required": [
+                    "observations"
+                  ]
+                },
+                {
+                  "required": [
+                    "forecastComparison"
+                  ]
+                },
+                {
+                  "required": [
+                    "methodLearning"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "episode": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidenceClass": {
+          "enum": [
+            "synthetic",
+            "observed"
+          ]
+        },
+        "previousEpisodeId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decidedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "methodVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profileVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "responsibleActorRef": {
+          "$ref": "#/$defs/pin"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/input"
+          },
+          "minItems": 1
+        },
+        "applicability": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "applicable",
+                "not-applicable",
+                "unknown"
+              ]
+            },
+            "basis": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "basis"
+          ]
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 6
+        },
+        "focus": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/candidate"
+          },
+          "minItems": 1
+        },
+        "selection": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "candidateIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0
+            },
+            "grounds": {
+              "type": "string",
+              "minLength": 1
+            },
+            "compatibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "remainingResources": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "hours": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "budget": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "hours",
+                "budget"
+              ]
+            }
+          },
+          "required": [
+            "candidateIds",
+            "grounds",
+            "compatibility",
+            "remainingResources"
+          ]
+        },
+        "forecast": {
+          "$ref": "#/$defs/forecast"
+        },
+        "authorization": {
+          "$ref": "#/$defs/authorization"
+        },
+        "humanRequest": {
+          "$ref": "#/$defs/humanRequest"
+        },
+        "execution": {
+          "$ref": "#/$defs/execution"
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "evidenceClass",
+        "previousEpisodeId",
+        "decidedAt",
+        "methodVersion",
+        "profileVersion",
+        "responsibleActorRef",
+        "inputs",
+        "applicability",
+        "conditions",
+        "focus",
+        "candidates",
+        "selection",
+        "forecast",
+        "authorization",
+        "execution",
+        "review"
+      ]
+    }
+  },
+  "title": "ODE experimental decision-making description 0.1.0"
+}

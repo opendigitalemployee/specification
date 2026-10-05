@@ -1,0 +1,10 @@
+{
+  "evidenceClass": "synthetic",
+  "observedAt": "2026-10-01T08:00:00Z",
+  "measure": "Seven-day team activation",
+  "baseline": "Illustrative 40%; cohort coverage not yet verified",
+  "limitations": [
+    "No causal attribution",
+    "Recent product change may affect comparability"
+  ]
+}

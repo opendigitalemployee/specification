@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Work",
+  "layer": "agent",
+  "id": "urn:ode:example:product-employee:work",
+  "version": "1.0.0",
+  "title": "Choose a bounded activation experiment",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic scenario; not runtime evidence"
+  },
+  "spec": {
+    "workKind": "recurring",
+    "outcome": "Improve the chance of reaching the activation outcome within limits",
+    "contributionHypothesis": "Identify and test a material activation barrier before investing in a feature",
+    "input": {
+      "context": "Dated funnel and interview evidence"
+    },
+    "output": {
+      "deliverable": "A reviewed next-step brief with alternatives and forecast"
+    },
+    "steps": [
+      {
+        "id": "prepare",
+        "input": {},
+        "output": {},
+        "contributions": [
+          {
+            "actor": "agent",
+            "action": "Prepare a bounded next-step recommendation",
+            "output": "Decision brief and forecast"
+          },
+          {
+            "actor": "human",
+            "action": "Decide requests beyond mandate",
+            "output": "Explicit decision or pending status"
+          }
+        ],
+        "skillRefs": [
+          {
+            "objectId": "urn:ode:example:product-employee:human-skill",
+            "version": "1.0.0"
+          }
+        ]
+      }
+    ],
+    "acceptanceRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:check",
+        "version": "1.0.0"
+      }
+    ],
+    "skillRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:human-skill",
+        "version": "1.0.0"
+      }
+    ],
+    "policyRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:read-policy",
+        "version": "1.0.0"
+      }
+    ],
+    "stopConditions": [
+      "Permission absent or revoked",
+      "Method does not apply",
+      "Budget would be exceeded"
+    ]
+  }
+}

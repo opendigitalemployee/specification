@@ -11,19 +11,21 @@
 [![docs license: CC BY 4.0](docs/badges/docs-license.svg)](https://github.com/opendigitalemployee/specification/blob/main/LICENSES/CC-BY-4.0.txt)
 <!-- project-badges:end -->
 
-**Draft release 0.2.0-draft.2 · format 0.2.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
+**Draft release 0.2.0-draft.3 · format 0.2.0-draft.** The package name and namespace remain provisional. The normative specification, schemas, examples and automated checks use Apache-2.0; explanatory documentation and glossary use CC BY 4.0. See [license scope](LICENSING.md).
 
-Design a digital employee around a **measurable business outcome**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Preserve that design independently of a runtime.
+Design a digital employee around a **measurable business outcome in an imperfect world**. Agree on how its contribution will be assessed, treat work as a hypothesis for reaching that outcome, and describe the expertise, environment, permissions and checks it needs. Expertise includes doing the work and choosing the next step when evidence, interests or resources limit the options. Preserve that design independently of a runtime.
 
 ## Latest release
 
-[**v0.2.0-draft.2 — release notes**](https://github.com/opendigitalemployee/specification/releases/tag/v0.2.0-draft.2) · [Full changelog](CHANGELOG.md)
+[**v0.2.0-draft.3 — release notes**](https://github.com/opendigitalemployee/specification/releases/tag/v0.2.0-draft.3) · [Full changelog](CHANGELOG.md)
 
-This documentation release highlights the changes introduced in [v0.2.0-draft.1](https://github.com/opendigitalemployee/specification/releases/tag/v0.2.0-draft.1):
+**Measurable outcomes in an imperfect world.** This release adds an opt-in description of how an employee selects a justified next step:
 
-- **Personal and shared agents:** identify whom an agent serves — a person, family, team, organization or another named party — without requiring an organization ID. Authority and environment control have separate references.
-- **Agent procedures:** find self-description and affiliation in one [procedure index](docs/agents/procedures/README.md), with prerequisites and conditional ordering. Self-description remains experimental.
-- **Worked examples:** inspect complete [personal](examples/personal-agent/manifest.json), [family](examples/family-agent/manifest.json), [project/team](examples/project-agent/manifest.json) and [company](examples/company-agent/manifest.json) packages, checked for structure and references. Earlier 0.1 schemas and examples are preserved.
+- **Professional judgment:** [logic, applicability and application history](spec/DECISION-MAKING.md), with explicit human responsibility.
+- **Real-world conditions:** a versioned [six-category catalog](spec/catalogs/operating-conditions.json), with context-specific assessments and an extensible vocabulary.
+- **Try the description:** [DECISION-01](docs/agents/procedures/decision-making.md), a complete [synthetic product employee](examples/product-employee/README.md), and structural regression checks.
+
+These additions are experimental. The 0.2 package format and its 34 core kinds are unchanged. Prior personal/shared affiliations and examples remain available; no runtime performance or business-effect claim is made.
 
 ## Start here
 
@@ -51,6 +53,7 @@ Package/backup CLI tools and runtime adapters are **not distributed**. Read-only
 ## What is included
 
 - A versioned specification, JSON Schema, reference rules and type catalog.
+- An experimental decision-making contract, conditions catalog, description procedure and product employee example.
 - An EN/RU [glossary](spec/glossary.json) and English [composition notes](spec/COMPOSITION.md) explaining how existing formats fit together.
 - One synthetic employee scenario and its file backup, with native skill resources.
 - An experimental personal-agent description route, schemas, blank collection, self-diagnosis and synthetic Aster example.

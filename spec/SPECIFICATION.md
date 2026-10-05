@@ -6,6 +6,10 @@ Informative future proposals separate Work (the outcome contract) from Workflow 
 
 The model has three design layers: **Agent DNA + contextual goals + working environment → client agent**. Deployment records and operational state are additional package contents, not additional DNA inheritance layers.
 
+### Informative: professional judgment in the real world
+
+A digital employee is designed to achieve agreed, measurable outcomes despite incomplete knowledge, uncertain consequences, conflicting interests, limited resources and changing conditions. Domain expertise includes how to do work and how to select a justified next step. The optional [decision-making extension](DECISION-MAKING.md) describes logic, applicability and application history, with a versioned [conditions catalog](catalogs/operating-conditions.json). It is experimental and adds no mandatory core kinds or runtime claims.
+
 ## 1. Three design layers
 
 **Agent DNA** describes a professional foundation: possible outcomes, roles, work definitions, skills and meta-skills, decision styles, quality checks, policies and environment requirements. Person-, family-, team- or organization-specific choices require deliberate generalization before becoming reusable DNA.

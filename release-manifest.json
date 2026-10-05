@@ -24,6 +24,7 @@
   },
   "checks": {
     "affiliationRegressionChecks": true,
+    "experimentalDecisionMaking": true,
     "experimentalSelfDescription": true,
     "fileAdapters": [],
     "liveRuntimeTested": false,
@@ -40,21 +41,28 @@
       "license": "Apache-2.0",
       "sha256": "c16cce57572ddc9f9a3ccfd71dcaecaa2a2290eada0cdd0beec691b0df43af82",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     ".github/ISSUE_TEMPLATE/02-problem.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "e6c7042b7799ebf317c95c08d3f8c9fdd37ad96344ffc1cb03b5d98a1c3268b0",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     ".github/ISSUE_TEMPLATE/config.yml": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "814f4d43c2c84e0e545924ea093852909e3180edcf3a71fe709ef32ca7efa829",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
+    },
+    ".github/checks/decision_making.py": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "af94c283377a54beeea26818e7b707abf5d19cde41b7ae0d94ab8105c70d1d49",
+      "source": ".github/checks/decision_making.py",
+      "sourceSha256": "af94c283377a54beeea26818e7b707abf5d19cde41b7ae0d94ab8105c70d1d49"
     },
     ".github/checks/package_contract.py": {
       "adapted": false,
@@ -69,6 +77,13 @@
       "sha256": "78ff9da0d6eb4a439e7ba1f02611c1dc4267c33ef288ddb5c03e09fe5e2eea26",
       "source": ".github/checks/self_description.py",
       "sourceSha256": "78ff9da0d6eb4a439e7ba1f02611c1dc4267c33ef288ddb5c03e09fe5e2eea26"
+    },
+    ".github/checks/test_decision_making.py": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "25e51ad7aee1e51bcb0484bc04ae0708111c563f50ea4f30a9d6a02bbb220894",
+      "source": ".github/checks/test_decision_making.py",
+      "sourceSha256": "25e51ad7aee1e51bcb0484bc04ae0708111c563f50ea4f30a9d6a02bbb220894"
     },
     ".github/checks/test_package_contract.py": {
       "adapted": false,
@@ -87,44 +102,44 @@
     ".github/workflows/check.yml": {
       "adapted": true,
       "license": "Apache-2.0",
-      "sha256": "9235cdd96a25c4ff954e585ce0a2db38c90d366438e989d8a7a065affa23e355",
+      "sha256": "ed403ba10664def079672e2a7277e63955308ec9f9baa273182047d348cccd61",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     ".gitignore": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "daa1621cef56cfbce76f76b5a024ad3c94c5057fcaebcb4bd31996ea592cd403",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "AGENTS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "ac3dc33218a9269d503e66770697994e326f00a9a4da4c806235c7c5ff466818",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "CHANGELOG.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "890501140af3f6f88853bb064b0bc3663504087f89b732cffa87f6e744084e8a",
+      "sha256": "be3d8004f5d37c351cc6580bb30c4d56105d8f2cff0cb5c16deb46254796e639",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "CONTRIBUTING.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "f00b3192503ace5a0991bdb2858046cb66d1513c5dd045dfee796e09d2d8e97b",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "CONTRIBUTORS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "8683e3393b0223bb324908ae5ac7ffacdbc94ff97dde5da86f77b685a049ad1a",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "LICENSE": {
       "adapted": false,
@@ -145,49 +160,49 @@
       "license": "CC-BY-4.0",
       "sha256": "678caaaddf86febf1d29d9a9ba2cc6f150a482d952ed2e3642496721f463e4a4",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "NOTICE": {
       "adapted": true,
       "license": "Apache-2.0",
       "sha256": "3a552cc2f12ce3bf8f7262bdd8ab289d56be43c8836cf32d49a7c0288a727151",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "README.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "cd7f5ca67c101612fadbad7668525d72c24d1950572611b7d22e5b066d8852a0",
+      "sha256": "e41c2c898d040deba4f7b8464f81e520c0a8cc5dc9d8fafa4b3627676ee6641a",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "STATUS.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "b5d64a2034c8688b10a1b2c8f6a14720e03e2b0dfe701fc6a234e665bb32a82e",
+      "sha256": "2199eaca0ced5ad3370202f1ffb24289d55be8535912c102b43681ac5e163285",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "docs/BRAND.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
       "sha256": "d89b382c0edd1eb8460e74f8445d587e566292e511de57793d502eee9ddad7c1",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "docs/OVERVIEW.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "94dd2ccf27ac6415c086d23bdc5d069b703223056921f5497c30b8ecc78900cd",
+      "sha256": "c60616cd70ee58a17e49332693eef1968623533e11cc93330e1e633400bbac13",
       "source": "spec/public-export.json",
-      "sourceSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec"
+      "sourceSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b"
     },
     "docs/agents/README.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "d23e957c9eecca4cecd39c200751966bb2f786c0a57a717ab024fcea2a0338f6",
+      "sha256": "a24e0083362524709508ec36db93c42a6e2190d89771d87e7e75e3525d9ef144",
       "source": "docs/agents/README.md",
-      "sourceSha256": "53388a21154536e70708d100576b77024d4803d13d919bc08784fdd423badee2"
+      "sourceSha256": "4bd81b20299997e0224d72ce568dce73afff6ce0a016f2912f4f71eedf0d369e"
     },
     "docs/agents/aster-self-diagnosis.md": {
       "adapted": true,
@@ -213,9 +228,9 @@
     "docs/agents/procedures/README.md": {
       "adapted": true,
       "license": "CC-BY-4.0",
-      "sha256": "66fd0e706d656033375eabf60c6822a64eec811e1eb784e35391f16558dc96a5",
+      "sha256": "e82791a3b55dd2d5b513761932e666b5bdaa8385ff230c528d8f3c0ebf8d8660",
       "source": "docs/agents/procedures/README.md",
-      "sourceSha256": "2e598e0233573fffbdd2f57fde4492ab2a90912d5599bf86707e7437f32001c9"
+      "sourceSha256": "2276e81f3a5504ccf050004b323e044f9db5d367436b07b21e13d8baf69d3b75"
     },
     "docs/agents/procedures/affiliation.md": {
       "adapted": true,
@@ -223,6 +238,13 @@
       "sha256": "6a767318646cf2b672e3365def1d533b9eb149e5feff098658f2ef75a2b6d8d9",
       "source": "docs/agents/procedures/affiliation.md",
       "sourceSha256": "669aee43fdd4d03209947c2c99e688c2e09a238acced447b65c1b6293ff544a1"
+    },
+    "docs/agents/procedures/decision-making.md": {
+      "adapted": true,
+      "license": "CC-BY-4.0",
+      "sha256": "1dd21c6cb47568313245b88e804fea85cda55ccd978259a8fac0a0129b1e99cb",
+      "source": "docs/agents/procedures/decision-making.md",
+      "sourceSha256": "0a7737cfecf41ead66d0801fca08367dd1b1ef5039cd8a094f7f2f67363a575d"
     },
     "docs/agents/procedures/self-description.md": {
       "adapted": true,
@@ -1246,6 +1268,167 @@
       "source": "examples/personal-description/0.2.0/profile.json",
       "sourceSha256": "3a6f615ad94ac0b33687cd50cb14e852304455b7895608ef6ac542d62cdc127a"
     },
+    "examples/product-employee/README.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "09abf74482fea423e460b229b3e91ab7da7307878bdbae6e07ca78b82cc30b22",
+      "source": "examples/product-employee/README.md",
+      "sourceSha256": "09abf74482fea423e460b229b3e91ab7da7307878bdbae6e07ca78b82cc30b22"
+    },
+    "examples/product-employee/decision-making.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "716488da3741da2018b8e972580571047c4828cab33369e0a89a25961cdc4acd",
+      "source": "examples/product-employee/decision-making.json",
+      "sourceSha256": "716488da3741da2018b8e972580571047c4828cab33369e0a89a25961cdc4acd"
+    },
+    "examples/product-employee/inputs/funnel.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c79af76ea01f7fb936675d7cad06a5b4581b27ba80b0a477e41a5cfaf4d185a4",
+      "source": "examples/product-employee/inputs/funnel.json",
+      "sourceSha256": "c79af76ea01f7fb936675d7cad06a5b4581b27ba80b0a477e41a5cfaf4d185a4"
+    },
+    "examples/product-employee/inputs/review.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "d8e2b1cc57f3adcd6c033e26b065788a82d5d093302bc3dfaaebc759f1bfea00",
+      "source": "examples/product-employee/inputs/review.json",
+      "sourceSha256": "d8e2b1cc57f3adcd6c033e26b065788a82d5d093302bc3dfaaebc759f1bfea00"
+    },
+    "examples/product-employee/manifest.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "a9654ee96bb77684f4235344f96589e23af4a94483eb1c83fa620ee0544f7cd5",
+      "source": "examples/product-employee/manifest.json",
+      "sourceSha256": "a9654ee96bb77684f4235344f96589e23af4a94483eb1c83fa620ee0544f7cd5"
+    },
+    "examples/product-employee/native/skills/human-decision-brief/SKILL.md": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "edd6d04b9b47955e6fd7992bcbc8331d952b59167c650b14c855bf2eb1d80c83",
+      "source": "examples/product-employee/native/skills/human-decision-brief/SKILL.md",
+      "sourceSha256": "edd6d04b9b47955e6fd7992bcbc8331d952b59167c650b14c855bf2eb1d80c83"
+    },
+    "examples/product-employee/objects/agent.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "0fb8e5af3fed5b61315cbf52113f4c673020d1bc487c0a00c0ea4c0881307ddb",
+      "source": "examples/product-employee/objects/agent.json",
+      "sourceSha256": "0fb8e5af3fed5b61315cbf52113f4c673020d1bc487c0a00c0ea4c0881307ddb"
+    },
+    "examples/product-employee/objects/binding.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c45b6c58becc6b1c6e22ff90031ca3d97ca67320fb92e457e46dd59b3e911778",
+      "source": "examples/product-employee/objects/binding.json",
+      "sourceSha256": "c45b6c58becc6b1c6e22ff90031ca3d97ca67320fb92e457e46dd59b3e911778"
+    },
+    "examples/product-employee/objects/check.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "a44b0bceb760adcc26c7695b2bf6fe2d359835107aa2cab32be2f5db8f3ec242",
+      "source": "examples/product-employee/objects/check.json",
+      "sourceSha256": "a44b0bceb760adcc26c7695b2bf6fe2d359835107aa2cab32be2f5db8f3ec242"
+    },
+    "examples/product-employee/objects/contact-policy.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "1ea5d072246c3743c43fbe77a06e3aab4a96c61a382f59ce9b4b348f093ef28a",
+      "source": "examples/product-employee/objects/contact-policy.json",
+      "sourceSha256": "1ea5d072246c3743c43fbe77a06e3aab4a96c61a382f59ce9b4b348f093ef28a"
+    },
+    "examples/product-employee/objects/dna.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "8a76c0ca004777c51641562790ecb4fe973f6976cb43d8f1d945b53d66ef26eb",
+      "source": "examples/product-employee/objects/dna.json",
+      "sourceSha256": "8a76c0ca004777c51641562790ecb4fe973f6976cb43d8f1d945b53d66ef26eb"
+    },
+    "examples/product-employee/objects/environment.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "838dbd04da604a6e49a40999d7ef24c36751df9fa08e3da281b80c38f7dee9c8",
+      "source": "examples/product-employee/objects/environment.json",
+      "sourceSha256": "838dbd04da604a6e49a40999d7ef24c36751df9fa08e3da281b80c38f7dee9c8"
+    },
+    "examples/product-employee/objects/goal.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "c0d600ec8d1723b72d67f27d4c371ecf1d575f7f722147c8f51c0721cfd922b7",
+      "source": "examples/product-employee/objects/goal.json",
+      "sourceSha256": "c0d600ec8d1723b72d67f27d4c371ecf1d575f7f722147c8f51c0721cfd922b7"
+    },
+    "examples/product-employee/objects/human-skill.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "7e7a83751ccfd19700248ce566b5de634c90149e776ee97f809393bee5bbd866",
+      "source": "examples/product-employee/objects/human-skill.json",
+      "sourceSha256": "7e7a83751ccfd19700248ce566b5de634c90149e776ee97f809393bee5bbd866"
+    },
+    "examples/product-employee/objects/interaction.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "ed71db60fce4a54ef2b1dd9913448765b8a6bf2ad47193593a15ae06908f7167",
+      "source": "examples/product-employee/objects/interaction.json",
+      "sourceSha256": "ed71db60fce4a54ef2b1dd9913448765b8a6bf2ad47193593a15ae06908f7167"
+    },
+    "examples/product-employee/objects/party.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "7e68790c1851a377f634bae2c8943572274780d39f4fd6965157e376e45435c0",
+      "source": "examples/product-employee/objects/party.json",
+      "sourceSha256": "7e68790c1851a377f634bae2c8943572274780d39f4fd6965157e376e45435c0"
+    },
+    "examples/product-employee/objects/read-policy.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "169df236b4c6e44a6b3aa1ae7266ebd9d3ff51aac9f2c8d09d48c18e2cad5418",
+      "source": "examples/product-employee/objects/read-policy.json",
+      "sourceSha256": "169df236b4c6e44a6b3aa1ae7266ebd9d3ff51aac9f2c8d09d48c18e2cad5418"
+    },
+    "examples/product-employee/objects/reviewer.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "ce2d1b0fda31e2444bfeb56c3e776ac49ab82ac356846fb7d540f94d86be7331",
+      "source": "examples/product-employee/objects/reviewer.json",
+      "sourceSha256": "ce2d1b0fda31e2444bfeb56c3e776ac49ab82ac356846fb7d540f94d86be7331"
+    },
+    "examples/product-employee/objects/style.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "b3173aec4ca868aec021e2d26ae64fdddd48a0e3153d6b7483ba01765ff647a9",
+      "source": "examples/product-employee/objects/style.json",
+      "sourceSha256": "b3173aec4ca868aec021e2d26ae64fdddd48a0e3153d6b7483ba01765ff647a9"
+    },
+    "examples/product-employee/objects/tool.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "48a604b15ec16d03db6878578b4d8cca3c2d3085ce848181a603a02b203c851a",
+      "source": "examples/product-employee/objects/tool.json",
+      "sourceSha256": "48a604b15ec16d03db6878578b4d8cca3c2d3085ce848181a603a02b203c851a"
+    },
+    "examples/product-employee/objects/work.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "666fe1e6d04b2a4c7cc00739596a7417410147e80dad1aa5516f28f144768d93",
+      "source": "examples/product-employee/objects/work.json",
+      "sourceSha256": "666fe1e6d04b2a4c7cc00739596a7417410147e80dad1aa5516f28f144768d93"
+    },
+    "examples/product-employee/objects/world.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "659837d72f34122c8706c9edaeaa5f5128e1c7db1c6e5426de3b73b4581f4908",
+      "source": "examples/product-employee/objects/world.json",
+      "sourceSha256": "659837d72f34122c8706c9edaeaa5f5128e1c7db1c6e5426de3b73b4581f4908"
+    },
+    "examples/product-employee/package.lock.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "87006a5a12c5d722ef14ba4a7470faf47537cde204f1280c735edd94cf1f5c42",
+      "source": "examples/product-employee/package.lock.json",
+      "sourceSha256": "87006a5a12c5d722ef14ba4a7470faf47537cde204f1280c735edd94cf1f5c42"
+    },
     "examples/project-agent/manifest.json": {
       "adapted": false,
       "license": "Apache-2.0",
@@ -1330,19 +1513,40 @@
       "source": "spec/COMPOSITION.md",
       "sourceSha256": "67a0028535505d2a00437a4ec73427cf508b23b62da44e1b2b72a35858d0fe8a"
     },
+    "spec/DECISION-MAKING.md": {
+      "adapted": true,
+      "license": "Apache-2.0",
+      "sha256": "240805497b537efc35d56da73cc8c72526b80faddc527b48400d1b86e95ba2e5",
+      "source": "spec/DECISION-MAKING.md",
+      "sourceSha256": "2f53f51a6290fe97ea78f34081bcd2af9fff9256709c4c2ab0b0adfabcc6e45e"
+    },
     "spec/SPECIFICATION.md": {
       "adapted": true,
       "license": "Apache-2.0",
-      "sha256": "2aedf02922fc455fbe54a2341ac6918e33f8fe99198c42bc8eca977ecbca5b88",
+      "sha256": "ff86a75945cf47230ad24d3a7e8f11dfc1a7118b4401d36581d22d88cfa0897b",
       "source": "spec/SPECIFICATION.md",
-      "sourceSha256": "d3181087e2afb8860963127a45a1c40b764f614363a159bdb743fb167a120204"
+      "sourceSha256": "b5e370edc7e7339b00b77d7b0e7a9c3bbbfea6f8043d653c6215698faf68bd2b"
+    },
+    "spec/catalogs/operating-conditions.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "08b29aabf2d8c5bd2e8990d816ed070dfbe2893e8d712415487da3504cd58d0c",
+      "source": "spec/catalogs/operating-conditions.json",
+      "sourceSha256": "08b29aabf2d8c5bd2e8990d816ed070dfbe2893e8d712415487da3504cd58d0c"
+    },
+    "spec/extensions/decision-making.schema.json": {
+      "adapted": false,
+      "license": "Apache-2.0",
+      "sha256": "5746ac23ee463645c3e4973388ba8128091f036949bedd67936a76e685963130",
+      "source": "spec/extensions/decision-making.schema.json",
+      "sourceSha256": "5746ac23ee463645c3e4973388ba8128091f036949bedd67936a76e685963130"
     },
     "spec/glossary.json": {
       "adapted": false,
       "license": "CC-BY-4.0",
-      "sha256": "2736784ee8bc7bbc30809c911986cb545c1932468220af5eaa7bc35cc6ab9eae",
+      "sha256": "5ea3542a4a25c75740c6b48690ac7f5330286911f0df28042e41fea8c958e7cf",
       "source": "spec/glossary.json",
-      "sourceSha256": "2736784ee8bc7bbc30809c911986cb545c1932468220af5eaa7bc35cc6ab9eae"
+      "sourceSha256": "5ea3542a4a25c75740c6b48690ac7f5330286911f0df28042e41fea8c958e7cf"
     },
     "spec/research/proposals/personal-description-components.schema.json": {
       "adapted": false,
@@ -1522,10 +1726,10 @@
     ]
   },
   "publication": "local-candidate; no repository created or pushed",
-  "releaseVersion": "0.2.0-draft.2",
+  "releaseVersion": "0.2.0-draft.3",
   "rightsHolder": "Taras Pustovoy and contributors",
   "sourcePlan": "spec/public-export.json",
-  "sourcePlanSha256": "ce89845435659321531dfe490ddb505c81eaa5ca9387c02a8c47d3b5283e55ec",
+  "sourcePlanSha256": "e4dc6e4c9328d7cc90a3e2c5e3c48ade5bc5fddbc0bdf8a9256aab478f609b7b",
   "specVersion": "0.2.0-draft",
   "verificationSources": {
     "tools/dep.py": "a5106fdae04271bfcc97936303545543b8269c55ebefccd71d67dfe66df06cbf",

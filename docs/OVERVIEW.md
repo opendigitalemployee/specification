@@ -43,5 +43,13 @@ Three pillars assess quality: **performance, reliability and alignment**. They a
 
 See the [normative draft](../spec/SPECIFICATION.md) and [current status](../STATUS.md) for exact requirements and limits. The standard connects these components without replacing their native formats.
 
+## Outcomes in an imperfect world
+
+Digital employees need professional judgment as well as execution skills. Incomplete knowledge, uncertain consequences, conflicting interests, limited resources, changing conditions and execution limits affect the next step. A package can now include an experimental, inspectable description of that judgment.
+
+**ODE contract → domain method → contextual method profile → implementation → application history.** The contract defines what to describe; the method chooses how; a profile binds it to an outcome and responsibility; an implementation acts; observations support review. Authority remains a separate boundary throughout.
+
+Read the [decision-making extension](../spec/DECISION-MAKING.md), inspect the [conditions catalog](../spec/catalogs/operating-conditions.json), or try the [product employee](../examples/product-employee/README.md). These are experimental descriptions and structural checks, not demonstrated outcome guarantees.
+
 ---
 Copyright 2026 Taras Pustovoy and contributors. Licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).

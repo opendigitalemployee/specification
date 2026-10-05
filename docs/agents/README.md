@@ -23,5 +23,9 @@ Normative ClientAgent 0.2 supports [person, family, team, organization and other
 
 This is the first public self-description slice of [issue #4](https://github.com/opendigitalemployee/specification/issues/4). The fixture and structural checks are authored examples. Independent author repetition and behavioral evaluation have not been performed. Multi-day onboarding, useful work, feedback and longitudinal improvement remain in that issue. Publish only a separately reviewed disclosure copy; private source files are not release inputs by default.
 
+## Describe professional judgment
+
+Use [DECISION-01](procedures/decision-making.md) to capture how an employee selects its next step, where its method applies and when a person must decide. The experimental [conditions catalog](../../spec/catalogs/operating-conditions.json), contract and synthetic product example add a third route. Existing examples are starting points, not limits on roles or domains.
+
 ---
 Copyright 2026 Taras Pustovoy and contributors. Licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).

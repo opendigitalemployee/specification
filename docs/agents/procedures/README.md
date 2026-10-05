@@ -1,6 +1,6 @@
 # Procedures for agents
 
-**Informative index · 0.1.0 · 4 October 2026.** This is the maintained entrypoint for published procedures and proposed application scenarios. A procedure is an instruction for a result; a schema defines its file contract. An application profile selects several relevant tasks; it is not an agent category or `manifest.profile`.
+**Informative index · 0.2.0 · 4 October 2026.** This is the maintained entrypoint for published procedures and proposed application scenarios. A procedure is an instruction for a result; a schema defines its file contract. An application profile selects several relevant tasks; it is not an agent category or `manifest.profile`.
 
 ## Available procedures
 
@@ -9,6 +9,8 @@
 | [SELF-01 / 0.3.0](self-description.md) | Describe an existing agent, its purpose, composition and gaps | An explicit purpose and authorized sources; unknown facts may remain unknown | Profile, composition, linked 25+15 assessment and pinned index; structural check passes; unfilled items have next steps. Experimental; independent repetition and behavior remain unverified. |
 | [AFFILIATION-01 / 0.1.0](affiliation.md) | Create a normative package for a personal or collective agent | Known served party and environment controller; exact objects or explicit external dependencies | 0.2 ClientAgent/Environment relationships and package pass structural validation. No Organization required for a person, family or team. |
 
+| [DECISION-01 / 0.1.0](decision-making.md) | Describe next-step judgment in an imperfect world | Proposed outcome, selected domain method, authorized context and explicit responsibility | Method logic, applicability, contextual profile and contrasting episodes; structural checks pass and unknowns have next steps. Experimental; professional review and runtime trials remain separate. |
+
 Composition, self-diagnosis and collection checking are stages of SELF-01, supported by the [composition guide](../component-description.md), [checklist](../self-diagnosis.md) and [collection contract](../self-description-contract.md). They do not require separately completing other application scenarios.
 
 ## How to choose an order
@@ -16,7 +18,8 @@ Composition, self-diagnosis and collection checking are stages of SELF-01, suppo
 - For an existing agent whose description is missing: SELF-01 → review the description and its open items. Use AFFILIATION-01 only if a normative DEP package is needed.
 - For a package whose purpose and parties are already known: begin with AFFILIATION-01 directly. SELF-01 is helpful input, not a mandatory dependency.
 - Before a package check: identify parties → distinguish service/authority/environment control → create or pin the objects → validate references and integrity. Resolve external dependencies and actual permissions before runtime admission.
-- Preservation/recovery is a later, separately scoped task when requested. It does not follow automatically from finishing either procedure.
+- For next-step judgment: use DECISION-01 with known or explicitly proposed outcomes and responsibility. Other procedures can supply context but are not mandatory prerequisites.
+- Preservation/recovery is a later, separately scoped task when requested. It does not follow automatically from finishing a description procedure.
 
 These are conditional routes, not a compulsory pipeline. Completing a self-description does not assert responsible-party agreement, readiness, backup completion or observed capability.
 

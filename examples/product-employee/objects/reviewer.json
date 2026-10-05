@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Party",
+  "layer": "environment",
+  "id": "urn:ode:example:product-employee:reviewer",
+  "version": "1.0.0",
+  "title": "Fictional product owner",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic product-employee scenario; no real execution or approval observed"
+  },
+  "spec": {
+    "category": "person",
+    "description": "Fictional designated reviewer; scope is set by policy, not by assumed group membership."
+  }
+}

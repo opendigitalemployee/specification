@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Skill",
+  "layer": "dna",
+  "id": "urn:ode:example:product-employee:human-skill",
+  "version": "1.0.0",
+  "title": "Prepare a human decision brief",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic scenario; not runtime evidence"
+  },
+  "spec": {
+    "skillKind": "meta-skill",
+    "artifact": {
+      "path": "native/skills/human-decision-brief/SKILL.md",
+      "format": "agent-skills",
+      "standardId": "agent-skills"
+    },
+    "input": {
+      "decision": "Situation, authority boundary and alternatives"
+    },
+    "output": {
+      "brief": "Question, options, recommendation, consequences and permitted waiting behavior"
+    },
+    "checkRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:check",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

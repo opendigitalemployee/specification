@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "Policy",
+  "layer": "agent",
+  "id": "urn:ode:example:product-employee:read-policy",
+  "version": "1.0.0",
+  "title": "read-policy",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic product-employee scenario; no real execution or approval observed"
+  },
+  "spec": {
+    "actions": [
+      "Read selected local evidence and draft recommendations"
+    ],
+    "resourceScope": {
+      "scope": "Local synthetic files only; no customer contact or product changes"
+    },
+    "mode": "allow",
+    "enforcement": "instruction"
+  }
+}

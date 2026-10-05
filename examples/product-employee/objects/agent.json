@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "ClientAgent",
+  "layer": "agent",
+  "id": "urn:ode:example:product-employee:agent",
+  "version": "1.0.0",
+  "title": "Fictional product development employee",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic product-employee scenario; no real execution or approval observed"
+  },
+  "spec": {
+    "dnaRef": {
+      "objectId": "urn:ode:example:product-employee:dna",
+      "version": "1.0.0"
+    },
+    "servesRef": {
+      "objectId": "urn:ode:example:product-employee:party",
+      "version": "1.0.0"
+    },
+    "authorityRef": {
+      "objectId": "urn:ode:example:product-employee:reviewer",
+      "version": "1.0.0"
+    },
+    "environmentRef": {
+      "objectId": "urn:ode:example:product-employee:environment",
+      "version": "1.0.0"
+    },
+    "workRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:work",
+        "version": "1.0.0"
+      }
+    ],
+    "toolBindingRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:binding",
+        "version": "1.0.0"
+      }
+    ],
+    "policyRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:read-policy",
+        "version": "1.0.0"
+      },
+      {
+        "objectId": "urn:ode:example:product-employee:contact-policy",
+        "version": "1.0.0"
+      }
+    ],
+    "goalRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:goal",
+        "version": "1.0.0"
+      }
+    ],
+    "styleRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:style",
+        "version": "1.0.0"
+      }
+    ],
+    "interactionRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:interaction",
+        "version": "1.0.0"
+      }
+    ],
+    "checkRefs": [
+      {
+        "objectId": "urn:ode:example:product-employee:check",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

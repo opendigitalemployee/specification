@@ -1,0 +1,30 @@
+{
+  "format": "digital-employee-lock",
+  "specVersion": "0.2.0-draft",
+  "packageId": "urn:ode:example:product-employee:package",
+  "packageVersion": "1.0.0",
+  "files": {
+    "manifest.json": "a9654ee96bb77684f4235344f96589e23af4a94483eb1c83fa620ee0544f7cd5",
+    "objects/agent.json": "0fb8e5af3fed5b61315cbf52113f4c673020d1bc487c0a00c0ea4c0881307ddb",
+    "objects/binding.json": "c45b6c58becc6b1c6e22ff90031ca3d97ca67320fb92e457e46dd59b3e911778",
+    "objects/check.json": "a44b0bceb760adcc26c7695b2bf6fe2d359835107aa2cab32be2f5db8f3ec242",
+    "objects/contact-policy.json": "1ea5d072246c3743c43fbe77a06e3aab4a96c61a382f59ce9b4b348f093ef28a",
+    "objects/dna.json": "8a76c0ca004777c51641562790ecb4fe973f6976cb43d8f1d945b53d66ef26eb",
+    "objects/environment.json": "838dbd04da604a6e49a40999d7ef24c36751df9fa08e3da281b80c38f7dee9c8",
+    "objects/goal.json": "c0d600ec8d1723b72d67f27d4c371ecf1d575f7f722147c8f51c0721cfd922b7",
+    "objects/human-skill.json": "7e7a83751ccfd19700248ce566b5de634c90149e776ee97f809393bee5bbd866",
+    "objects/interaction.json": "ed71db60fce4a54ef2b1dd9913448765b8a6bf2ad47193593a15ae06908f7167",
+    "objects/party.json": "7e68790c1851a377f634bae2c8943572274780d39f4fd6965157e376e45435c0",
+    "objects/read-policy.json": "169df236b4c6e44a6b3aa1ae7266ebd9d3ff51aac9f2c8d09d48c18e2cad5418",
+    "objects/reviewer.json": "ce2d1b0fda31e2444bfeb56c3e776ac49ab82ac356846fb7d540f94d86be7331",
+    "objects/style.json": "b3173aec4ca868aec021e2d26ae64fdddd48a0e3153d6b7483ba01765ff647a9",
+    "objects/tool.json": "48a604b15ec16d03db6878578b4d8cca3c2d3085ce848181a603a02b203c851a",
+    "objects/work.json": "666fe1e6d04b2a4c7cc00739596a7417410147e80dad1aa5516f28f144768d93",
+    "objects/world.json": "659837d72f34122c8706c9edaeaa5f5128e1c7db1c6e5426de3b73b4581f4908",
+    "README.md": "09abf74482fea423e460b229b3e91ab7da7307878bdbae6e07ca78b82cc30b22",
+    "decision-making.json": "716488da3741da2018b8e972580571047c4828cab33369e0a89a25961cdc4acd",
+    "inputs/funnel.json": "c79af76ea01f7fb936675d7cad06a5b4581b27ba80b0a477e41a5cfaf4d185a4",
+    "inputs/review.json": "d8e2b1cc57f3adcd6c033e26b065788a82d5d093302bc3dfaaebc759f1bfea00",
+    "native/skills/human-decision-brief/SKILL.md": "edd6d04b9b47955e6fd7992bcbc8331d952b59167c650b14c855bf2eb1d80c83"
+  }
+}

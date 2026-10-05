@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.2.0-draft",
+  "kind": "ToolDefinition",
+  "layer": "dna",
+  "id": "urn:ode:example:product-employee:tool",
+  "version": "1.0.0",
+  "title": "tool",
+  "status": "draft",
+  "provenance": {
+    "origin": "Authored synthetic product-employee scenario; no real execution or approval observed"
+  },
+  "spec": {
+    "operation": "Read a deliberately selected local description file",
+    "inputSchema": {
+      "type": "object"
+    },
+    "outputSchema": {
+      "type": "object"
+    },
+    "effects": [],
+    "errors": []
+  }
+}
